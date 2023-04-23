@@ -479,10 +479,52 @@ header a:active {
 
 .main-recepies__search {
     display: flex;
+    height: 6rem;
+    padding: 0.5rem 1.5rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-recepies__search-title {
-    
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #023e8a;
+    width: 66%;
+}
+
+.main-recepies__search-form {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    padding: 0 0 0 1rem;
+}
+
+.main-recepies__search-input {
+    display: flex;
+    height: 2rem;
+}
+
+.main-recepies__search-text {
+    width: 75%;
+}
+
+.main-recepies__search-button {
+    display: flex;
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #FB8500;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-recepies__search-button-img {
+    height: 1.5rem;
 }
 
 .main-about {
