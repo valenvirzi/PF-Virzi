@@ -448,20 +448,21 @@ header a:active {
 .main-products__categories {
     display: flex;
     flex-direction: column;
-}
-
-.main-products__intro {
-    display: flex;
-    height: 8rem;
-    background-color: #8ECAE6;
-    color: #023e8a;
-    font-size: 2.75rem;
-    align-items: center;
     background-color: #8ECAE6;
     opacity: 1;
     background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
     background-size: 40px 40px;
     background-position: 0 0,20px 20px;
+}
+
+.main-products__intro {
+    display: flex;
+    height: 8rem;
+    color: #023e8a;
+    font-size: 2.75rem;
+    align-items: center;
+    border-bottom: #219EBC solid 2px;
+    border-top: #219EBC solid 2px;
 }
 
 .end {
@@ -474,7 +475,6 @@ header a:active {
 
 .main-products__slider{
     height: 15rem;
-    background-image: linear-gradient(#edede9, #e5e5e5, #edede9);
 }
 
 .main-recepies {
@@ -492,6 +492,7 @@ header a:active {
     column-gap: 1.5rem;
     justify-content: center;
     align-items: center;
+    border-bottom: #219EBC solid 2px;
 }
 
 .main-recepies__search-title {
@@ -533,7 +534,7 @@ header a:active {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    column-gap: 5%;
+    column-gap: 4px;
 }
 
 .main-recepies__search-button-img {
