@@ -84,6 +84,14 @@ header a:active {
     color: #FB8500;
 }
 
+.main {
+    background-color: #8ECAE6;
+    opacity: 1;
+    background-image:  radial-gradient(#219EBC 1.25px, transparent 1.25px), radial-gradient(#219EBC 1.25px, #8ECAE6 1.25px);
+    background-size: 50px 50px;
+    background-position: 0 0,25px 25px;
+}
+
 .main__intro {
     display: flex;
     height: 22rem;
@@ -148,7 +156,7 @@ header a:active {
     padding: 3rem 4rem;
     height: 20rem;
     justify-content: space-around;
-    background-image: linear-gradient(#F7F6FB, #ffffff);
+    /* background-image: linear-gradient(#F7F6FB, #ffffff); */
     column-gap: 2rem;
 }
 
@@ -211,15 +219,18 @@ header a:active {
     display: flex;
     height: 20rem;
     padding: 0 0 0 3.4rem;
-    background-image: linear-gradient(#ffffff, #EFEFD0);
+}
+
+.main__suscription-div-img {
+    display: flex;
+    height: 100%;
+    width: 37rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__suscription-img {
-    /* background-image: url(../img/Pescados-y-mariscos-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-    height: 100%;
-    width: 37rem;
+    height: 85%;
 }
 
 .main__suscription-text {
