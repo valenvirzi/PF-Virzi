@@ -330,9 +330,6 @@ header a:active {
     height: 9rem;
     width: 100%;
     position: relative;
-    /* background-color: #FB8500;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #FB8500 25px ), repeating-linear-gradient( #EFEFD055, #F7C59F );
-    overflow: hidden; */
     background-color: #fbba72;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fbba72 25px ), repeating-linear-gradient( #EFEFD055, #f9c784 );
     overflow: hidden;
@@ -522,12 +519,32 @@ header a:active {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    row-gap: 1.5rem;
+    row-gap: 2rem;
     background-color: #8ECAE6;
     opacity: 1;
     background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
     background-size: 40px 40px;
     background-position: 0 0,20px 20px;
+}
+
+.main-contact__form {
+    font-weight: 600;
+}
+
+.main-contact__form-button {
+    background-color: #FB8500;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main-contact__form-button:hover {
+    background-color: #f6972a;
+}
+
+.main-contact__form-button:active {
+    background-color: #cd6f03;
 }
 
 .main-contact__h3 {
