@@ -545,6 +545,7 @@ header a:active {
     justify-content: center;
     align-items: center;
     column-gap: 4px;
+    padding: 0 3px;
 }
 
 .main-recepies__search-button-img {
@@ -569,6 +570,7 @@ header a:active {
     color: #023e8a;
     height: 6rem;
     padding: 0 0 0 4rem;
+    background-color: #8ECAE6;
     border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px;
 }
@@ -609,7 +611,7 @@ header a:active {
     height: 85%;
 }
 
-span {
+.editar-luego {
     background-color: white;
     text-align: center;
     line-height: 4rem;
