@@ -477,6 +477,14 @@ header a:active {
     background-image: linear-gradient(#edede9, #e5e5e5, #edede9);
 }
 
+.main-recepies {
+    background-color: #8ECAE6;
+    opacity: 1;
+    background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+}
+
 .main-recepies__search {
     display: flex;
     height: 6rem;
@@ -500,6 +508,10 @@ header a:active {
     padding: 0 0 0 1rem;
 }
 
+.main-recepies__search-label {
+    font-weight: 600;
+}
+
 .main-recepies__search-input {
     display: flex;
     height: 2rem;
@@ -521,11 +533,14 @@ header a:active {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    column-gap: 5%;
 }
 
 .main-recepies__search-button-img {
-    height: 1.5rem;
+    height: 1.25rem;
 }
+
+
 
 .main-about {
    display: grid;
