@@ -63,6 +63,7 @@ li {
     display: flex;
     justify-content: space-around;
     margin: 0;
+    padding: 0;
 }
 
 .header__link-cart {
@@ -476,7 +477,13 @@ header a:active {
     background-image: linear-gradient(#edede9, #e5e5e5, #edede9);
 }
 
+.main-recepies__search {
+    display: flex;
+}
 
+.main-recepies__search-title {
+    
+}
 
 .main-about {
    display: grid;
