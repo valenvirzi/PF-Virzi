@@ -95,9 +95,9 @@ header a:active {
 .main {
     background-color: #8ECAE6;
     opacity: 1;
-    background-image:  radial-gradient(#219EBC 1.25px, transparent 1.25px), radial-gradient(#219EBC 1.25px, #8ECAE6 1.25px);
+    background-image: radial-gradient(#219EBC 1.25px, transparent 1.25px), radial-gradient(#219EBC 1.25px, #8ECAE6 1.25px);
     background-size: 50px 50px;
-    background-position: 0 0,25px 25px;
+    background-position: 0 0, 25px 25px;
 }
 
 .main__intro {
@@ -334,10 +334,11 @@ header a:active {
     width: 100%;
     position: relative;
     background-color: #fbba72;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fbba72 25px ), repeating-linear-gradient( #EFEFD055, #f9c784 );
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #fbba72 25px), repeating-linear-gradient(#EFEFD055, #f9c784);
     overflow: hidden;
-  }
-  .air{
+}
+
+.air {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -345,51 +346,59 @@ header a:active {
     height: 2rem;
     background: url(../img/wave2.png);
     background-size: 1000px 3rem;
-  }
-  .air.air1{
+}
+
+.air.air1 {
     animation: wave 25s linear infinite;
     z-index: 1000;
     opacity: 1;
     animation-delay: 0s;
     bottom: 0;
-  }
-  .air.air2{
+}
+
+.air.air2 {
     animation: wave2 15s linear infinite;
     z-index: 999;
     opacity: 0.5;
     animation-delay: -5s;
     bottom: 0px;
-  }
-  .air.air3{
+}
+
+.air.air3 {
     animation: wave 26s linear infinite;
     z-index: 998;
     opacity: 0.2;
     animation-delay: -2s;
     bottom: 1px;
-  }
-  .air.air4{
+}
+
+.air.air4 {
     animation: wave2 8s linear infinite;
     z-index: 997;
     opacity: 0.7;
     animation-delay: -5s;
     bottom: 0px;
-  }
-  @keyframes wave{
-    0%{
-      background-position-x: 0px; 
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0px;
     }
-    100%{
-      background-position-x: 1000px; 
+
+    100% {
+        background-position-x: 1000px;
     }
-  }
-  @keyframes wave2{
-    0%{
-      background-position-x: 0px; 
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
     }
-    100%{
-      background-position-x: -1000px; 
+
+    100% {
+        background-position-x: -1000px;
     }
-  }
+}
 
 .main-subpage__title {
     font-size: 4.5rem;
@@ -450,9 +459,9 @@ header a:active {
     flex-direction: column;
     background-color: #8ECAE6;
     opacity: 1;
-    background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
+    background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
     background-size: 40px 40px;
-    background-position: 0 0,20px 20px;
+    background-position: 0 0, 20px 20px;
 }
 
 .main-products__intro {
@@ -473,16 +482,16 @@ header a:active {
     margin: 0 6rem;
 }
 
-.main-products__slider{
+.main-products__slider {
     height: 15rem;
 }
 
 .main-recepies {
     background-color: #8ECAE6;
     opacity: 1;
-    background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
+    background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
     background-size: 40px 40px;
-    background-position: 0 0,20px 20px;
+    background-position: 0 0, 20px 20px;
 }
 
 .main-recepies__search {
@@ -492,7 +501,8 @@ header a:active {
     column-gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    border-bottom: #219EBC solid 2px;
+    /* border-bottom: #219EBC solid 2px; */
+    border-top: #219EBC solid 2px;
 }
 
 .main-recepies__search-title {
@@ -541,19 +551,134 @@ header a:active {
     height: 1.25rem;
 }
 
+.main-recepies__content {
+    display: flex;
+    flex-direction: column;
+}
 
+.main-recepies__latest {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-recepies__title {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #023e8a;
+    height: 6rem;
+    padding: 0 0 0 4rem;
+    border-bottom: #219EBC solid 2px;
+    border-top: #219EBC solid 2px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+/* Base styles for this example */
+
+.wrapper {
+    width: 65vw;
+    /* unfortunately width has to be set to some hard value */
+    display: flex;
+}
+
+.slide {
+    width: 0;
+}
+
+.content {
+    width: 65vw;
+    height: 100%;
+    /* this is optional if you want every slide to have same height as the highest one */
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-color: white;
+    height: 85%;
+}
+
+span {
+    background-color: white;
+    text-align: center;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 8rem;
+    color: #616161;
+    font-size: 2rem;
+}
+
+.content {
+    padding: 30px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.content2,
+.content5,
+.content6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E0E0;
+}
+
+.content3 {
+    background-image: url(https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-size: cover;
+    background-position: center;
+}
+
+#i_1:checked~.wrapper .content1,
+#i_2:checked~.wrapper .content2,
+#i_3:checked~.wrapper .content3,
+#i_4:checked~.wrapper .content4,
+#i_5:checked~.wrapper .content5,
+#i_6:checked~.wrapper .content6 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.control {
+    color: #E0E0E0;
+    transition-duration: .6s;
+    cursor: pointer;
+}
+
+#i_1:checked~.controls label[for="i_1"],
+#i_2:checked~.controls label[for="i_2"],
+#i_3:checked~.controls label[for="i_3"],
+#i_4:checked~.controls label[for="i_4"],
+#i_5:checked~.controls label[for="i_5"],
+#i_6:checked~.controls label[for="i_6"] {
+    color: #424242;
+}
 
 .main-about {
-   display: grid;
-   grid-template-rows: 1fr 1fr;
-   grid-template-columns: 1fr 1fr;
-   height: 40rem;
-   background-color: #8ECAE6;
-   opacity: 1;
-   background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
-   background-size: 40px 40px;
-   background-position: 0 0,20px 20px;
-   padding: 0 0 1.5rem 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 40rem;
+    background-color: #8ECAE6;
+    opacity: 1;
+    background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    padding: 0 0 1.5rem 0;
 }
 
 .main-about__text {
@@ -596,9 +721,9 @@ header a:active {
     row-gap: 2rem;
     background-color: #8ECAE6;
     opacity: 1;
-    background-image:  radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
+    background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
     background-size: 40px 40px;
-    background-position: 0 0,20px 20px;
+    background-position: 0 0, 20px 20px;
 }
 
 .main-contact__form {
@@ -682,7 +807,8 @@ header a:active {
     background-color: #cd6f03;
 }
 
-.footer__contact-button-a, .footer__contact-button-a:visited {
+.footer__contact-button-a,
+.footer__contact-button-a:visited {
     color: #ffffff;
     font-weight: 600;
 }
@@ -727,4 +853,3 @@ header a:active {
 .footer__link:active {
     color: #FB8500;
 }
-
