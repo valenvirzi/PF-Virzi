@@ -411,11 +411,10 @@ header a:active {
     align-items: center;
     text-align: center;
     justify-content: center;
-    /* background-color: #FB8500; */
-    /* background-image: linear-gradient(#EFEFD0, #F7C59F, #EFEFD0); */
-    background-image: linear-gradient(#edede9, #e5e5e5, #edede9);
+    background-color: #EFEFD0;
     row-gap: 1rem;
-    border-left: #d9d9d9 solid 2px;
+    border-left: #d9d9d9 solid 1px;
+    border-right: #d9d9d9 solid 1px;
 }
 
 .main-products__img-title {
