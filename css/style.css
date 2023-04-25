@@ -22,6 +22,10 @@ li {
     list-style: none;
 }
 
+.body * {
+    margin: 0;
+}
+
 .header {
     justify-content: space-around;
     display: flex;
@@ -676,12 +680,18 @@ header a:active {
     flex-direction: column;
 }
 
+.footer * {
+    margin: 0;
+}
+
 .footer__contact {
     display: flex;
     flex-direction: column;
     text-align: center;
-    row-gap: 1.2rem;
-    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 1.1rem 0;
     background-color: #EFEFD0;
     height: 12rem;
 }
@@ -689,11 +699,14 @@ header a:active {
 .footer__contact-title {
     color: #023e8a;
     font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 .footer__contact-p {
     font-size: 1.2rem;
     font-weight: 600;
+    margin: 0;
 }
 
 .footer__contact-button {
@@ -706,6 +719,7 @@ header a:active {
     border-radius: 5px;
     align-self: center;
     cursor: pointer;
+    margin: 0;
 }
 
 .footer__contact-button:hover {
@@ -740,6 +754,7 @@ header a:active {
 .footer__link-logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .footer__main-legal {
