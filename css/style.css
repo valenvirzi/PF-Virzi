@@ -841,6 +841,7 @@ header a:active {
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .header {
         justify-content: space-between;
+        padding: 0 1rem;
     }
 
     .header__nav {
@@ -849,7 +850,7 @@ header a:active {
 
     .header__menu {
         width: 7rem;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .header__link-cart {
@@ -894,6 +895,16 @@ header a:active {
         width: 100%;
     }
 
+    .main-contact__h3 {
+        font-size: 1.8rem;
+        margin: 0 1.5rem;
+    }
+
+    .main-contact__form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer__contact {
         row-gap: 1rem;
         padding: 1.1rem 0;
@@ -922,10 +933,12 @@ header a:active {
         align-items: center;
         gap: 0;
         justify-content: space-around;
+        padding-left: 0rem;
     }
 
     .footer__main-socials-img {
         column-gap: 2.5rem;
+        padding: 0;
     }
 
     .footer__main-socials-img img {
@@ -940,12 +953,14 @@ header a:active {
         color: #ffffff;
         row-gap: 1rem;
         font-size: 0.9rem;
+        padding: 0;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .header {
         justify-content: space-between;
+        padding: 0 0.2rem;
     }
 
     .header__logo {
@@ -1007,6 +1022,22 @@ header a:active {
         width: 100%;
     }
 
+    .main-contact__h3 {
+        font-size: 1.4rem;
+        margin: 0 1rem;
+    }
+
+    .main-contact__form-inputs {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .main-contact__form-area {
+        padding: 1rem 0;
+        row-gap: 1rem;
+    }
+
     .footer__contact {
         row-gap: 1rem;
         padding: 1.1rem 0.8rem;
@@ -1024,8 +1055,8 @@ header a:active {
 
     .footer__main {
         height: 20rem;
-        padding: 1rem 1rem 1rem 1.5rem;
-        row-gap: 0.5rem;
+        padding: 1rem 0.2rem;
+        row-gap: 1rem;
     }
 
     .footer__main-socials {
@@ -1035,10 +1066,12 @@ header a:active {
         align-items: center;
         gap: 0;
         justify-content: space-around;
+        padding-left: 0rem;
     }
 
     .footer__main-socials-img {
-        column-gap: 2.5rem;
+        column-gap: 2rem;
+        padding: 0;
     }
 
     .footer__main-socials-img img {
@@ -1053,12 +1086,14 @@ header a:active {
         color: #ffffff;
         row-gap: 1rem;
         font-size: 0.9rem;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 319px) {
     .header {
         justify-content: space-between;
+        padding: 0 0.2rem;
     }
 
     .header__logo {
@@ -1090,7 +1125,7 @@ header a:active {
     .main-subpage__title {
         margin: auto;
         text-align: center;
-        font-size: 2.1rem;
+        font-size: 2.5rem;
     }
     
     .main-about {
@@ -1120,6 +1155,22 @@ header a:active {
         width: 100%;
     }
 
+    .main-contact__h3 {
+        font-size: 1.4rem;
+        margin: 0 1rem;
+    }
+
+    .main-contact__form-inputs {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .main-contact__form-area {
+        padding: 1rem 0;
+        row-gap: 1rem;
+    }
+
     .footer__contact {
         row-gap: 1rem;
         padding: 1.1rem 0.8rem;
@@ -1137,8 +1188,8 @@ header a:active {
 
     .footer__main {
         height: 20rem;
-        padding: 1rem 1rem 1rem 1.5rem;
-        row-gap: 0.5rem;
+        padding: 1rem 0.2rem;
+        row-gap: 1rem;
     }
 
     .footer__main-socials {
@@ -1148,10 +1199,12 @@ header a:active {
         align-items: center;
         gap: 0;
         justify-content: space-around;
+        padding-left: 0rem;
     }
 
     .footer__main-socials-img {
-        column-gap: 2.5rem;
+        column-gap: 2rem;
+        padding: 0;
     }
 
     .footer__main-socials-img img {
@@ -1166,5 +1219,6 @@ header a:active {
         color: #ffffff;
         row-gap: 1rem;
         font-size: 0.9rem;
+        padding: 0;
     }
 }
