@@ -1005,7 +1005,9 @@ header a:active {
     .main-about {
         display: flex;
         flex-direction: column;
-        height: 65.8rem;
+        justify-content: space-around;
+        height: 66rem;
+        padding: 0.7rem 0;
     }
 
     #div-img2 {
@@ -1013,7 +1015,7 @@ header a:active {
     }
 
     .main-about__text {
-        padding: 1.5rem;
+        padding: 1rem;
         text-align: center;
     }
 
