@@ -303,6 +303,7 @@ header a:active {
 
 .main__form-text {
     width: 20rem;
+    padding: 0 0.4rem;
 }
 
 .main__form-text:focus {
@@ -881,7 +882,7 @@ header a:active {
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1980px) {
-    
+
     .header {
         height: 3.6rem;
         font-size: 1.5rem;
@@ -889,6 +890,192 @@ header a:active {
 
     .header__cart {
         width: 2.5rem;
+    }
+    
+    .main__intro {
+        height: auto;
+    }
+    
+    .main__intro-text {
+        width: 55%;
+        padding: 2.45rem 0;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    
+    .main__intro-inside {
+        width: 70%;
+        margin: 0;
+    }
+    
+    .main__home-title {
+        font-size: 5rem;
+        height: auto;
+    }
+    
+    .main__description {
+        font-size: 2rem;
+        line-height: 2.81rem;
+    }
+    
+    .main__intro-button {
+        font-size: 1.66rem;
+        height: 3.3rem;
+    }
+    
+    .main__intro-img {
+        width: 45%;
+        height: 576.08px;
+    }
+    
+    .main__products {
+        display: flex;
+        padding: 3rem 4rem;
+        height: 20rem;
+        justify-content: space-around;
+        column-gap: 2rem;
+    }
+    
+    .main__products-inside {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 24rem;
+        padding: 0 4rem;
+        border-radius: 7px;
+        justify-content: center;
+        text-align: center;
+        color: #023e8a;
+        row-gap: 1rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-frescos:hover {
+        background-image: url(../img/salmon-hand.jpg);
+        outline: #FB8500 3px solid;
+        color: #FB8500;
+        cursor: pointer;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados:hover {
+        background-image: url(../img/bg-frozen-seafood-counter.jpg);
+        outline: #FB8500 3px solid;
+        color: #FB8500;
+        cursor: pointer;
+    }
+    
+    .main__products-title {
+        width: 16rem;
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    
+    .main__products-p {
+        width: 16rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.7rem;
+    }
+    
+    .main__suscription {
+        display: flex;
+        height: 20rem;
+        padding: 0 0 0 3.4rem;
+    }
+    
+    .main__suscription-div-img {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main__suscription-img {
+        width: 60%;
+    }
+    
+    .main__suscription-text {
+        display: grid;
+        grid-template-rows: 1fr 0.4fr 1fr;
+        grid-template-columns: 13rem 1fr 1fr;
+        padding: 0 2.5rem 0 2.5rem;
+        margin-inline: auto;
+    }
+    
+    .main__suscription-title {
+        align-self: center;
+        grid-column: 1 / 4;
+        color: #023e8a;
+        font-size: 2.3rem;
+        width: 85%;
+    }
+    
+    .main__suscription-p {
+        align-self: center;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.7rem;
+        width: 16rem;
+    
+    }
+    
+    .main__suscription-arrow {
+        display: flex;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 2rem;
+        width: 2rem;
+        align-self: center;
+    }
+    
+    .main__suscription-form {
+        display: flex;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        height: 2rem;
+        margin: 1rem 0 0 0;
+    }
+    
+    .main__form-text {
+        width: 20rem;
+    }
+    
+    .main__form-text:focus {
+        outline: #FFB703 2px solid;
+    }
+    
+    .main__form-button {
+        width: 6.5rem;
+        gap: 4px;
+    }
+    
+    .main__form-button-img {
+        width: 1.5rem;
+    }
+    
+    .main__form-button-p {
+        color: #ffffff;
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 1.7rem;
     }
 
     .main-subpage__intro {
