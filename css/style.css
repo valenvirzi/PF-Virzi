@@ -863,14 +863,12 @@ header a:active {
     }
 
     .footer__main-socials {
-        height: 55%;
         justify-content: space-between;
         padding: 0 9rem 0 4rem;
     }
 
     .footer__main-socials-img {
         column-gap: 7.5rem;
-        /* margin: 0 9rem; */
     }
 
     .footer__main-socials-img img {
