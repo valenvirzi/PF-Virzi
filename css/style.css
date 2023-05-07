@@ -256,14 +256,13 @@ header a:active {
 }
 
 .main__suscription-img {
-    width: 65%;
+    width: 70%;
 }
 
 .main__suscription-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     width: 50%;
     row-gap: 2.2rem;
     padding: 0 0 1rem 0;
@@ -290,10 +289,6 @@ header a:active {
     width: auto;
 }
 
-.main__suscription-arrow {
-    display: flex;
-}
-
 .main__suscription-arrow-img {
     height: 2rem;
     width: 2rem;
@@ -306,7 +301,7 @@ header a:active {
 }
 
 .main__form-text {
-    width: 20rem;
+    width: 56%;
     padding: 0 0.4rem;
 }
 
@@ -319,7 +314,7 @@ header a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 6.5rem;
+    width: 18.2%;
     gap: 4px;
     background-color: #FB8500;
     border: none;
@@ -336,7 +331,7 @@ header a:active {
 }
 
 .main__form-button-img {
-    width: 1.5rem;
+    width: 23%;
 }
 
 .main__form-button-p {
@@ -774,8 +769,10 @@ header a:active {
 .footer__main-socials {
     display: flex;
     height: 55%;
+    justify-content: space-between;
     align-items: center;
     gap: 2.5rem;
+    padding: 0 4rem 0 2.5rem;
 }
 
 .footer__main-socials-img {
@@ -848,8 +845,6 @@ header a:active {
     }
 
 
-
-
     .main__products {
         padding: 5.25rem 7rem;
         height: 35rem;
@@ -875,95 +870,60 @@ header a:active {
     
     .main__products-title {
         font-size: 4.4rem;
-        font-weight: 900;
     }
     
     .main__products-p {
         font-size: 2.3rem;
-        font-weight: 700;
         line-height: 3rem;
     }
-
-
 
     
     .main__suscription {
         height: 35rem;
     }
     
-    .main__suscription-div-img {
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .main__suscription-img {
-        width: 65%;
-    }
-    
     .main__suscription-text {
-        display: grid;
-        grid-template-rows: 1fr 0.4fr 1fr;
-        grid-template-columns: 13rem 1fr 1fr;
-        padding: 0 2.5rem;
-        width: 50%;
+        row-gap: 4rem;
+        padding: 0 0 3rem 0;
     }
     
     .main__suscription-title {
-        align-self: center;
         font-size: 4rem;
-        width: 85%;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.5rem;
     }
     
     .main__suscription-p {
-        align-self: center;
         font-size: 2.1rem;
         line-height: 3rem;
-        width: 28rem;
-    }
-    
-    .main__suscription-arrow {
-        display: flex;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
     }
     
     .main__suscription-arrow-img {
-        height: 2rem;
-        width: 2rem;
-        align-self: center;
+        height: 3.25rem;
+        width: 3.25rem;
     }
     
     .main__suscription-form {
-        display: flex;
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
-        height: 2rem;
-        margin: 1rem 0 0 0;
+        height: 3.5rem;
+        column-gap: 1px;
     }
     
     .main__form-text {
-        width: 20rem;
-    }
-    
-    .main__form-text:focus {
-        outline: #FFB703 2px solid;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        padding: 0 1rem;
     }
     
     .main__form-button {
-        width: 6.5rem;
         gap: 4px;
-    }
-    
-    .main__form-button-img {
-        width: 1.5rem;
+        border-radius: 3px;
     }
     
     .main__form-button-p {
-        color: #ffffff;
-        font-size: 0.85rem;
-        font-weight: 600;
-        line-height: 1.7rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
     }
 
 
@@ -1025,7 +985,6 @@ header a:active {
     }
 
     .footer__main-socials {
-        justify-content: space-between;
         padding: 0 9rem 0 4rem;
     }
 
@@ -1056,25 +1015,106 @@ header a:active {
 
     
     .main__intro-text {
-        row-gap: 2rem;
-        padding: 1.8rem 0 1.8rem 3rem;
+        row-gap: 1.75rem;
+        padding: 2rem 0 2rem 3.5rem;
     }
     
     .main__home-title {
-        font-size: 5rem;
-        height: auto;
+        font-size: 4.6rem;
     }
     
     .main__description {
-        font-size: 2rem;
-        line-height: 2.81rem;
+        font-size: 1.85rem;
+        line-height: 2.7rem;
     }
     
     .main__intro-button {
-        font-size: 1.66rem;
-        height: 3.3rem;
+        font-size: 1.54rem;
+        height: 3.08rem;
+    }
+
+
+    .main__products {
+        padding: 3.08rem 4.16rem;
+        height: 27rem;
     }
     
+    .main__products-inside {
+        width: 32.35rem;
+        border-radius: 10px;
+        row-gap: 2rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 3.4rem;
+    }
+    
+    .main__products-p {
+        font-size: 1.77rem;
+        line-height: 2.3rem;
+    }
+
+    
+    .main__suscription {
+        height: 27rem;
+    }
+    
+    .main__suscription-text {
+        row-gap: 3rem;
+        padding: 0 0 2.35rem 0;
+    }
+    
+    .main__suscription-title {
+        font-size: 3.08rem;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.5rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 1.62rem;
+        line-height: 2.3rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    .main__suscription-form {
+        height: 2.7rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 1.16rem;
+        line-height: 2.3rem;
+        padding: 0 0.8rem;
+    }
+    
+    .main__form-button {
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 1.16rem;
+        line-height: 2.3rem;
+    }
+
     
 
 
@@ -1114,7 +1154,7 @@ header a:active {
     }
 
     .footer__contact-title {
-        font-size: 3.83rem;
+        font-size: 3.7rem;
     }
 
     .footer__contact-p {
@@ -1160,9 +1200,215 @@ header a:active {
         height: 100%;
     }
 
+
+    .main__intro-text {
+        row-gap: 1.25rem;
+        padding: 1.5rem 0 1.5rem 3.5rem;
+    }
+    
+    .main__home-title {
+        font-size: 3.36rem;
+    }
+    
+    .main__description {
+        font-size: 1.35rem;
+        line-height: 2rem;
+    }
+    
+    .main__intro-button {
+        font-size: 1.25rem;
+        height: 2.25rem;
+    }
+
+
+    .main__products {
+        padding: 2.25rem 3.04rem;
+        height: 19.7rem;
+    }
+    
+    .main__products-inside {
+        width: 23.6rem;
+        border-radius: 10px;
+        row-gap: 1.5rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 2.5rem;
+    }
+    
+    .main__products-p {
+        font-size: 1.3rem;
+        line-height: 1.68rem;
+    }
+
+    
+    .main__suscription {
+        height: 19.7rem;
+    }
+    
+    .main__suscription-text {
+        row-gap: 2.25rem;
+        padding: 0 0 1.8rem 0;
+    }
+    
+    .main__suscription-title {
+        font-size: 2.25rem;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.5rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 1.19rem;
+        line-height: 1.68rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 1.82rem;
+        width: 1.82rem;
+    }
+    
+    .main__suscription-form {
+        height: 2rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 0.85rem;
+        line-height: 1.68rem;
+        padding: 0 0.65rem;
+    }
+    
+    .main__form-button {
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 0.85rem;
+        line-height: 1.68rem;
+    }
+
+
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    .main__intro-text {
+        row-gap: 1.11rem;
+        padding: 1.35rem 0 1.35rem 3.5rem;
+    }
+    
+    .main__home-title {
+        font-size: 3rem;
+    }
+    
+    .main__description {
+        font-size: 1.2rem;
+        line-height: 1.78rem;
+    }
+    
+    .main__intro-button {
+        font-size: 1.11rem;
+        height: 2rem;
+    }
+
+
+    .main__products {
+        padding: 2rem 2.7rem;
+        height: 17.5rem;
+    }
+    
+    .main__products-inside {
+        width: 21rem;
+        border-radius: 9px;
+        row-gap: 1.3rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 2.22rem;
+    }
+    
+    .main__products-p {
+        font-size: 1.16rem;
+        line-height: 1.5rem;
+    }
+
+    
+    .main__suscription {
+        height: 17.5rem;
+    }
+    
+    .main__suscription-text {
+        row-gap: 2rem;
+        padding: 0 0 1.6rem 0;
+    }
+    
+    .main__suscription-title {
+        font-size: 2rem;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.45rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 1.06rem;
+        line-height: 1.5rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 1.62rem;
+        width: 1.62rem;
+    }
+    
+    .main__suscription-form {
+        height: 1.8rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 0.76rem;
+        line-height: 1.5rem;
+        padding: 0 0.6rem;
+    }
+    
+    .main__form-button {
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 0.76rem;
+        line-height: 1.5rem;
+    }
+
+
     .main-about {
         height: 55rem;
     }
@@ -1172,7 +1418,110 @@ header a:active {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .main__intro-text {
+        row-gap: 0.9rem;
+        padding: 1.08rem 0 1.08rem 2.9rem;
+    }
+    
+    .main__home-title {
+        font-size: 2.4rem;
+    }
+    
+    .main__description {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+    
+    .main__intro-button {
+        font-size: 0.9rem;
+        height: 1.6rem;
+    }
+
+
+    .main__products {
+        padding: 1.6rem 2.16rem;
+        height: 14rem;
+    }
+    
+    .main__products-inside {
+        width: 16.8rem;
+        border-radius: 9px;
+        row-gap: 1rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 1.78rem;
+    }
+    
+    .main__products-p {
+        font-size: 0.93rem;
+        line-height: 1.2rem;
+    }
+
+    
+    .main__suscription {
+        height: 14rem;
+    }
+    
+    .main__suscription-text {
+        row-gap: 1.6rem;
+        padding: 0 0 1.3rem 0;
+    }
+    
+    .main__suscription-title {
+        font-size: 1.8rem;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.4rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+    .main__suscription-form {
+        height: 1.6rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        padding: 0 0.6rem;
+    }
+    
+    .main__form-button {
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+
     .main-about {
         height: 45rem;
     }
@@ -1192,9 +1541,44 @@ header a:active {
     .footer__main {
         padding: 1rem 1rem 0.4rem 1.5rem;
     }
+
+    .footer__contact {
+        height: 10rem;
+    }
+
+    .footer__contact-title {
+        font-size: 2.1rem;
+    }
+
+    .footer__contact-p {
+        font-size: 1.1rem;
+    }
+
+    .footer__contact-button {
+        font-size: 1rem;
+        height: 2rem;
+        width: 15rem;
+    }
+
+    .footer__main {
+        height: 10rem;
+        font-size: 0.9rem;
+    }
+
+    .footer__main-socials {
+        justify-content: space-between;
+    }
+
+    .footer__main-socials-img img {
+        width: 3.2rem;
+    }
+
+    .footer__link-logo img {
+        width: 3rem;
+    }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .header {
         justify-content: space-between;
         padding: 0 1rem;
@@ -1217,6 +1601,113 @@ header a:active {
         display: inline-block;
         width: 2.5rem;
     }
+
+
+
+    .main__intro-text {
+        row-gap: 0.68rem;
+        padding: 0.81rem 0 0.81rem 2.18rem;
+    }
+    
+    .main__home-title {
+        font-size: 1.8rem;
+    }
+    
+    .main__description {
+        font-size: 0.71rem;
+        line-height: 1.05rem;
+    }
+    
+    .main__intro-button {
+        font-size: 0.71rem;
+        height: 1.2rem;
+        border-radius: 3px;
+    }
+
+
+    .main__products {
+        padding: 1.2rem 1.62rem;
+        height: 10.5rem;
+    }
+    
+    .main__products-inside {
+        width: 12.6rem;
+        border-radius: 9px;
+        row-gap: 1rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 1.34rem;
+    }
+    
+    .main__products-p {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    
+    .main__suscription {
+        height: 10.5rem;
+    }
+    
+    .main__suscription-text {
+        row-gap: 1.2rem;
+        padding: 0 0 1rem 0;
+    }
+    
+    .main__suscription-title {
+        font-size: 1.2rem;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.4rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 0.64rem;
+        line-height: 0.9rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 1rem;
+        width: 1rem;
+    }
+    
+    .main__suscription-form {
+        height: 1.08rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 0.46rem;
+        line-height: 0.9rem;
+        padding: 0 0.4rem;
+    }
+    
+    .main__form-button {
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 0.46rem;
+        line-height: 0.9rem;
+    }
+
+
+
 
     .main-subpage__title {
         margin: auto;
@@ -1291,7 +1782,7 @@ header a:active {
         align-items: center;
         gap: 0;
         justify-content: space-around;
-        padding-left: 0rem;
+        padding: 0;
     }
 
     .footer__main-socials-img {
@@ -1315,7 +1806,7 @@ header a:active {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 425px) and (max-width: 480px) {
     .header {
         justify-content: space-between;
         padding: 0 0.4rem;
@@ -1346,6 +1837,144 @@ header a:active {
         display: inline-block;
         width: 2.5rem;
     }
+
+
+
+
+    .main__intro-text {
+        row-gap: 0.68rem;
+        padding: 0.81rem 0 0.81rem 1.2rem;
+    }
+
+    .main__intro-inside {
+        width: 95%;
+    }
+    
+    .main__home-title {
+        font-size: 1.7rem;
+    }
+    
+    .main__description {
+        font-size: 0.7rem;
+        line-height: 1.05rem;
+    }
+    
+    .main__intro-button {
+        font-size: 0.7rem;
+        height: 1.3rem;
+        border-radius: 3px;
+    }
+
+
+    .main__main {
+        height: 43.6rem;
+        justify-content: space-evenly;
+    }
+
+
+    .main__products {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+        padding: 0 12.5%;
+        height: 30rem;
+    }
+    
+    .main__products-inside {
+        height: 13rem;
+        width: 95%;
+        border-radius: 9px;
+        row-gap: 1rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 2rem;
+    }
+    
+    .main__products-p {
+        font-size: 1.05rem;
+        line-height: 1.35rem;
+    }
+
+    
+    .main__suscription {
+        height: 10.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__suscription-div-img {
+        display: none;
+    }
+    
+    .main__suscription-text {
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.2rem;
+        padding: 0;
+    }
+
+    .main__suscription-inside {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main__suscription-title {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.4rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 0.91rem;
+        line-height: 1.28rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 1rem;
+        width: 1rem;
+    }
+    
+    .main__suscription-form {
+        height: 1.54rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 0.7rem;
+        line-height: 1.28rem;
+        padding: 0 0.4rem;
+    }
+    
+    .main__form-button {
+        height: 100%;
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 0.7rem;
+        line-height: 1.28rem;
+    }
+
+
+
 
     .main-subpage__title {
         margin: auto;
@@ -1400,7 +2029,7 @@ header a:active {
 
     .footer__contact {
         row-gap: 1rem;
-        padding: 1.1rem 0.8rem;
+        padding: 1.1rem 1rem;
         background-color: #EFEFD0;
         height: 14rem;
     }
@@ -1426,7 +2055,7 @@ header a:active {
         align-items: center;
         gap: 0;
         justify-content: space-around;
-        padding-left: 0rem;
+        padding: 0;
     }
 
     .footer__main-socials-img {
@@ -1450,10 +2079,10 @@ header a:active {
     }
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (min-width: 320px) and (max-width: 424px) {
     .header {
         justify-content: space-between;
-        padding: 0 0.2rem;
+        padding: 0 0.4rem;
     }
 
     .header__logo {
@@ -1470,7 +2099,7 @@ header a:active {
 
     .header__menu {
         width: 7rem;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .header__link-cart {
@@ -1482,6 +2111,145 @@ header a:active {
         width: 2.5rem;
     }
 
+
+
+
+    .main__intro-text {
+        row-gap: 0.65rem;
+        padding: 0.8rem 0 0.8rem 0.8rem;
+    }
+
+    .main__intro-inside {
+        width: 95%;
+    }
+    
+    .main__home-title {
+        font-size: 1.5rem;
+    }
+    
+    .main__description {
+        font-size: 0.7rem;
+        line-height: 1.05rem;
+    }
+    
+    .main__intro-button {
+        font-size: 0.7rem;
+        height: 1.3rem;
+        border-radius: 3px;
+    }
+
+
+    .main__main {
+        height: 35rem;
+        justify-content: space-evenly;
+    }
+
+
+    .main__products {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+        padding: 0 12%;
+        height: 20rem;
+    }
+    
+    .main__products-inside {
+        width: 95%;
+        border-radius: 9px;
+        row-gap: 0.5rem;
+    }
+    
+    .main__products-frescos {
+        background-image: url(../img/bg-fresh-salmon-1.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-congelados {
+        background-image: url(../img/frozen-oysters.jpg);
+        background-repeat: round;
+        background-size: contain;
+    }
+    
+    .main__products-title {
+        font-size: 1.7rem;
+        width: auto;
+    }
+    
+    .main__products-p {
+        font-size: 0.85rem;
+        line-height: 1.1rem;
+    }
+
+    
+    .main__suscription {
+        height: 10.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__suscription-div-img {
+        display: none;
+    }
+    
+    .main__suscription-text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.2rem;
+        padding: 0;
+    }
+
+    .main__suscription-inside {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main__suscription-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .main__suscription-description {
+        column-gap: 0.4rem;
+    }
+    
+    .main__suscription-p {
+        font-size: 0.85rem;
+        line-height: 1.2rem;
+    }
+    
+    .main__suscription-arrow-img {
+        height: 1rem;
+        width: 1rem;
+    }
+    
+    .main__suscription-form {
+        height: 1.54rem;
+        column-gap: 1px;
+    }
+    
+    .main__form-text {
+        font-size: 0.65rem;
+        line-height: 1.28rem;
+        padding: 0 0.4rem;
+    }
+    
+    .main__form-button {
+        width: 22.5%;
+        height: 100%;
+        gap: 4px;
+        border-radius: 3px;
+    }
+    
+    .main__form-button-p {
+        font-size: 0.65rem;
+        line-height: 1.1rem;
+    }
+
+
+
+
     .main-subpage__title {
         margin: auto;
         text-align: center;
@@ -1491,7 +2259,9 @@ header a:active {
     .main-about {
         display: flex;
         flex-direction: column;
-        height: 65.8rem;
+        justify-content: space-around;
+        height: 66rem;
+        padding: 0.7rem 0;
     }
 
     #div-img2 {
@@ -1499,7 +2269,7 @@ header a:active {
     }
 
     .main-about__text {
-        padding: 1.5rem;
+        padding: 1rem;
         text-align: center;
     }
 
@@ -1533,7 +2303,7 @@ header a:active {
 
     .footer__contact {
         row-gap: 1rem;
-        padding: 1.1rem 0.8rem;
+        padding: 1.1rem 1rem;
         background-color: #EFEFD0;
         height: 14rem;
     }
@@ -1559,7 +2329,7 @@ header a:active {
         align-items: center;
         gap: 0;
         justify-content: space-around;
-        padding-left: 0rem;
+        padding: 0;
     }
 
     .footer__main-socials-img {
