@@ -652,7 +652,7 @@ header a:active {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    height: 72vh;
+    height: 30rem;
     background-color: #8ECAE6;
     opacity: 1;
     background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
@@ -965,36 +965,56 @@ header a:active {
 
 
     .main-contact__form-area {
+        height: 50rem;
         padding: 3.5rem 3rem;
     }
-    
+
     .main-contact__form {
-        
+        max-width: none;
+        max-height: none;
+        width: 90%;
+        height: auto;
+    }
+
+    .main-contact__form-inputs {
+        column-gap: 3rem;
+    }
+
+    .main-contact__form-col-small, 
+    .main-contact__form-col-large {
+        max-height: none;
+        height: 20rem;
+        align-self: center;
     }
 
     .main-contact__form-label {
         font-size: 2rem;
     }
 
-    .main-contact__form-small {
-
+    .form-control {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
     }
 
-    .main-contact__form-large {
-        
+    .main-contact__form-small {
+        margin: 0;
+    }
+
+    .main-contact__form-small-input {
+        height: 5rem;
+    }
+
+    .main-contact__form-large-input {
+        height: 8rem;
     }
     
     .main-contact__form-button {
-
+        border-radius: 8px;
     }
     
     .main-contact__h3 {
         font-size: 4rem;
         margin: 0 3rem;
-    }
-    
-    .main-contact__end-text {
-
     }
 
 
