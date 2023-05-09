@@ -649,10 +649,10 @@ header a:active {
 .main-contact__form-area {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    row-gap: 2rem;
+    padding: 1.5rem;
+    height: 72vh;
     background-color: #8ECAE6;
     opacity: 1;
     background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
@@ -941,6 +941,9 @@ header a:active {
         font-size: 6rem;
     }
 
+
+
+
     .main-about {
         height: 85rem;
     }
@@ -957,6 +960,45 @@ header a:active {
     .main-about__img {
         height: 100%;
     }
+
+
+
+
+    .main-contact__form-area {
+        padding: 3.5rem 3rem;
+    }
+    
+    .main-contact__form {
+        
+    }
+
+    .main-contact__form-label {
+        font-size: 2rem;
+    }
+
+    .main-contact__form-small {
+
+    }
+
+    .main-contact__form-large {
+        
+    }
+    
+    .main-contact__form-button {
+
+    }
+    
+    .main-contact__h3 {
+        font-size: 4rem;
+        margin: 0 3rem;
+    }
+    
+    .main-contact__end-text {
+
+    }
+
+
+
 
     .footer__contact {
         height: 17rem;
