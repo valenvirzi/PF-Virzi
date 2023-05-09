@@ -605,7 +605,7 @@ header a:active {
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
-    height: 40rem;
+    height: auto;
     background-color: #8ECAE6;
     opacity: 1;
     background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
@@ -629,6 +629,7 @@ header a:active {
 
 .main-about__img {
     width: 100%;
+    height: 100%;
 }
 
 .main-about__text-title {
@@ -652,7 +653,7 @@ header a:active {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    height: 30rem;
+    height: auto;
     background-color: #8ECAE6;
     opacity: 1;
     background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
@@ -965,7 +966,7 @@ header a:active {
 
 
     .main-contact__form-area {
-        height: 50rem;
+        row-gap: 2.5rem;
         padding: 3.5rem 3rem;
     }
 
@@ -983,8 +984,11 @@ header a:active {
     .main-contact__form-col-small, 
     .main-contact__form-col-large {
         max-height: none;
-        height: 20rem;
-        align-self: center;
+        height: auto;
+    }
+
+    .main-contact__form-col-small {
+        justify-content: space-between;
     }
 
     .main-contact__form-label {
@@ -994,10 +998,6 @@ header a:active {
     .form-control {
         font-size: 2rem;
         padding: 0.5rem 1rem;
-    }
-
-    .main-contact__form-small {
-        margin: 0;
     }
 
     .main-contact__form-small-input {
@@ -1010,6 +1010,7 @@ header a:active {
     
     .main-contact__form-button {
         border-radius: 8px;
+        font-size: 2rem;
     }
     
     .main-contact__h3 {
@@ -1192,6 +1193,9 @@ header a:active {
         font-size: 6rem;
     }
 
+
+
+
     .main-about {
         height: 85rem;
     }
@@ -1208,6 +1212,65 @@ header a:active {
     .main-about__img {
         height: 100%;
     }
+
+
+
+
+    .main-contact__form-area {
+        row-gap: 2rem;
+        padding: 3rem 2.7rem;
+    }
+
+    .main-contact__form {
+        max-width: none;
+        max-height: none;
+        width: 93%;
+        height: auto;
+    }
+
+    .main-contact__form-inputs {
+        column-gap: 2.8rem;
+    }
+
+    .main-contact__form-col-small, 
+    .main-contact__form-col-large {
+        max-height: none;
+        height: auto;
+    }
+
+    .main-contact__form-col-small {
+        justify-content: space-between;
+    }
+
+    .main-contact__form-label {
+        font-size: 1.8rem;
+    }
+
+    .form-control {
+        font-size: 1.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .main-contact__form-small-input {
+        height: 4.5rem;
+    }
+
+    .main-contact__form-large-input {
+        height: 7rem;
+    }
+    
+    .main-contact__form-button {
+        border-radius: 8px;
+        font-size: 1.8rem;
+    }
+    
+    .main-contact__h3 {
+        font-size: 3.7rem;
+        margin: 0 3rem;
+    }
+
+
+
 
     .footer__contact {
         height: 17rem;
@@ -1228,6 +1291,7 @@ header a:active {
         height: 3.33rem;
         width: 26rem;
     }
+
 
     .footer__main {
         height: 16rem;
@@ -1254,14 +1318,6 @@ header a:active {
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
-    .main-about {
-        height: 50rem;
-    }
-
-    .main-about__img {
-        height: 100%;
-    }
-
 
     .main__intro-text {
         row-gap: 1.25rem;
@@ -1362,6 +1418,73 @@ header a:active {
     .main__form-button-p {
         font-size: 0.85rem;
         line-height: 1.68rem;
+    }
+
+
+
+
+    .main-about {
+        height: 50rem;
+    }
+
+    .main-about__img {
+        height: 100%;
+    }
+
+
+
+
+    .main-contact__form-area {
+        padding: 3rem 2.7rem;
+        row-gap: 1.7rem;
+    }
+
+    .main-contact__form {
+        max-width: none;
+        max-height: none;
+        width: 93%;
+        height: auto;
+    }
+
+    .main-contact__form-inputs {
+        column-gap: 2rem;
+    }
+
+    .main-contact__form-col-small, 
+    .main-contact__form-col-large {
+        max-height: none;
+        height: auto;
+    }
+
+    .main-contact__form-col-small {
+        justify-content: space-between;
+    }
+
+    .main-contact__form-label {
+        font-size: 1.5rem;
+    }
+
+    .form-control {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .main-contact__form-small-input {
+        height: 3.8rem;
+    }
+
+    .main-contact__form-large-input {
+        height: 6rem;
+    }
+    
+    .main-contact__form-button {
+        border-radius: 8px;
+        font-size: 1.5rem;
+    }
+    
+    .main-contact__h3 {
+        font-size: 3.2rem;
+        margin: 0 3rem;
     }
 
 
@@ -1471,6 +1594,8 @@ header a:active {
     }
 
 
+
+
     .main-about {
         height: 55rem;
     }
@@ -1478,6 +1603,63 @@ header a:active {
     .main-about__text {
         padding: 1.8rem 2.5rem;
     }
+
+
+
+
+    .main-contact__form-area {
+        padding: 2.9rem 2.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .main-contact__form {
+        max-width: none;
+        max-height: none;
+        width: 93%;
+        height: auto;
+    }
+
+    .main-contact__form-inputs {
+        column-gap: 1.8rem;
+    }
+
+    .main-contact__form-col-small, 
+    .main-contact__form-col-large {
+        max-height: none;
+        height: auto;
+    }
+
+    .main-contact__form-col-small {
+        justify-content: space-between;
+    }
+
+    .main-contact__form-label {
+        font-size: 1.35rem;
+    }
+
+    .form-control {
+        font-size: 1.35rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .main-contact__form-small-input {
+        height: 3.8rem;
+    }
+
+    .main-contact__form-large-input {
+        height: 6rem;
+    }
+    
+    .main-contact__form-button {
+        border-radius: 8px;
+        font-size: 1.35rem;
+    }
+    
+    .main-contact__h3 {
+        font-size: 2.8rem;
+        margin: 0 2.7rem;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1584,6 +1766,8 @@ header a:active {
     }
 
 
+
+
     .main-about {
         height: 45rem;
     }
@@ -1599,6 +1783,66 @@ header a:active {
     .main-about__text-p {
         font-size: 1.2rem;
     }
+
+
+
+
+    .main-contact__form-area {
+        height: auto;
+        padding: 2rem 2rem;
+        row-gap: 2rem;
+    }
+
+    .main-contact__form {
+        max-width: none;
+        max-height: none;
+        width: 95%;
+        height: auto;
+    }
+
+    .main-contact__form-inputs {
+        column-gap: 1.3rem;
+    }
+
+    .main-contact__form-col-small, 
+    .main-contact__form-col-large {
+        max-height: none;
+        height: auto;
+    }
+
+    .main-contact__form-col-small {
+        justify-content: space-between;
+    }
+
+    .main-contact__form-label {
+        font-size: 1.35rem;
+    }
+
+    .form-control {
+        font-size: 1.35rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .main-contact__form-small-input {
+        height: 3.8rem;
+    }
+
+    .main-contact__form-large-input {
+        height: 6rem;
+    }
+    
+    .main-contact__form-button {
+        border-radius: 8px;
+        font-size: 1.35rem;
+    }
+    
+    .main-contact__h3 {
+        font-size: 2.5rem;
+        margin: 0 1.5rem;
+    }
+
+
+
 
     .footer__main {
         padding: 1rem 1rem 0.4rem 1.5rem;
@@ -1776,6 +2020,9 @@ header a:active {
         text-align: center;
         font-size: 3rem;
     }
+
+
+
     
     .main-about {
         display: flex;
@@ -1806,6 +2053,9 @@ header a:active {
         width: 85%;
     }
 
+
+
+
     .main-contact__h3 {
         font-size: 1.8rem;
         margin: 0 1.5rem;
@@ -1815,6 +2065,13 @@ header a:active {
         display: flex;
         flex-direction: column;
     }
+
+    .main-contact__form-area {
+        row-gap: 1.5rem;
+    }
+
+
+
 
     .footer__contact {
         row-gap: 1rem;
@@ -1832,9 +2089,9 @@ header a:active {
     }
 
     .footer__main {
-        height: 20rem;
-        padding: 1rem 1rem 1rem 1.5rem;
-        row-gap: 0.5rem;
+        height: auto;
+        padding: 1.5rem 1.5rem;
+        row-gap: 1rem;
     }
 
     .footer__main-socials {
@@ -1843,6 +2100,7 @@ header a:active {
         height: 45%;
         align-items: center;
         gap: 0;
+        row-gap: 0.5rem;
         justify-content: space-around;
         padding: 0;
     }
@@ -2043,6 +2301,9 @@ header a:active {
         text-align: center;
         font-size: 2.5rem;
     }
+
+
+
     
     .main-about {
         display: flex;
@@ -2073,8 +2334,11 @@ header a:active {
         width: 100%;
     }
 
+
+
+
     .main-contact__h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin: 0 1rem;
     }
 
@@ -2085,9 +2349,12 @@ header a:active {
     }
 
     .main-contact__form-area {
-        padding: 1rem 0;
-        row-gap: 1rem;
+        padding: 1.5rem 0.5rem;
+        row-gap: 1.3rem;
     }
+
+
+
 
     .footer__contact {
         row-gap: 1rem;
@@ -2105,8 +2372,8 @@ header a:active {
     }
 
     .footer__main {
-        height: 20rem;
-        padding: 1rem 0.2rem;
+        height: auto;
+        padding: 1.2rem 1.2rem;
         row-gap: 1rem;
     }
 
@@ -2116,6 +2383,7 @@ header a:active {
         height: 45%;
         align-items: center;
         gap: 0;
+        row-gap: 0.5rem;
         justify-content: space-around;
         padding: 0;
     }
@@ -2317,6 +2585,9 @@ header a:active {
         text-align: center;
         font-size: 2.5rem;
     }
+
+
+
     
     .main-about {
         display: flex;
@@ -2347,9 +2618,12 @@ header a:active {
         width: 100%;
     }
 
+
+
+
     .main-contact__h3 {
         font-size: 1.4rem;
-        margin: 0 1rem;
+        margin: 0 0.8rem;
     }
 
     .main-contact__form-inputs {
@@ -2360,8 +2634,11 @@ header a:active {
 
     .main-contact__form-area {
         padding: 1rem 0;
-        row-gap: 1rem;
+        row-gap: 1.3rem;
     }
+
+
+
 
     .footer__contact {
         row-gap: 1rem;
@@ -2379,8 +2656,8 @@ header a:active {
     }
 
     .footer__main {
-        height: 20rem;
-        padding: 1rem 0.2rem;
+        height: auto;
+        padding: 1.2rem 1.2rem;
         row-gap: 1rem;
     }
 
@@ -2390,6 +2667,7 @@ header a:active {
         height: 45%;
         align-items: center;
         gap: 0;
+        row-gap: 0.5rem;
         justify-content: space-around;
         padding: 0;
     }
@@ -2413,4 +2691,5 @@ header a:active {
         font-size: 0.9rem;
         padding: 0;
     }
+
 }
