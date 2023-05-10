@@ -553,6 +553,9 @@ header a:active {
 .main-recepies__search-text {
     width: 75%;
     padding: 0 0.5rem;
+    border: none;
+    outline: #858585 1px solid;
+    border-radius: 5px;
 }
 
 .main-recepies__search-button {
@@ -596,6 +599,15 @@ header a:active {
     background-color: #8ECAE6;
     border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px;
+}
+
+.carousel {
+    background: #000;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -814,6 +826,7 @@ header a:active {
 
 
 @media screen and (min-width: 1981px) {
+
     .header {
         height: 3.6rem;
         font-size: 1.5rem;
@@ -1885,6 +1898,7 @@ header a:active {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
     .header {
         justify-content: space-between;
         padding: 0 1rem;
@@ -2127,6 +2141,7 @@ header a:active {
 }
 
 @media screen and (min-width: 425px) and (max-width: 480px) {
+
     .header {
         justify-content: space-between;
         padding: 0 0.4rem;
@@ -2410,6 +2425,7 @@ header a:active {
 }
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
+
     .header {
         justify-content: space-between;
         padding: 0 0.4rem;
