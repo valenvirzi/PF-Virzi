@@ -3,6 +3,11 @@
     src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -135,6 +140,7 @@ header a:active {
 
 .main__home-title {
     font-size: 3rem;
+    font-weight: 900;
     color: #023e8a;
     height: auto;
 }
@@ -503,7 +509,7 @@ header a:active {
 
 .main-products__slider {
     height: 15rem;
-    background-color: #023e8a;
+    background-color: #003566;
 }
 
 
@@ -524,7 +530,7 @@ header a:active {
     column-gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    /* border-bottom: #219EBC solid 2px; */
+    background-color: #8ECAE6;
     border-top: #219EBC solid 2px;
 }
 
@@ -597,7 +603,7 @@ header a:active {
     color: #023e8a;
     height: 6rem;
     padding: 0 0 0 4rem;
-    background-color: #8ECAE6;
+    background-color: #EFEFD0;
     border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px;
 }
