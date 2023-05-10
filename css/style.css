@@ -442,13 +442,12 @@ header a:active {
     height: 10rem;
     width: 50%;
     padding: 0.5rem 3rem;
+    row-gap: 1rem;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #EFEFD0;
-    row-gap: 1rem;
-    border-left: #d9d9d9 solid 1px;
-    border-right: #d9d9d9 solid 1px;
+    background-color: #8ECAE6;
+    border-top: #219EBC solid 2px;
 }
 
 .main-products__img-title {
@@ -486,9 +485,10 @@ header a:active {
 .main-products__intro {
     display: flex;
     height: 8rem;
-    color: #023e8a;
-    font-size: 2.75rem;
     align-items: center;
+    font-size: 2.75rem;
+    color: #023e8a;
+    background-color: #EFEFD0;
     border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px;
 }
@@ -503,6 +503,7 @@ header a:active {
 
 .main-products__slider {
     height: 15rem;
+    background-color: #023e8a;
 }
 
 
