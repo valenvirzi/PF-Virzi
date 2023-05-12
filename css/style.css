@@ -227,13 +227,13 @@ header a:active {
 }
 
 .main__products-congelados {
-    background-image: url(../img/frozen-oysters.jpg);
+    background-image: url(../img/bg-frozen-seafood-counter.jpg);
     background-repeat: round;
     background-size: contain;
 }
 
 .main__products-congelados:hover {
-    background-image: url(../img/bg-frozen-seafood-counter.jpg);
+    background-image: url(../img/frozen-oysters.jpg);
 }
 
 .main__products-title {
@@ -308,7 +308,7 @@ header a:active {
 
 .main__form-text {
     width: 56%;
-    padding: 0 0.4rem;
+    padding: 0 0.5rem;
 }
 
 .main__form-text:focus {
@@ -355,7 +355,7 @@ header a:active {
     height: 9rem;
     width: 100%;
     position: relative;
-    background-color: #fbba72;
+    background-color: #f9c784;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #fbba72 25px), repeating-linear-gradient(#EFEFD055, #f9c784);
     overflow: hidden;
 }
@@ -517,11 +517,11 @@ header a:active {
 
 
 .main-recepies {
-    background-color: #8ECAE6;
+    /* background-color: #8ECAE6;
     opacity: 1;
     background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
     background-size: 40px 40px;
-    background-position: 0 0, 20px 20px;
+    background-position: 0 0, 20px 20px; */
 }
 
 .main-recepies__search {
@@ -606,8 +606,14 @@ header a:active {
     padding: 0 0 0 4rem;
     background-color: #EFEFD0;
     border: none;
+    background-image: linear-gradient(#8ECAE6, #EFEFD0, #EFEFD0);
     /* border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px; */
+    /* background-color: #EFEFD0;
+    opacity: 1;
+    background-image: linear-gradient(45deg, #FFB703 50%, #EFEFD0 50%);
+    background-size: 11px 11px; */
+    
 }
 
 .main-recepies__carousel {
@@ -840,7 +846,7 @@ iframe {
 
 /* .bg {
     background-size: 300% 300%;
-    background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+    background-image: linear-gradient(-45deg, #EFEFD0 0%, #EFEFD0 25%, #EFEFD0 51%, #219EBC 100%);
     animation: AnimateBG 20s ease infinite;
   }
   
@@ -923,7 +929,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -1218,7 +1223,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -1504,7 +1508,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -1721,7 +1724,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -1937,7 +1939,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -2250,7 +2251,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -2565,7 +2565,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
@@ -2900,7 +2899,6 @@ iframe {
     }
     
     .main__products-congelados {
-        background-image: url(../img/frozen-oysters.jpg);
         background-repeat: round;
         background-size: contain;
     }
