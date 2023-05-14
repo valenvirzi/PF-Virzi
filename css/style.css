@@ -458,6 +458,10 @@ header a:active {
     text-align: center;
     justify-content: center;
     border-top: #219EBC solid 2px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    /* background-color: rgba(255, 255, 255, 0.45); */
+    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); */
+    backdrop-filter: blur(5px);
 }
 
 .main-products__img-title {
@@ -491,14 +495,16 @@ header a:active {
     display: flex;
     height: 8rem;
     align-items: center;
-    background-image: linear-gradient(#C2E8FF, #3993D2);
     border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
 }
 
 .end {
     flex-direction: row-reverse;
-    background-image: linear-gradient(#DBFFDB, #C2E8FF);
 }
 
 .main-products__intro-title {
@@ -605,6 +611,9 @@ input[type=number]::-webkit-outer-spin-button {
     column-gap: 1.5rem;
     align-items: center;
     border-top: #219EBC solid 2px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    border: none;
 }
 
 .main-recepies__search-title {
@@ -677,9 +686,9 @@ input[type=number]::-webkit-outer-spin-button {
     color: #023e8a;
     height: 6rem;
     padding: 0 0 0 4rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
     border: none;
-    background-repeat: repeat-x;
-    background-size: contain;
 }
 
 .main-recepies__carousel {
@@ -699,20 +708,19 @@ iframe {
 
 
 .main-about {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    height: auto;
-    /* background-color: #8ECAE6;
-    opacity: 1;
-    background-image: radial-gradient(#219EBC 1px, transparent 1px), radial-gradient(#219EBC 1px, #8ECAE6 1px);
-    background-size: 40px 40px;
-    background-position: 0 0, 20px 20px; */
     background-image: url(../img/wallpaper-marine-life-01.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.main-about__body {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
 }
 
 .main-about__text {
@@ -1124,7 +1132,7 @@ iframe {
 
 
 
-    .main-about {
+    .main-about__body {
         height: 88rem;
     }
 
@@ -1418,7 +1426,7 @@ iframe {
 
 
 
-    .main-about {
+    .main-about__body {
         height: 85rem;
     }
 
@@ -1688,7 +1696,7 @@ iframe {
 
 
 
-    .main-about {
+    .main-about__body {
         height: 50rem;
     }
 
@@ -1904,7 +1912,7 @@ iframe {
 
 
 
-    .main-about {
+    .main-about__body {
         height: 55rem;
     }
 
@@ -2140,7 +2148,7 @@ iframe {
 
 
 
-    .main-about {
+    .main-about__body {
         height: 45rem;
     }
 
@@ -2445,7 +2453,7 @@ iframe {
 
 
     
-    .main-about {
+    .main-about__body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -2778,7 +2786,7 @@ iframe {
 
 
     
-    .main-about {
+    .main-about__body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -3110,7 +3118,7 @@ iframe {
 
 
     
-    .main-about {
+    .main-about__body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
