@@ -491,7 +491,6 @@ header a:active {
     display: flex;
     height: 8rem;
     align-items: center;
-    background-color: #EFEFD0;
     background-image: linear-gradient(#C2E8FF, #3993D2);
     border-bottom: #219EBC solid 2px;
     border-top: #219EBC solid 2px;
