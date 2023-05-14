@@ -12,37 +12,68 @@
 </head>
 
 <body class="body">
-    <header class="header">
-        <a class="header__link-logo" href="../index.html">
-            <img class="header__logo" logo="company" src="../img/fish-logo.png" alt="Logo de la Empresa">
-            <p class="header__name">Truchas Bs. As.</p>
-        </a>
+    <header class="navbar header__bootstrap">
+        <div class="container-fluid">
+            <a class="header__link-logo" href="../index.html">
+                <img class="header__logo" logo="company" src="../img/fish-logo.png" alt="Logo de la Empresa">
+                <p class="header__name">Truchas Bs. As.</p>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list-pages">
+                    <li class="header__home">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="header__products">
+                        <a href="productos.html">Productos</a>
+                    </li>
+                    <li class="header__recipes">
+                        <a href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="header__about">
+                        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="header__contact">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
             
-        <nav class="header__nav">
-            <ul class="header__list-pages">
-                <li class="header__home">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="header__products">
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li class="header__recipes">
-                    <a href="recetas.html">Recetas</a>
-                </li>
-                <li class="header__about">
-                    <a href="sobre-nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="header__contact">
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="header__menu">
             <a class="header__link-cart" href="">
                 <img class="header__cart" logo="carrito" src="../img/cart.png" alt="Carrito">
             </a>
-            <img class="header__menu-img" src="../img/hamburger-menu.png" alt="menu icon">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas-menu offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="header-offcanvas__link-cart offcanvas-title" id="offcanvasNavbarLabel" href="">
+                        <img class="header-offcanvas__cart" logo="carrito" src="../img/cart.png" alt="Carrito">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="header-offcanvas__list-pages justify-content-end flex-grow-1 pe-3">
+                        <li class="header__home">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="header__products">
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li class="header__recipes">
+                            <a href="recetas.html">Recetas</a>
+                        </li>
+                        <li class="header__about">
+                            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="header__contact">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
