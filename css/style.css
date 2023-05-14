@@ -352,7 +352,7 @@ header a:active {
 
 .main-subpage__intro {
     display: flex;
-    height: 9rem;
+    height: 8.5rem;
     width: 100%;
     position: relative;
     background-color: #f9c784;
@@ -566,6 +566,7 @@ header a:active {
     border: none;
     border-radius: 3px;
     background-color: #FB8500;
+    font-weight: 900;
 }
 
 .main-products__item-button:hover {
