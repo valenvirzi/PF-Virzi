@@ -747,36 +747,30 @@ input[type=number]::-webkit-outer-spin-button {
   background-size: 40px 40px;
   background-position: 0 0, 20px 20px;
 }
-
-.main-contact__form {
-  font-weight: 600;
-}
-
-.main-contact__form-button {
-  background-color: #FB8500;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.main-contact__form-button:hover {
-  background-color: #f6972a;
-}
-
-.main-contact__form-button:active {
-  background-color: #cd6f03;
-}
-
-.main-contact__h3 {
+.main-contact__form-area .main-contact__h3 {
   font-size: 2rem;
   font-weight: 600;
   color: #023e8a;
   text-align: center;
   margin: 0 3rem;
 }
-
-.main-contact__end-text {
+.main-contact__form-area .main-contact__form {
+  font-weight: 600;
+}
+.main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button {
+  background-color: #FB8500;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button:hover {
+  background-color: #f6972a;
+}
+.main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button:active {
+  background-color: #cd6f03;
+}
+.main-contact__form-area .main-contact__end-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1098,43 +1092,51 @@ input[type=number]::-webkit-outer-spin-button {
     row-gap: 2.5rem;
     padding: 3.5rem 3rem;
   }
-  .main-contact__form {
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 4rem;
+    margin: 0 3rem;
+  }
+  .main-contact__form-area .main-contact__form {
     max-width: none;
     max-height: none;
     width: 90%;
     height: auto;
   }
-  .main-contact__form-inputs {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
     column-gap: 3rem;
   }
-  .main-contact__form-col-small,
-  .main-contact__form-col-large {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small {
+    justify-content: space-between;
     max-height: none;
     height: auto;
   }
-  .main-contact__form-col-small {
-    justify-content: space-between;
-  }
-  .main-contact__form-label {
-    font-size: 2rem;
-  }
-  .form-control {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .form-control {
     font-size: 2rem;
     padding: 0.5rem 1rem;
   }
-  .main-contact__form-small-input {
-    height: 5rem;
-  }
-  .main-contact__form-large-input {
-    height: 8rem;
-  }
-  .main-contact__form-button {
-    border-radius: 8px;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-label {
     font-size: 2rem;
   }
-  .main-contact__h3 {
-    font-size: 4rem;
-    margin: 0 3rem;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-small-input {
+    height: 5rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large {
+    max-height: none;
+    height: auto;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .form-control {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-label {
+    font-size: 2rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-large-input {
+    height: 8rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button {
+    border-radius: 8px;
+    font-size: 2rem;
   }
   .footer__contact {
     height: 17rem;
@@ -1372,43 +1374,51 @@ input[type=number]::-webkit-outer-spin-button {
     row-gap: 2rem;
     padding: 3rem 2.7rem;
   }
-  .main-contact__form {
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 3.7rem;
+    margin: 0 3rem;
+  }
+  .main-contact__form-area .main-contact__form {
     max-width: none;
     max-height: none;
     width: 93%;
     height: auto;
   }
-  .main-contact__form-inputs {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
     column-gap: 2.8rem;
   }
-  .main-contact__form-col-small,
-  .main-contact__form-col-large {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small {
+    justify-content: space-between;
     max-height: none;
     height: auto;
   }
-  .main-contact__form-col-small {
-    justify-content: space-between;
-  }
-  .main-contact__form-label {
-    font-size: 1.8rem;
-  }
-  .form-control {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .form-control {
     font-size: 1.8rem;
     padding: 0.5rem 1rem;
   }
-  .main-contact__form-small-input {
-    height: 4.5rem;
-  }
-  .main-contact__form-large-input {
-    height: 7rem;
-  }
-  .main-contact__form-button {
-    border-radius: 8px;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-label {
     font-size: 1.8rem;
   }
-  .main-contact__h3 {
-    font-size: 3.7rem;
-    margin: 0 3rem;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-small-input {
+    height: 4.5rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large {
+    max-height: none;
+    height: auto;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .form-control {
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-label {
+    font-size: 1.8rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-large-input {
+    height: 7rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button {
+    border-radius: 8px;
+    font-size: 1.8rem;
   }
   .footer__contact {
     height: 17rem;
@@ -1624,43 +1634,51 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 3rem 2.7rem;
     row-gap: 1.7rem;
   }
-  .main-contact__form {
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 3.7rem;
+    margin: 0 3rem;
+  }
+  .main-contact__form-area .main-contact__form {
     max-width: none;
     max-height: none;
     width: 93%;
     height: auto;
   }
-  .main-contact__form-inputs {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
     column-gap: 2rem;
   }
-  .main-contact__form-col-small,
-  .main-contact__form-col-large {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small {
+    justify-content: space-between;
     max-height: none;
     height: auto;
   }
-  .main-contact__form-col-small {
-    justify-content: space-between;
-  }
-  .main-contact__form-label {
-    font-size: 1.5rem;
-  }
-  .form-control {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .form-control {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
   }
-  .main-contact__form-small-input {
-    height: 3.8rem;
-  }
-  .main-contact__form-large-input {
-    height: 6rem;
-  }
-  .main-contact__form-button {
-    border-radius: 8px;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-label {
     font-size: 1.5rem;
   }
-  .main-contact__h3 {
-    font-size: 3.2rem;
-    margin: 0 3rem;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-small-input {
+    height: 3.8rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large {
+    max-height: none;
+    height: auto;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .form-control {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-label {
+    font-size: 1.5rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-large-input {
+    height: 6rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button {
+    border-radius: 8px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -1842,43 +1860,51 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 2.9rem 2.5rem;
     row-gap: 1.5rem;
   }
-  .main-contact__form {
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 2.8rem;
+    margin: 0 2.7rem;
+  }
+  .main-contact__form-area .main-contact__form {
     max-width: none;
     max-height: none;
     width: 93%;
     height: auto;
   }
-  .main-contact__form-inputs {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
     column-gap: 1.8rem;
   }
-  .main-contact__form-col-small,
-  .main-contact__form-col-large {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small {
+    justify-content: space-between;
     max-height: none;
     height: auto;
   }
-  .main-contact__form-col-small {
-    justify-content: space-between;
-  }
-  .main-contact__form-label {
-    font-size: 1.35rem;
-  }
-  .form-control {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .form-control {
     font-size: 1.35rem;
     padding: 0.5rem 1rem;
   }
-  .main-contact__form-small-input {
-    height: 3.8rem;
-  }
-  .main-contact__form-large-input {
-    height: 6rem;
-  }
-  .main-contact__form-button {
-    border-radius: 8px;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-label {
     font-size: 1.35rem;
   }
-  .main-contact__h3 {
-    font-size: 2.8rem;
-    margin: 0 2.7rem;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-small-input {
+    height: 3.8rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large {
+    max-height: none;
+    height: auto;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .form-control {
+    font-size: 1.35rem;
+    padding: 0.5rem 1rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-label {
+    font-size: 1.35rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-large-input {
+    height: 6rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button {
+    border-radius: 8px;
+    font-size: 1.35rem;
   }
   .footer__contact-p {
     font-size: 1.1rem;
@@ -2084,43 +2110,51 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 2rem 2rem;
     row-gap: 2rem;
   }
-  .main-contact__form {
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 2.5rem;
+    margin: 0 1.5rem;
+  }
+  .main-contact__form-area .main-contact__form {
     max-width: none;
     max-height: none;
     width: 95%;
     height: auto;
   }
-  .main-contact__form-inputs {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
     column-gap: 1.3rem;
   }
-  .main-contact__form-col-small,
-  .main-contact__form-col-large {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small {
+    justify-content: space-between;
     max-height: none;
     height: auto;
   }
-  .main-contact__form-col-small {
-    justify-content: space-between;
-  }
-  .main-contact__form-label {
-    font-size: 1.35rem;
-  }
-  .form-control {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .form-control {
     font-size: 1.35rem;
     padding: 0.5rem 1rem;
   }
-  .main-contact__form-small-input {
-    height: 3.8rem;
-  }
-  .main-contact__form-large-input {
-    height: 6rem;
-  }
-  .main-contact__form-button {
-    border-radius: 8px;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-label {
     font-size: 1.35rem;
   }
-  .main-contact__h3 {
-    font-size: 2.5rem;
-    margin: 0 1.5rem;
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-small .main-contact__form-small .main-contact__form-small-input {
+    height: 3.8rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large {
+    max-height: none;
+    height: auto;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .form-control {
+    font-size: 1.35rem;
+    padding: 0.5rem 1rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-label {
+    font-size: 1.35rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-large .main-contact__form-large-input {
+    height: 6rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs .main-contact__form-col-large .main-contact__form-button {
+    border-radius: 8px;
+    font-size: 1.35rem;
   }
   .footer__main {
     padding: 1rem 1rem 0.4rem 1.5rem;
@@ -2370,16 +2404,16 @@ input[type=number]::-webkit-outer-spin-button {
   .main-about__img {
     width: 85%;
   }
-  .main-contact__h3 {
+  .main-contact__form-area {
+    row-gap: 1.5rem;
+  }
+  .main-contact__form-area .main-contact__h3 {
     font-size: 1.8rem;
     margin: 0 1.5rem;
   }
-  .main-contact__form-inputs {
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
     display: flex;
     flex-direction: column;
-  }
-  .main-contact__form-area {
-    row-gap: 1.5rem;
   }
   .footer__contact {
     row-gap: 1rem;
@@ -2686,18 +2720,18 @@ input[type=number]::-webkit-outer-spin-button {
   .main-about__img {
     width: 100%;
   }
-  .main-contact__h3 {
-    font-size: 1.5rem;
-    margin: 0 1rem;
-  }
-  .main-contact__form-inputs {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.9rem;
-  }
   .main-contact__form-area {
     padding: 1.5rem 0.5rem;
     row-gap: 1.3rem;
+  }
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
   }
   .footer__contact {
     row-gap: 1rem;
@@ -3000,18 +3034,18 @@ input[type=number]::-webkit-outer-spin-button {
   .main-about__img {
     width: 100%;
   }
-  .main-contact__h3 {
-    font-size: 1.4rem;
-    margin: 0 0.8rem;
-  }
-  .main-contact__form-inputs {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.9rem;
-  }
   .main-contact__form-area {
     padding: 1rem 0;
     row-gap: 1.3rem;
+  }
+  .main-contact__form-area .main-contact__h3 {
+    font-size: 1.4rem;
+    margin: 0 0.8rem;
+  }
+  .main-contact__form-area .main-contact__form .main-contact__form-inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
   }
   .footer__contact {
     row-gap: 1rem;

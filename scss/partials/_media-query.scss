@@ -288,59 +288,74 @@
     .main-contact__form-area {
         row-gap: 2.5rem;
         padding: 3.5rem 3rem;
+
+        .main-contact__h3 {
+            font-size: 4rem;
+            margin: 0 3rem;
+        }
+
+        .main-contact__form {
+            max-width: none;
+            max-height: none;
+            width: 90%;
+            height: auto;
+
+            .main-contact__form-inputs {
+                column-gap: 3rem;
+
+                .main-contact__form-col-small {
+                    justify-content: space-between;
+                    max-height: none;
+                    height: auto;
+
+                    .main-contact__form-small {
+
+                        .form-control {
+                            font-size: 2rem;
+                            padding: 0.5rem 1rem;
+                        }
+                        
+                        .main-contact__form-label {
+                            font-size: 2rem;
+                        }
+
+                        .main-contact__form-small-input {
+                            height: 5rem;
+                        }
+                    }
+                }
+
+                .main-contact__form-col-large {
+                    max-height: none;
+                    height: auto;
+
+                    .main-contact__form-large {
+
+                        .form-control {
+                            font-size: 2rem;
+                            padding: 0.5rem 1rem;
+                        }
+
+                        .main-contact__form-label {
+                            font-size: 2rem;
+                        }
+
+                        .main-contact__form-large-input {
+                            height: 8rem;
+                        }
+                    }
+
+                    .main-contact__form-button {
+                        border-radius: 8px;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
     }
 
-    .main-contact__form {
-        max-width: none;
-        max-height: none;
-        width: 90%;
-        height: auto;
-    }
 
-    .main-contact__form-inputs {
-        column-gap: 3rem;
-    }
-
-    .main-contact__form-col-small,
-    .main-contact__form-col-large {
-        max-height: none;
-        height: auto;
-    }
-
-    .main-contact__form-col-small {
-        justify-content: space-between;
-    }
-
-    .main-contact__form-label {
-        font-size: 2rem;
-    }
-
-    .form-control {
-        font-size: 2rem;
-        padding: 0.5rem 1rem;
-    }
-
-    .main-contact__form-small-input {
-        height: 5rem;
-    }
-
-    .main-contact__form-large-input {
-        height: 8rem;
-    }
-
-    .main-contact__form-button {
-        border-radius: 8px;
-        font-size: 2rem;
-    }
-
-    .main-contact__h3 {
-        font-size: 4rem;
-        margin: 0 3rem;
-    }
-
-
-
-
+    
     .footer__contact {
         height: 17rem;
         row-gap: 0;
@@ -672,54 +687,70 @@
     .main-contact__form-area {
         row-gap: 2rem;
         padding: 3rem 2.7rem;
-    }
 
-    .main-contact__form {
-        max-width: none;
-        max-height: none;
-        width: 93%;
-        height: auto;
-    }
+        .main-contact__h3 {
+            font-size: 3.7rem;
+            margin: 0 3rem;
+        }
 
-    .main-contact__form-inputs {
-        column-gap: 2.8rem;
-    }
+        .main-contact__form {
+            max-width: none;
+            max-height: none;
+            width: 93%;
+            height: auto;
 
-    .main-contact__form-col-small,
-    .main-contact__form-col-large {
-        max-height: none;
-        height: auto;
-    }
+            .main-contact__form-inputs {
+                column-gap: 2.8rem;
 
-    .main-contact__form-col-small {
-        justify-content: space-between;
-    }
+                .main-contact__form-col-small {
+                    justify-content: space-between;
+                    max-height: none;
+                    height: auto;
 
-    .main-contact__form-label {
-        font-size: 1.8rem;
-    }
+                    .main-contact__form-small {
 
-    .form-control {
-        font-size: 1.8rem;
-        padding: 0.5rem 1rem;
-    }
+                        .form-control {
+                            font-size: 1.8rem;
+                            padding: 0.5rem 1rem;
+                        }
+                        
+                        .main-contact__form-label {
+                            font-size: 1.8rem;
+                        }
 
-    .main-contact__form-small-input {
-        height: 4.5rem;
-    }
+                        .main-contact__form-small-input {
+                            height: 4.5rem;
+                        }
+                    }
+                }
 
-    .main-contact__form-large-input {
-        height: 7rem;
-    }
+                .main-contact__form-col-large {
+                    max-height: none;
+                    height: auto;
 
-    .main-contact__form-button {
-        border-radius: 8px;
-        font-size: 1.8rem;
-    }
+                    .main-contact__form-large {
 
-    .main-contact__h3 {
-        font-size: 3.7rem;
-        margin: 0 3rem;
+                        .form-control {
+                            font-size: 1.8rem;
+                            padding: 0.5rem 1rem;
+                        }
+
+                        .main-contact__form-label {
+                            font-size: 1.8rem;
+                        }
+
+                        .main-contact__form-large-input {
+                            height: 7rem;
+                        }
+                    }
+
+                    .main-contact__form-button {
+                        border-radius: 8px;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
     }
 
 
@@ -1025,57 +1056,71 @@
     .main-contact__form-area {
         padding: 3rem 2.7rem;
         row-gap: 1.7rem;
+
+        .main-contact__h3 {
+            font-size: 3.7rem;
+            margin: 0 3rem;
+        }
+
+        .main-contact__form {
+            max-width: none;
+            max-height: none;
+            width: 93%;
+            height: auto;
+
+            .main-contact__form-inputs {
+                column-gap: 2rem;
+
+                .main-contact__form-col-small {
+                    justify-content: space-between;
+                    max-height: none;
+                    height: auto;
+
+                    .main-contact__form-small {
+
+                        .form-control {
+                            font-size: 1.5rem;
+                            padding: 0.5rem 1rem;
+                        }
+                        
+                        .main-contact__form-label {
+                            font-size: 1.5rem;
+                        }
+
+                        .main-contact__form-small-input {
+                            height: 3.8rem;
+                        }
+                    }
+                }
+
+                .main-contact__form-col-large {
+                    max-height: none;
+                    height: auto;
+
+                    .main-contact__form-large {
+
+                        .form-control {
+                            font-size: 1.5rem;
+                            padding: 0.5rem 1rem;
+                        }
+
+                        .main-contact__form-label {
+                            font-size: 1.5rem;
+                        }
+
+                        .main-contact__form-large-input {
+                            height: 6rem;
+                        }
+                    }
+
+                    .main-contact__form-button {
+                        border-radius: 8px;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
     }
-
-    .main-contact__form {
-        max-width: none;
-        max-height: none;
-        width: 93%;
-        height: auto;
-    }
-
-    .main-contact__form-inputs {
-        column-gap: 2rem;
-    }
-
-    .main-contact__form-col-small,
-    .main-contact__form-col-large {
-        max-height: none;
-        height: auto;
-    }
-
-    .main-contact__form-col-small {
-        justify-content: space-between;
-    }
-
-    .main-contact__form-label {
-        font-size: 1.5rem;
-    }
-
-    .form-control {
-        font-size: 1.5rem;
-        padding: 0.5rem 1rem;
-    }
-
-    .main-contact__form-small-input {
-        height: 3.8rem;
-    }
-
-    .main-contact__form-large-input {
-        height: 6rem;
-    }
-
-    .main-contact__form-button {
-        border-radius: 8px;
-        font-size: 1.5rem;
-    }
-
-    .main-contact__h3 {
-        font-size: 3.2rem;
-        margin: 0 3rem;
-    }
-
-
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -1333,54 +1378,70 @@
     .main-contact__form-area {
         padding: 2.9rem 2.5rem;
         row-gap: 1.5rem;
-    }
 
-    .main-contact__form {
-        max-width: none;
-        max-height: none;
-        width: 93%;
-        height: auto;
-    }
+        .main-contact__h3 {
+            font-size: 2.8rem;
+            margin: 0 2.7rem;
+        }
 
-    .main-contact__form-inputs {
-        column-gap: 1.8rem;
-    }
+        .main-contact__form {
+            max-width: none;
+            max-height: none;
+            width: 93%;
+            height: auto;
 
-    .main-contact__form-col-small,
-    .main-contact__form-col-large {
-        max-height: none;
-        height: auto;
-    }
+            .main-contact__form-inputs {
+                column-gap: 1.8rem;
 
-    .main-contact__form-col-small {
-        justify-content: space-between;
-    }
+                .main-contact__form-col-small {
+                    justify-content: space-between;
+                    max-height: none;
+                    height: auto;
 
-    .main-contact__form-label {
-        font-size: 1.35rem;
-    }
+                    .main-contact__form-small {
 
-    .form-control {
-        font-size: 1.35rem;
-        padding: 0.5rem 1rem;
-    }
+                        .form-control {
+                            font-size: 1.35rem;
+                            padding: 0.5rem 1rem;
+                        }
+                        
+                        .main-contact__form-label {
+                            font-size: 1.35rem;
+                        }
 
-    .main-contact__form-small-input {
-        height: 3.8rem;
-    }
+                        .main-contact__form-small-input {
+                            height: 3.8rem;
+                        }
+                    }
+                }
 
-    .main-contact__form-large-input {
-        height: 6rem;
-    }
+                .main-contact__form-col-large {
+                    max-height: none;
+                    height: auto;
 
-    .main-contact__form-button {
-        border-radius: 8px;
-        font-size: 1.35rem;
-    }
+                    .main-contact__form-large {
 
-    .main-contact__h3 {
-        font-size: 2.8rem;
-        margin: 0 2.7rem;
+                        .form-control {
+                            font-size: 1.35rem;
+                            padding: 0.5rem 1rem;
+                        }
+
+                        .main-contact__form-label {
+                            font-size: 1.35rem;
+                        }
+
+                        .main-contact__form-large-input {
+                            height: 6rem;
+                        }
+                    }
+
+                    .main-contact__form-button {
+                        border-radius: 8px;
+                        font-size: 1.35rem;
+                    }
+                }
+            }
+        }
     }
 
 
@@ -1675,54 +1736,70 @@
         height: auto;
         padding: 2rem 2rem;
         row-gap: 2rem;
-    }
 
-    .main-contact__form {
-        max-width: none;
-        max-height: none;
-        width: 95%;
-        height: auto;
-    }
+        .main-contact__h3 {
+            font-size: 2.5rem;
+            margin: 0 1.5rem;
+        }
 
-    .main-contact__form-inputs {
-        column-gap: 1.3rem;
-    }
+        .main-contact__form {
+            max-width: none;
+            max-height: none;
+            width: 95%;
+            height: auto;
 
-    .main-contact__form-col-small,
-    .main-contact__form-col-large {
-        max-height: none;
-        height: auto;
-    }
+            .main-contact__form-inputs {
+                column-gap: 1.3rem;
 
-    .main-contact__form-col-small {
-        justify-content: space-between;
-    }
+                .main-contact__form-col-small {
+                    justify-content: space-between;
+                    max-height: none;
+                    height: auto;
 
-    .main-contact__form-label {
-        font-size: 1.35rem;
-    }
+                    .main-contact__form-small {
 
-    .form-control {
-        font-size: 1.35rem;
-        padding: 0.5rem 1rem;
-    }
+                        .form-control {
+                            font-size: 1.35rem;
+                            padding: 0.5rem 1rem;
+                        }
+                        
+                        .main-contact__form-label {
+                            font-size: 1.35rem;
+                        }
 
-    .main-contact__form-small-input {
-        height: 3.8rem;
-    }
+                        .main-contact__form-small-input {
+                            height: 3.8rem;
+                        }
+                    }
+                }
 
-    .main-contact__form-large-input {
-        height: 6rem;
-    }
+                .main-contact__form-col-large {
+                    max-height: none;
+                    height: auto;
 
-    .main-contact__form-button {
-        border-radius: 8px;
-        font-size: 1.35rem;
-    }
+                    .main-contact__form-large {
 
-    .main-contact__h3 {
-        font-size: 2.5rem;
-        margin: 0 1.5rem;
+                        .form-control {
+                            font-size: 1.35rem;
+                            padding: 0.5rem 1rem;
+                        }
+
+                        .main-contact__form-label {
+                            font-size: 1.35rem;
+                        }
+
+                        .main-contact__form-large-input {
+                            height: 6rem;
+                        }
+                    }
+
+                    .main-contact__form-button {
+                        border-radius: 8px;
+                        font-size: 1.35rem;
+                    }
+                }
+            }
+        }
     }
 
 
@@ -2070,18 +2147,21 @@
 
 
 
-    .main-contact__h3 {
-        font-size: 1.8rem;
-        margin: 0 1.5rem;
-    }
-
-    .main-contact__form-inputs {
-        display: flex;
-        flex-direction: column;
-    }
-
     .main-contact__form-area {
         row-gap: 1.5rem;
+
+        .main-contact__h3 {
+            font-size: 1.8rem;
+            margin: 0 1.5rem;
+        }
+
+        .main-contact__form {
+
+            .main-contact__form-inputs {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 
 
@@ -2492,20 +2572,23 @@
 
 
 
-    .main-contact__h3 {
-        font-size: 1.5rem;
-        margin: 0 1rem;
-    }
-
-    .main-contact__form-inputs {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.9rem;
-    }
-
     .main-contact__form-area {
         padding: 1.5rem 0.5rem;
         row-gap: 1.3rem;
+
+        .main-contact__h3 {
+            font-size: 1.5rem;
+            margin: 0 1rem;
+        }
+
+        .main-contact__form {
+
+            .main-contact__form-inputs {
+                display: flex;
+                flex-direction: column;
+                font-size: 0.9rem;
+            }
+        }
     }
 
 
@@ -2909,20 +2992,23 @@
 
 
 
-    .main-contact__h3 {
-        font-size: 1.4rem;
-        margin: 0 0.8rem;
-    }
-
-    .main-contact__form-inputs {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.9rem;
-    }
-
     .main-contact__form-area {
         padding: 1rem 0;
         row-gap: 1.3rem;
+
+        .main-contact__h3 {
+            font-size: 1.4rem;
+            margin: 0 0.8rem;
+        }
+
+        .main-contact__form {
+
+            .main-contact__form-inputs {
+                display: flex;
+                flex-direction: column;
+                font-size: 0.9rem;
+            }
+        }
     }
 
 
