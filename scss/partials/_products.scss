@@ -1,0 +1,163 @@
+.main-products {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/wallpaper-marine-life-01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-products__info {
+    display: flex;
+}
+
+.main-products__text {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 50%;
+    padding: 0.5rem 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-top: #219EBC solid 2px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    backdrop-filter: blur(5px);
+}
+
+.main-products__img-title {
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+}
+
+.main-products__img {
+    width: 2.5rem;
+}
+
+.main-products__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $color-title;
+}
+
+.main-products__p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+
+.main-products__categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-products__intro {
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    border-bottom: #219EBC solid 2px;
+    border-top: #219EBC solid 2px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+}
+
+.end {
+    flex-direction: row-reverse;
+}
+
+.main-products__intro-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: $color-title;
+    margin: 0 6rem;
+}
+
+.main-products__carousel {
+    height: auto;
+    background-image: url(../img/wallpaper-marine-life-01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0.75rem 2.5rem;
+}
+
+.main-products__item {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.75rem;
+    align-items: center;
+    /* background-image: linear-gradient(#f0f3bd, #02c39a, #00a896, #028090, #05668d); */
+    background-image: linear-gradient(#a9d6e5, #89c2d9, #61a5c2, #468faf, #2c7da0);
+    background-color: #05668d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    margin: 0.5rem;
+    min-height: 4.5rem;
+
+}
+
+.main-products__item-img {
+    width: 4.5rem;
+}
+
+.main-products__item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-products__item-name {
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-products__item-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.3rem;
+    width: 4.3rem;
+}
+
+.main-products__item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: $color-button;
+    font-weight: 900;
+}
+
+.main-products__item-button:hover {
+    background-color: $color-button-hover;
+}
+
+.main-products__item-button:active {
+    background-color: $color-button-active;
+}
+
+.main-products__item-number {
+    width: 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none; 
+  margin: 0; 
+}

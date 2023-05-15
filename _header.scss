@@ -1,0 +1,121 @@
+.header__bootstrap {
+    justify-content: space-around;
+    display: flex;
+    position: sticky;
+    background-color: $color-bg-menu;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    height: 3rem;
+    align-content: center;
+    z-index: 9999;
+    top: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.header__link-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    height: 95%;
+    display: inline-block;
+}
+
+.header__name {
+    margin: 0;
+}
+
+.header__nav {
+    display: flex;
+    height: 100%;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list-pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__link-cart, .header-offcanvas__link-cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.header__cart, .header-offcanvas__cart {
+    height: 74%;
+    width: 2rem;
+    display: inline-block;
+}
+
+.header__menu-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu-toggle {
+    display: none;
+}
+
+.header__menu-img {
+    display: none;
+}
+
+.header__bootstrap a {
+    color: $color-link;
+}
+
+.header__bootstrap a:hover {
+    color: $color-link-hover;
+}
+
+.header__bootstrap a:active {
+    color: $color-button;
+}
+
+.navbar-toggler {
+    background-color: $color-button;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:hover {
+    background-color: $color-button-hover;
+}
+
+.navbar-toggler:active {
+    background-color: $color-button-active;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas-menu {
+    background-color: $color-bg-menu;
+}
+
+.header-offcanvas__list-pages {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+[class="offcanvas-body"] {
+    font-size: 1.75rem;
+}

@@ -1,0 +1,115 @@
+.main-recepies {
+    background-image: url(../img/wallpaper-marine-life-01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-recepies__search {
+    display: flex;
+    height: 6rem;
+    padding: 0.5rem 1.5rem;
+    column-gap: 1.5rem;
+    align-items: center;
+    border-top: #219EBC solid 2px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    border: none;
+}
+
+.main-recepies__search-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $color-title;
+    width: 66%;
+}
+
+.main-recepies__search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 34%;
+    height: 90%;
+}
+
+.main-recepies__search-label {
+    font-weight: 600;
+}
+
+.main-recepies__search-input {
+    display: flex;
+    height: 52%;
+}
+
+.main-recepies__search-text {
+    width: 75%;
+    padding: 0 0.5rem;
+    border: none;
+    outline: #858585 1px solid;
+    border-radius: 5px;
+}
+
+.main-recepies__search-button {
+    display: flex;
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: $color-button;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    padding: 0 3px;
+}
+
+.main-recepies__search-button:hover {
+    background-color: $color-button-hover;
+}
+
+.main-recepies__search-button:active {
+    background-color: $color-button-active;
+}
+
+.main-recepies__search-button-img {
+    width: 1.25rem;
+}
+
+.main-recepies__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-recepies__latest {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-recepies__title {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: $color-title;
+    height: 6rem;
+    padding: 0 0 0 4rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    border: none;
+}
+
+.main-recepies__carousel {
+    background: #000;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
+}
+
+.main-recepies iframe {
+    height: 95%;
+}
