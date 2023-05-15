@@ -4,236 +4,244 @@
     background-image: radial-gradient(#219EBC 1.25px, transparent 1.25px), radial-gradient(#219EBC 1.25px, $color-link 1.25px);
     background-size: 50px 50px;
     background-position: 0 0, 25px 25px;
-}
 
-.main__intro {
-    display: flex;
-    height: auto;
-}
+    .main__intro {
+        display: flex;
+        height: auto;
 
-.main__intro-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: #F7F6FB;
-    padding: 1.5rem 0 1.5rem 3rem;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem;
-}
+        .main__intro-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #F7F6FB;
+            padding: 1.5rem 0 1.5rem 3rem;
+            align-items: center;
+            justify-content: center;
+            row-gap: 1rem;
 
-.main__intro-inside {
-    width: 75%;
-}
+            .main__intro-inside {
+                width: 75%;
+            }
 
-.main__home-title {
-    font-size: 3rem;
-    font-weight: 900;
-    color: $color-title;
-    height: auto;
-}
+            .main__home-title {
+                font-size: 3rem;
+                font-weight: 900;
+                color: $color-title;
+                height: auto;
+            }
 
-.main__description {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.7rem;
-}
+            .main__description {
+                font-size: 1.2rem;
+                font-weight: 600;
+                line-height: 1.7rem;
+            }
 
-.main__intro-button {
-    font-size: 1rem;
-    background-color: $color-button;
-    height: 2rem;
-    border: 0px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+            .main__intro-button {
+                font-size: 1rem;
+                background-color: $color-button;
+                height: 2rem;
+                border: 0px;
+                border-radius: 5px;
+                cursor: pointer;
 
-.main__intro-button:hover {
-    background-color: $color-button-hover;
-}
+                .main_intro-button-a {
+                    color: #ffffff;
+                    font-weight: 600;
+                }
+            }
 
-.main__intro-button:active {
-    background-color: $color-button-active;
-}
+            .main__intro-button:hover {
+                background-color: $color-button-hover;
+            }
+            
+            .main__intro-button:active {
+                background-color: $color-button-active;
+            }
+        }
 
-.main_intro-button-a {
-    color: #ffffff;
-    font-weight: 600;
-}
+        .main__intro-img {
+            flex: 1;
+            background-image: url(../img/pescados-y-mariscos-5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 
-.main__intro-img {
-    flex: 1;
-    background-image: url(../img/pescados-y-mariscos-5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    .main__main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
 
-.main__main {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
+        .main__products {
+            @include justify(space-around);
+            padding: 3rem 4rem;
+            height: 20rem;
+            column-gap: 2rem;
 
-.main__products {
-    display: flex;
-    padding: 3rem 4rem;
-    height: 20rem;
-    justify-content: space-around;
-    column-gap: 2rem;
-}
+            .main__products-inside {
+                display: flex;
+                flex-direction: column;
+                min-height: 180px;
+                height: 100%;
+                min-width: 180px;
+                width: 24rem;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: $color-title;
+                text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+                transition-duration: 0.4s;
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
+                row-gap: 1rem;
+                background-repeat: round;
+                background-size: contain;
 
-.main__products-inside {
-    display: flex;
-    flex-direction: column;
-    min-height: 180px;
-    height: 100%;
-    min-width: 180px;
-    width: 24rem;
-    border-radius: 7px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: $color-title;
-    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
-    transition-duration: 0.4s;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
-    row-gap: 1rem;
-}
+                .main__products-title {
+                    width: 66.67%;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                }
+                
+                .main__products-p {
+                    width: 66.67%;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                    line-height: 1.7rem;
+                }
+            }
 
-.main__products-inside:hover {
-    outline: $color-button 3px solid;
-    color: $color-button;
-    cursor: pointer;
-}
+            // .main__products-inside:hover {
+            //     outline: $color-button 3px solid;
+            //     color: $color-button;
+            //     cursor: pointer;
+            // }
 
-.main__products-frescos {
-    background-image: url(../img/bg-fresh-salmon-1.jpg);
-    background-repeat: round;
-    background-size: contain;
-}
+            .main__products-frescos {
+                @extend .main__products-inside;
+                background-image: url(../img/bg-fresh-salmon-1.jpg);
+            }
+            
+            .main__products-frescos:hover {
+                @extend .main__products-inside;
+                outline: $color-button 3px solid;
+                color: $color-button;
+                cursor: pointer;
+                background-image: url(../img/salmon-hand.jpg);
+            }
+            
+            .main__products-congelados {
+                @extend .main__products-inside;
+                background-image: url(../img/bg-frozen-seafood-counter.jpg);
+            }
+            
+            .main__products-congelados:hover {
+                @extend .main__products-inside;
+                outline: $color-button 3px solid;
+                color: $color-button;
+                cursor: pointer;
+                background-image: url(../img/frozen-oysters.jpg);
+            }
+        }
 
-.main__products-frescos:hover {
-    background-image: url(../img/salmon-hand.jpg);
-}
+        .main__suscription {
+            display: flex;
+            height: 20rem;
 
-.main__products-congelados {
-    background-image: url(../img/bg-frozen-seafood-counter.jpg);
-    background-repeat: round;
-    background-size: contain;
-}
+            .main__suscription-div-img {
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
 
-.main__products-congelados:hover {
-    background-image: url(../img/frozen-oysters.jpg);
-}
+                .main__suscription-img {
+                    max-height: 540px;
+                    width: 75%;
+                }
+            }
 
-.main__products-title {
-    width: 66.67%;
-    font-size: 2.5rem;
-    font-weight: 900;
-}
+            .main__suscription-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+                row-gap: 2.2rem;
+                padding: 0 0 1rem 0;
 
-.main__products-p {
-    width: 66.67%;
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 1.7rem;
-}
+                .main__suscription-inside{
+                    width: 85%;
+                }
 
-.main__suscription {
-    display: flex;
-    height: 20rem;
-}
+                .main__suscription-title {
+                    color: $color-title;
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                }
+                
+                .main__suscription-description {
+                    display: flex;
+                    column-gap: 0.5rem;
 
-.main__suscription-div-img {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
+                    .main__suscription-p {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        line-height: 1.7rem;
+                        width: auto;
+                    }
+                    
+                    .main__suscription-arrow-img {
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
 
-.main__suscription-img {
-    width: 75%;
-}
+                .main__suscription-form {
+                    display: flex;
+                    height: 2rem;
+                    column-gap: 1px;
 
-.main__suscription-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    row-gap: 2.2rem;
-    padding: 0 0 1rem 0;
-}
+                    .main__form-text {
+                        width: 70%;
+                        padding: 0 0.5rem;
+                    }
+                    
+                    .main__form-text:focus {
+                        outline: $color-link-hover 2px solid;
+                        border-radius: 3px;
+                    }
 
-.main__suscription-inside{
-    width: 85%;
-}
+                    .main__form-button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25%;
+                        gap: 4px;
+                        background-color: $color-button;
+                        border: none;
+                        border-radius: 3px;
+                        cursor: pointer;
 
-.main__suscription-title {
-    color: $color-title;
-    font-size: 2.3rem;
-    font-weight: 700;
-}
-
-.main__suscription-description {
-    display: flex;
-    column-gap: 0.5rem;
-}
-
-.main__suscription-p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.7rem;
-    width: auto;
-}
-
-.main__suscription-arrow-img {
-    height: 2rem;
-    width: 2rem;
-}
-
-.main__suscription-form {
-    display: flex;
-    height: 2rem;
-    column-gap: 1px;
-}
-
-.main__form-text {
-    width: 70%;
-    padding: 0 0.5rem;
-}
-
-.main__form-text:focus {
-    outline: $color-link-hover 2px solid;
-    border-radius: 3px;
-}
-
-.main__form-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    gap: 4px;
-    background-color: $color-button;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.main__form-button:hover {
-    background-color: $color-button-hover;
-}
-
-.main__form-button:active {
-    background-color: $color-button-active;
-}
-
-.main__form-button-img {
-    width: 23%;
-}
-
-.main__form-button-p {
-    color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: 600;
-    line-height: 1.7rem;
+                        .main__form-button-img {
+                            width: 23%;
+                        }
+                        
+                        .main__form-button-p {
+                            color: #ffffff;
+                            font-size: 0.85rem;
+                            font-weight: 600;
+                            line-height: 1.7rem;
+                        }
+                    }
+                    
+                    .main__form-button:hover {
+                        background-color: $color-button-hover;
+                    }
+                    
+                    .main__form-button:active {
+                        background-color: $color-button-active;
+                    }
+                }
+            }
+        }
+    }
 }

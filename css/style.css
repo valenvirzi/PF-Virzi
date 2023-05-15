@@ -136,13 +136,11 @@ li {
   background-size: 50px 50px;
   background-position: 0 0, 25px 25px;
 }
-
-.main__intro {
+.main .main__intro {
   display: flex;
   height: auto;
 }
-
-.main__intro-text {
+.main .main__intro .main__intro-text {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -152,25 +150,21 @@ li {
   justify-content: center;
   row-gap: 1rem;
 }
-
-.main__intro-inside {
+.main .main__intro .main__intro-text .main__intro-inside {
   width: 75%;
 }
-
-.main__home-title {
+.main .main__intro .main__intro-text .main__home-title {
   font-size: 3rem;
   font-weight: 900;
   color: #023e8a;
   height: auto;
 }
-
-.main__description {
+.main .main__intro .main__intro-text .main__description {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.7rem;
 }
-
-.main__intro-button {
+.main .main__intro .main__intro-text .main__intro-button {
   font-size: 1rem;
   background-color: #FB8500;
   height: 2rem;
@@ -178,42 +172,35 @@ li {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.main__intro-button:hover {
-  background-color: #f6972a;
-}
-
-.main__intro-button:active {
-  background-color: #cd6f03;
-}
-
-.main_intro-button-a {
+.main .main__intro .main__intro-text .main__intro-button .main_intro-button-a {
   color: #ffffff;
   font-weight: 600;
 }
-
-.main__intro-img {
+.main .main__intro .main__intro-text .main__intro-button:hover {
+  background-color: #f6972a;
+}
+.main .main__intro .main__intro-text .main__intro-button:active {
+  background-color: #cd6f03;
+}
+.main .main__intro .main__intro-img {
   flex: 1;
   background-image: url(../img/pescados-y-mariscos-5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.main__main {
+.main .main__main {
   display: flex;
   flex-direction: column;
   height: auto;
 }
-
-.main__products {
+.main .main__main .main__products {
   display: flex;
+  justify-content: space-around;
   padding: 3rem 4rem;
   height: 20rem;
-  justify-content: space-around;
   column-gap: 2rem;
 }
-
-.main__products-inside {
+.main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-congelados:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-frescos {
   display: flex;
   flex-direction: column;
   min-height: 180px;
@@ -229,64 +216,53 @@ li {
   transition-duration: 0.4s;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
   row-gap: 1rem;
-}
-
-.main__products-inside:hover {
-  outline: #FB8500 3px solid;
-  color: #FB8500;
-  cursor: pointer;
-}
-
-.main__products-frescos {
-  background-image: url(../img/bg-fresh-salmon-1.jpg);
   background-repeat: round;
   background-size: contain;
 }
-
-.main__products-frescos:hover {
-  background-image: url(../img/salmon-hand.jpg);
-}
-
-.main__products-congelados {
-  background-image: url(../img/bg-frozen-seafood-counter.jpg);
-  background-repeat: round;
-  background-size: contain;
-}
-
-.main__products-congelados:hover {
-  background-image: url(../img/frozen-oysters.jpg);
-}
-
-.main__products-title {
+.main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title {
   width: 66.67%;
   font-size: 2.5rem;
   font-weight: 900;
 }
-
-.main__products-p {
+.main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p {
   width: 66.67%;
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.7rem;
 }
-
-.main__suscription {
+.main .main__main .main__products .main__products-frescos {
+  background-image: url(../img/bg-fresh-salmon-1.jpg);
+}
+.main .main__main .main__products .main__products-frescos:hover {
+  outline: #FB8500 3px solid;
+  color: #FB8500;
+  cursor: pointer;
+  background-image: url(../img/salmon-hand.jpg);
+}
+.main .main__main .main__products .main__products-congelados {
+  background-image: url(../img/bg-frozen-seafood-counter.jpg);
+}
+.main .main__main .main__products .main__products-congelados:hover {
+  outline: #FB8500 3px solid;
+  color: #FB8500;
+  cursor: pointer;
+  background-image: url(../img/frozen-oysters.jpg);
+}
+.main .main__main .main__suscription {
   display: flex;
   height: 20rem;
 }
-
-.main__suscription-div-img {
+.main .main__main .main__suscription .main__suscription-div-img {
   display: flex;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
-
-.main__suscription-img {
+.main .main__main .main__suscription .main__suscription-div-img .main__suscription-img {
+  max-height: 540px;
   width: 75%;
 }
-
-.main__suscription-text {
+.main .main__main .main__suscription .main__suscription-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -294,51 +270,42 @@ li {
   row-gap: 2.2rem;
   padding: 0 0 1rem 0;
 }
-
-.main__suscription-inside {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-inside {
   width: 85%;
 }
-
-.main__suscription-title {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-title {
   color: #023e8a;
   font-size: 2.3rem;
   font-weight: 700;
 }
-
-.main__suscription-description {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-description {
   display: flex;
   column-gap: 0.5rem;
 }
-
-.main__suscription-p {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.7rem;
   width: auto;
 }
-
-.main__suscription-arrow-img {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
   height: 2rem;
   width: 2rem;
 }
-
-.main__suscription-form {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form {
   display: flex;
   height: 2rem;
   column-gap: 1px;
 }
-
-.main__form-text {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
   width: 70%;
   padding: 0 0.5rem;
 }
-
-.main__form-text:focus {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text:focus {
   outline: #FFB703 2px solid;
   border-radius: 3px;
 }
-
-.main__form-button {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,24 +316,20 @@ li {
   border-radius: 3px;
   cursor: pointer;
 }
-
-.main__form-button:hover {
-  background-color: #f6972a;
-}
-
-.main__form-button:active {
-  background-color: #cd6f03;
-}
-
-.main__form-button-img {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-img {
   width: 23%;
 }
-
-.main__form-button-p {
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
   color: #ffffff;
   font-size: 0.85rem;
   font-weight: 600;
   line-height: 1.7rem;
+}
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button:hover {
+  background-color: #f6972a;
+}
+.main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button:active {
+  background-color: #cd6f03;
 }
 
 .main-subpage__intro {
@@ -942,82 +905,82 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .navbar-toggler {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 2rem;
     padding: 2rem 0 2rem 3.5rem;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 6rem;
     height: auto;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 2.4rem;
     line-height: 3.5rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 2rem;
     height: 4rem;
   }
-  .main__products {
+  .main .main__main .main__products {
     padding: 5.25rem 7rem;
     height: 35rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     width: 42rem;
     border-radius: 10px;
     row-gap: 2rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 4.4rem;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 4.4rem;
-  }
-  .main__products-p {
-    font-size: 2.3rem;
-    line-height: 3rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 35rem;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     row-gap: 4rem;
     padding: 0 0 3rem 0;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 4rem;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.5rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 2.1rem;
     line-height: 3rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 3.25rem;
     width: 3.25rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 3.5rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1.5rem;
     line-height: 3rem;
     padding: 0 1rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     gap: 4px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 1.5rem;
     line-height: 3rem;
   }
@@ -1218,81 +1181,81 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .navbar-toggler {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 1.75rem;
     padding: 2rem 0 2rem 3.5rem;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 4.6rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1.85rem;
     line-height: 2.7rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1.54rem;
     height: 3.08rem;
   }
-  .main__products {
+  .main .main__main .main__products {
     padding: 3.08rem 4.16rem;
     height: 27rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     width: 32.35rem;
     border-radius: 10px;
     row-gap: 2rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 3.4rem;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1.77rem;
+    line-height: 2.3rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 3.4rem;
-  }
-  .main__products-p {
-    font-size: 1.77rem;
-    line-height: 2.3rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 27rem;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     row-gap: 3rem;
     padding: 0 0 2.35rem 0;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 3.08rem;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.5rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1.62rem;
     line-height: 2.3rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 2.5rem;
     width: 2.5rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 2.7rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1.16rem;
     line-height: 2.3rem;
     padding: 0 0.8rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     gap: 4px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 1.16rem;
     line-height: 2.3rem;
   }
@@ -1486,81 +1449,81 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .navbar-toggler {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 1.25rem;
     padding: 1.5rem 0 1.5rem 3.5rem;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 3.36rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1.35rem;
     line-height: 2rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1.25rem;
     height: 2.25rem;
   }
-  .main__products {
+  .main .main__main .main__products {
     padding: 2.25rem 3.04rem;
     height: 19.7rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     width: 23.6rem;
     border-radius: 10px;
     row-gap: 1.5rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 2.5rem;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1.3rem;
+    line-height: 1.68rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 2.5rem;
+  .main .main__main .main__suscription {
+    height: 20rem;
   }
-  .main__products-p {
-    font-size: 1.3rem;
-    line-height: 1.68rem;
-  }
-  .main__suscription {
-    height: 19.7rem;
-  }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     row-gap: 2.25rem;
     padding: 0 0 1.8rem 0;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 2.5rem;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.5rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1.25rem;
     line-height: 1.7rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 1.82rem;
     width: 1.82rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 2rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1.2rem;
     line-height: 1.7rem;
     padding: 0 0.65rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     gap: 7px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
@@ -1704,81 +1667,81 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .navbar-toggler {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 1.11rem;
     padding: 1.35rem 0 1.35rem 3.5rem;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 3.1rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1.4rem;
     line-height: 1.9rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1.4rem;
     height: 2.5rem;
   }
-  .main__products {
+  .main .main__main .main__products {
     padding: 2rem 2.7rem;
     height: 17.5rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     width: 21rem;
     border-radius: 9px;
     row-gap: 1.3rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 2.25rem;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 2.25rem;
-  }
-  .main__products-p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 17.5rem;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     row-gap: 2rem;
     padding: 0 0 1.6rem 0;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 2rem;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.45rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 1.62rem;
     width: 1.62rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 2rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1.1rem;
     line-height: 1.5rem;
     padding: 0 0.6rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     gap: 4px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
@@ -1925,81 +1888,81 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .navbar-toggler {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 0.9rem;
     padding: 1.08rem 0 1.08rem 2.9rem;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 2.4rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1.1rem;
     height: 1.8rem;
   }
-  .main__products {
+  .main .main__main .main__products {
     padding: 1.6rem 2.16rem;
     height: 15rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     width: 19rem;
     border-radius: 9px;
     row-gap: 1rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 2rem;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 2rem;
-  }
-  .main__products-p {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 14rem;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     row-gap: 1.6rem;
     padding: 0 0 1.3rem 0;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 1.9rem;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.4rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 1.5rem;
     width: 1.5rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 1.8rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1.1rem;
     line-height: 1.5rem;
     padding: 0 0.6rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     gap: 4px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 1rem;
     line-height: 1.3rem;
   }
@@ -2201,87 +2164,87 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .header__link-cart {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 0.9rem;
     padding: 1rem 0 1rem 2.18rem;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 2.2rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1.1rem;
     height: 1.7rem;
     border-radius: 3px;
   }
-  .main__products {
+  .main .main__main .main__products {
     padding: 2.3rem 1.7rem;
     height: 16rem;
     align-items: center;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     width: 17rem;
     min-height: 120px;
     height: 90%;
     border-radius: 9px;
     row-gap: 0.5rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 1.5rem;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 1.5rem;
-  }
-  .main__products-p {
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 12rem;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     row-gap: 1.2rem;
     padding: 0 0 1rem 0;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 1.7rem;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.4rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 1.2rem;
     width: 1.2rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 2rem;
     column-gap: 1px;
   }
-  .main__form-text {
-    font-size: 0.9rem;
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
+    font-size: 1rem;
     line-height: 1.2rem;
     padding: 0 0.5rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     gap: 4px;
     border-radius: 3px;
     width: 30%;
   }
-  .main__form-button-p {
-    font-size: 0.9rem;
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
+    font-size: 1rem;
     line-height: 1.2rem;
   }
   .main-subpage__title {
@@ -2489,109 +2452,109 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .header__link-cart {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 0.9rem;
     padding: 1rem 0 1rem 1rem;
   }
-  .main__intro-inside {
+  .main .main__intro .main__intro-text .main__intro-inside {
     width: 100%;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 2rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1.1rem;
     line-height: 1.35rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1.1rem;
     height: 2rem;
     border-radius: 3px;
   }
-  .main__main {
+  .main .main__main {
     height: 43rem;
     justify-content: space-evenly;
   }
-  .main__products {
+  .main .main__main .main__products {
     flex-direction: column;
     align-items: center;
     row-gap: 1.5rem;
     padding: 0 12%;
     height: 28rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     min-width: 300px;
     width: 95%;
     border-radius: 9px;
     row-gap: 0.5rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 2.3rem;
+    width: auto;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1.35rem;
+    line-height: 1.65rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 2.3rem;
-    width: auto;
-  }
-  .main__products-p {
-    font-size: 1.35rem;
-    line-height: 1.65rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 10.5rem;
     justify-content: center;
     align-items: center;
   }
-  .main__suscription-div-img {
+  .main .main__main .main__suscription .main__suscription-div-img {
     display: none;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     width: 100%;
     justify-content: center;
     align-items: center;
     row-gap: 1.2rem;
     padding: 0;
   }
-  .main__suscription-inside {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-inside {
     align-items: center;
     justify-content: center;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 1.8rem;
     text-align: center;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.4rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1.1rem;
     line-height: 1.3rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 1rem;
     width: 1rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 1.8rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 0 0.5rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     width: 22.5%;
     height: 100%;
     gap: 4px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
@@ -2804,109 +2767,109 @@ input[type=number]::-webkit-outer-spin-button {
   .header__bootstrap .container-fluid .header__link-cart {
     display: none;
   }
-  .main__intro-text {
+  .main .main__intro .main__intro-text {
     row-gap: 0.9rem;
     padding: 1rem 0 1rem 1rem;
   }
-  .main__intro-inside {
+  .main .main__intro .main__intro-text .main__intro-inside {
     width: 100%;
   }
-  .main__home-title {
+  .main .main__intro .main__intro-text .main__home-title {
     font-size: 1.9rem;
   }
-  .main__description {
+  .main .main__intro .main__intro-text .main__description {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-  .main__intro-button {
+  .main .main__intro .main__intro-text .main__intro-button {
     font-size: 1rem;
     height: 1.8rem;
     border-radius: 3px;
   }
-  .main__main {
+  .main .main__main {
     height: 39rem;
     justify-content: space-evenly;
   }
-  .main__products {
+  .main .main__main .main__products {
     flex-direction: column;
     align-items: center;
     row-gap: 1.5rem;
     padding: 0 12%;
     height: 24rem;
   }
-  .main__products-inside {
+  .main .main__main .main__products .main__products-inside, .main .main__main .main__products .main__products-frescos, .main .main__main .main__products .main__products-frescos:hover, .main .main__main .main__products .main__products-congelados, .main .main__main .main__products .main__products-congelados:hover {
     min-width: 300px;
     width: 95%;
     border-radius: 9px;
     row-gap: 0.5rem;
   }
-  .main__products-frescos {
+  .main .main__main .main__products .main__products-inside .main__products-title, .main .main__main .main__products .main__products-frescos .main__products-title, .main .main__main .main__products .main__products-congelados .main__products-title {
+    font-size: 2.1rem;
+    width: auto;
+  }
+  .main .main__main .main__products .main__products-inside .main__products-p, .main .main__main .main__products .main__products-frescos .main__products-p, .main .main__main .main__products .main__products-congelados .main__products-p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .main .main__main .main__products .main__products-frescos {
     background-image: url(../img/bg-fresh-salmon-1.jpg);
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-congelados {
+  .main .main__main .main__products .main__products-congelados {
     background-repeat: round;
     background-size: contain;
   }
-  .main__products-title {
-    font-size: 2.1rem;
-    width: auto;
-  }
-  .main__products-p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-  }
-  .main__suscription {
+  .main .main__main .main__suscription {
     height: 10.5rem;
     justify-content: center;
     align-items: center;
   }
-  .main__suscription-div-img {
+  .main .main__main .main__suscription .main__suscription-div-img {
     display: none;
   }
-  .main__suscription-text {
+  .main .main__main .main__suscription .main__suscription-text {
     width: 100%;
     justify-content: center;
     align-items: center;
     row-gap: 1.2rem;
     padding: 0;
   }
-  .main__suscription-inside {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-inside {
     align-items: center;
     justify-content: center;
   }
-  .main__suscription-title {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-title {
     font-size: 1.8rem;
     text-align: center;
   }
-  .main__suscription-description {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description {
     column-gap: 0.4rem;
   }
-  .main__suscription-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-p {
     font-size: 1.1rem;
     line-height: 1.3rem;
   }
-  .main__suscription-arrow-img {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-description .main__suscription-arrow-img {
     height: 1rem;
     width: 1rem;
   }
-  .main__suscription-form {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form {
     height: 1.8rem;
     column-gap: 1px;
   }
-  .main__form-text {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-text {
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 0 0.5rem;
   }
-  .main__form-button {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button {
     width: 22.5%;
     height: 100%;
     gap: 4px;
     border-radius: 3px;
   }
-  .main__form-button-p {
+  .main .main__main .main__suscription .main__suscription-text .main__suscription-form .main__form-button .main__form-button-p {
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
