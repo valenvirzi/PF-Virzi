@@ -45,6 +45,10 @@ li {
     top: 0;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 .header__link-logo {
     display: flex;
     align-items: center;
@@ -239,7 +243,9 @@ li {
 .main__products-inside {
     display: flex;
     flex-direction: column;
+    min-height: 180px;
     height: 100%;
+    min-width: 180px;
     width: 24rem;
     border-radius: 7px;
     justify-content: center;
@@ -304,7 +310,7 @@ li {
 }
 
 .main__suscription-img {
-    width: 70%;
+    width: 75%;
 }
 
 .main__suscription-text {
@@ -323,6 +329,7 @@ li {
 .main__suscription-title {
     color: #023e8a;
     font-size: 2.3rem;
+    font-weight: 700;
 }
 
 .main__suscription-description {
@@ -349,7 +356,7 @@ li {
 }
 
 .main__form-text {
-    width: 56%;
+    width: 70%;
     padding: 0 0.5rem;
 }
 
@@ -362,7 +369,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 18.2%;
+    width: 25%;
     gap: 4px;
     background-color: #FB8500;
     border: none;
@@ -1817,7 +1824,7 @@ iframe {
     }
     
     .main__suscription-title {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
     
     .main__suscription-description {
@@ -1825,8 +1832,8 @@ iframe {
     }
     
     .main__suscription-p {
-        font-size: 1.19rem;
-        line-height: 1.68rem;
+        font-size: 1.25rem;
+        line-height: 1.7rem;
     }
     
     .main__suscription-arrow-img {
@@ -1840,19 +1847,19 @@ iframe {
     }
     
     .main__form-text {
-        font-size: 0.85rem;
-        line-height: 1.68rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
         padding: 0 0.65rem;
     }
     
     .main__form-button {
-        gap: 4px;
+        gap: 7px;
         border-radius: 3px;
     }
     
     .main__form-button-p {
-        font-size: 0.85rem;
-        line-height: 1.68rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
     }
 
 
@@ -2053,17 +2060,17 @@ iframe {
     }
     
     .main__home-title {
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
     
     .main__description {
-        font-size: 1.2rem;
-        line-height: 1.78rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
     }
     
     .main__intro-button {
-        font-size: 1.11rem;
-        height: 2rem;
+        font-size: 1.4rem;
+        height: 2.5rem;
     }
 
 
@@ -2090,11 +2097,11 @@ iframe {
     }
     
     .main__products-title {
-        font-size: 2.22rem;
+        font-size: 2.25rem;
     }
     
     .main__products-p {
-        font-size: 1.16rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
@@ -2117,7 +2124,7 @@ iframe {
     }
     
     .main__suscription-p {
-        font-size: 1.06rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
     }
     
@@ -2127,12 +2134,12 @@ iframe {
     }
     
     .main__suscription-form {
-        height: 1.8rem;
+        height: 2rem;
         column-gap: 1px;
     }
     
     .main__form-text {
-        font-size: 0.76rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
         padding: 0 0.6rem;
     }
@@ -2143,7 +2150,7 @@ iframe {
     }
     
     .main__form-button-p {
-        font-size: 0.76rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
     }
 
@@ -2330,6 +2337,11 @@ iframe {
         margin: 0 2.7rem;
     }
 
+    
+    .footer__contact-p {
+        font-size: 1.1rem;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2348,23 +2360,23 @@ iframe {
     }
     
     .main__description {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
         line-height: 1.4rem;
     }
     
     .main__intro-button {
-        font-size: 0.9rem;
-        height: 1.6rem;
+        font-size: 1.1rem;
+        height: 1.8rem;
     }
 
 
     .main__products {
         padding: 1.6rem 2.16rem;
-        height: 14rem;
+        height: 15rem;
     }
     
     .main__products-inside {
-        width: 16.8rem;
+        width: 19rem;
         border-radius: 9px;
         row-gap: 1rem;
     }
@@ -2381,12 +2393,12 @@ iframe {
     }
     
     .main__products-title {
-        font-size: 1.78rem;
+        font-size: 2rem;
     }
     
     .main__products-p {
-        font-size: 0.93rem;
-        line-height: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
     }
 
     
@@ -2400,7 +2412,7 @@ iframe {
     }
     
     .main__suscription-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .main__suscription-description {
@@ -2418,13 +2430,13 @@ iframe {
     }
     
     .main__suscription-form {
-        height: 1.6rem;
+        height: 1.8rem;
         column-gap: 1px;
     }
     
     .main__form-text {
-        font-size: 0.8rem;
-        line-height: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
         padding: 0 0.6rem;
     }
     
@@ -2434,8 +2446,8 @@ iframe {
     }
     
     .main__form-button-p {
-        font-size: 0.75rem;
-        line-height: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
     }
 
 
@@ -2727,35 +2739,38 @@ iframe {
 
 
     .main__intro-text {
-        row-gap: 0.68rem;
-        padding: 0.81rem 0 0.81rem 2.18rem;
+        row-gap: 0.9rem;
+        padding: 1rem 0 1rem 2.18rem;
     }
     
     .main__home-title {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     
     .main__description {
-        font-size: 0.71rem;
-        line-height: 1.05rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
     }
     
     .main__intro-button {
-        font-size: 0.71rem;
-        height: 1.2rem;
+        font-size: 1.1rem;
+        height: 1.7rem;
         border-radius: 3px;
     }
 
 
     .main__products {
-        padding: 1.2rem 1.62rem;
-        height: 10.5rem;
+        padding: 2.3rem 1.7rem;
+        height: 16rem;
+        align-items: center;
     }
     
     .main__products-inside {
-        width: 12.6rem;
+        width: 17rem;
+        min-height: 120px;
+        height: 90%;
         border-radius: 9px;
-        row-gap: 1rem;
+        row-gap: 0.5rem;
     }
     
     .main__products-frescos {
@@ -2770,17 +2785,17 @@ iframe {
     }
     
     .main__products-title {
-        font-size: 1.34rem;
+        font-size: 1.5rem;
     }
     
     .main__products-p {
-        font-size: 0.7rem;
-        line-height: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
 
     
     .main__suscription {
-        height: 10.5rem;
+        height: 12rem;
     }
     
     .main__suscription-text {
@@ -2789,7 +2804,7 @@ iframe {
     }
     
     .main__suscription-title {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
     
     .main__suscription-description {
@@ -2797,34 +2812,35 @@ iframe {
     }
     
     .main__suscription-p {
-        font-size: 0.64rem;
-        line-height: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     
     .main__suscription-arrow-img {
-        height: 1rem;
-        width: 1rem;
+        height: 1.2rem;
+        width: 1.2rem;
     }
     
     .main__suscription-form {
-        height: 1.08rem;
+        height: 2rem;
         column-gap: 1px;
     }
     
     .main__form-text {
-        font-size: 0.46rem;
-        line-height: 0.9rem;
-        padding: 0 0.4rem;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        padding: 0 0.5rem;
     }
     
     .main__form-button {
         gap: 4px;
         border-radius: 3px;
+        width: 30%;
     }
     
     .main__form-button-p {
-        font-size: 0.46rem;
-        line-height: 0.9rem;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
     }
 
 
@@ -2915,14 +2931,14 @@ iframe {
 
     
     .main-recepies__search {
-        height: 4.5rem;
+        height: 6rem;
         padding: 0.35rem 1rem;
         column-gap: 1.3rem;
         border-top: #219EBC solid 3px;
     }
     
     .main-recepies__search-title {
-        font-size: 1rem;
+        font-size: 1.15rem;
         width: 60%;
     }
 
@@ -2931,14 +2947,14 @@ iframe {
     }
     
     .main-recepies__search-label {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     .main-recepies__search-text {
         width: 100%;
         padding: 0.1rem 0.5rem;
-        font-size: 0.8rem;
-        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
     }
     
     .main-recepies__search-button {
@@ -2951,9 +2967,9 @@ iframe {
     
     .main-recepies__title {
         justify-content: center;
-        font-size: 2.2rem;
-        height: 4.5rem;
-        padding: 0 1rem;
+        font-size: 2.5rem;
+        height: 5.5rem;
+        padding: 0.2rem 1rem;
     }
     
     .carousel-item {
@@ -2967,7 +2983,7 @@ iframe {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 83rem;
+        height: auto;
         padding: 1rem 0;
     }
 
@@ -2981,11 +2997,12 @@ iframe {
     }
 
     .main-about__text-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .main-about__text-p {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .main-about__img {
@@ -3016,16 +3033,25 @@ iframe {
         row-gap: 1rem;
         padding: 1.1rem 0.8rem;
         background-color: #EFEFD0;
-        height: 12rem;
+        height: 14rem;
     }
 
     .footer__contact-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 
     .footer__contact-p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+
+    .footer__contact-button {
+        height: 3rem;
+    }
+
+    .footer__contact-button-a {
+        font-size: 1.3rem;
+    }
+
 
     .footer__main {
         height: auto;
@@ -3042,6 +3068,10 @@ iframe {
         row-gap: 0.5rem;
         justify-content: space-around;
         padding: 0;
+    }
+
+    .footer__link {
+        font-size: 1.3rem;
     }
 
     .footer__main-socials-img {
@@ -3063,6 +3093,10 @@ iframe {
         font-size: 0.9rem;
         padding: 0;
     }
+
+    .footer__main-legal {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width: 425px) and (max-width: 480px) {
@@ -3073,7 +3107,7 @@ iframe {
     }
 
     .header__link-logo {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .header__nav {
@@ -3098,32 +3132,32 @@ iframe {
 
 
     .main__intro-text {
-        row-gap: 0.68rem;
-        padding: 0.81rem 0 0.81rem 1.2rem;
+        row-gap: 0.9rem;
+        padding: 1rem 0 1rem 1rem;
     }
 
     .main__intro-inside {
-        width: 95%;
+        width: 100%;
     }
     
     .main__home-title {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     
     .main__description {
-        font-size: 0.7rem;
-        line-height: 1.05rem;
+        font-size: 1.1rem;
+        line-height: 1.35rem;
     }
     
     .main__intro-button {
-        font-size: 0.7rem;
-        height: 1.3rem;
+        font-size: 1.1rem;
+        height: 2rem;
         border-radius: 3px;
     }
 
 
     .main__main {
-        height: 43.6rem;
+        height: 43rem;
         justify-content: space-evenly;
     }
 
@@ -3132,15 +3166,15 @@ iframe {
         flex-direction: column;
         align-items: center;
         row-gap: 1.5rem;
-        padding: 0 12.5%;
-        height: 30rem;
+        padding: 0 12%;
+        height: 28rem;
     }
     
     .main__products-inside {
-        height: 13rem;
+        min-width: 300px;
         width: 95%;
         border-radius: 9px;
-        row-gap: 1rem;
+        row-gap: 0.5rem;
     }
     
     .main__products-frescos {
@@ -3155,12 +3189,13 @@ iframe {
     }
     
     .main__products-title {
-        font-size: 2rem;
+        font-size: 2.3rem;
+        width: auto;
     }
     
     .main__products-p {
-        font-size: 1.05rem;
-        line-height: 1.35rem;
+        font-size: 1.35rem;
+        line-height: 1.65rem;
     }
 
     
@@ -3175,7 +3210,7 @@ iframe {
     }
     
     .main__suscription-text {
-        width: 95%;
+        width: 100%;
         justify-content: center;
         align-items: center;
         row-gap: 1.2rem;
@@ -3188,7 +3223,7 @@ iframe {
     }
     
     .main__suscription-title {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     
@@ -3197,8 +3232,8 @@ iframe {
     }
     
     .main__suscription-p {
-        font-size: 0.91rem;
-        line-height: 1.28rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
     }
     
     .main__suscription-arrow-img {
@@ -3207,25 +3242,26 @@ iframe {
     }
     
     .main__suscription-form {
-        height: 1.54rem;
+        height: 1.8rem;
         column-gap: 1px;
     }
     
     .main__form-text {
-        font-size: 0.7rem;
-        line-height: 1.28rem;
-        padding: 0 0.4rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
     }
     
     .main__form-button {
+        width: 22.5%;
         height: 100%;
         gap: 4px;
         border-radius: 3px;
     }
     
     .main__form-button-p {
-        font-size: 0.7rem;
-        line-height: 1.28rem;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
     }
 
 
@@ -3263,8 +3299,8 @@ iframe {
     }
     
     .main-products__p {
-        font-size: 1.1rem;
-        line-height: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
     }
     
     .main-products__intro {
@@ -3326,7 +3362,7 @@ iframe {
     
     .main-recepies__search-title {
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         width: 100%;
     }
 
@@ -3335,15 +3371,15 @@ iframe {
     }
     
     .main-recepies__search-label {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     
     .main-recepies__search-text {
-        height: 1.7rem;
+        height: 2rem;
         width: 100%;
         padding: 0.1rem 0.5rem;
-        font-size: 0.9rem;
-        line-height: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
     }
     
     .main-recepies__search-button {
@@ -3356,9 +3392,10 @@ iframe {
     
     .main-recepies__title {
         justify-content: center;
-        font-size: 2rem;
-        height: 4.5rem;
-        padding: 0 0.7rem;
+        text-align: center;
+        font-size: 2.5rem;
+        height: 6rem;
+        padding: 0.2rem 0.7rem;
     }
     
     .carousel-item {
@@ -3372,7 +3409,7 @@ iframe {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 66rem;
+        height: auto;
         padding: 0.7rem 0;
     }
 
@@ -3386,11 +3423,12 @@ iframe {
     }
 
     .main-about__text-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .main-about__text-p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 
     .main-about__img {
@@ -3423,15 +3461,23 @@ iframe {
         row-gap: 1rem;
         padding: 1.1rem 1rem;
         background-color: #EFEFD0;
-        height: 14rem;
+        height: 16rem;
     }
 
     .footer__contact-title {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 
     .footer__contact-p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer__contact-button {
+        height: 3rem;
+    }
+
+    .footer__contact-button-a {
+        font-size: 1.2rem;
     }
 
     .footer__main {
@@ -3451,6 +3497,10 @@ iframe {
         padding: 0;
     }
 
+    .footer__link {
+        font-size: 1.2rem;
+    }
+
     .footer__main-socials-img {
         column-gap: 2rem;
         padding: 0;
@@ -3467,7 +3517,7 @@ iframe {
         justify-content: space-around;
         color: #ffffff;
         row-gap: 1rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         padding: 0;
     }
 }
@@ -3480,7 +3530,7 @@ iframe {
     }
 
     .header__link-logo {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .header__nav {
@@ -3505,32 +3555,32 @@ iframe {
 
 
     .main__intro-text {
-        row-gap: 0.65rem;
-        padding: 0.8rem 0 0.8rem 0.8rem;
+        row-gap: 0.9rem;
+        padding: 1rem 0 1rem 1rem;
     }
 
     .main__intro-inside {
-        width: 95%;
+        width: 100%;
     }
     
     .main__home-title {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     
     .main__description {
-        font-size: 0.7rem;
-        line-height: 1.05rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
     }
     
     .main__intro-button {
-        font-size: 0.7rem;
-        height: 1.3rem;
+        font-size: 1rem;
+        height: 1.8rem;
         border-radius: 3px;
     }
 
 
     .main__main {
-        height: 35rem;
+        height: 39rem;
         justify-content: space-evenly;
     }
 
@@ -3540,10 +3590,11 @@ iframe {
         align-items: center;
         row-gap: 1.5rem;
         padding: 0 12%;
-        height: 20rem;
+        height: 24rem;
     }
     
     .main__products-inside {
+        min-width: 300px;
         width: 95%;
         border-radius: 9px;
         row-gap: 0.5rem;
@@ -3561,13 +3612,13 @@ iframe {
     }
     
     .main__products-title {
-        font-size: 1.7rem;
+        font-size: 2.1rem;
         width: auto;
     }
     
     .main__products-p {
-        font-size: 0.85rem;
-        line-height: 1.1rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
     }
 
     
@@ -3595,7 +3646,7 @@ iframe {
     }
     
     .main__suscription-title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     
@@ -3604,8 +3655,8 @@ iframe {
     }
     
     .main__suscription-p {
-        font-size: 0.85rem;
-        line-height: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
     }
     
     .main__suscription-arrow-img {
@@ -3614,14 +3665,14 @@ iframe {
     }
     
     .main__suscription-form {
-        height: 1.54rem;
+        height: 1.8rem;
         column-gap: 1px;
     }
     
     .main__form-text {
-        font-size: 0.65rem;
-        line-height: 1.28rem;
-        padding: 0 0.4rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
     }
     
     .main__form-button {
@@ -3632,7 +3683,7 @@ iframe {
     }
     
     .main__form-button-p {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
         line-height: 1.1rem;
     }
 
@@ -3642,7 +3693,7 @@ iframe {
     .main-subpage__title {
         margin: auto;
         text-align: center;
-        font-size: 2.6rem;
+        font-size: 2.45rem;
     }
 
 
@@ -3671,8 +3722,8 @@ iframe {
     }
     
     .main-products__p {
-        font-size: 1rem;
-        line-height: 1.25rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
     }
     
     .main-products__intro {
@@ -3702,7 +3753,7 @@ iframe {
     }
     
     .main-products__item-name {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .main-products__item-inputs {
@@ -3734,7 +3785,8 @@ iframe {
     
     .main-recepies__search-title {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
         width: 100%;
     }
 
@@ -3743,15 +3795,15 @@ iframe {
     }
     
     .main-recepies__search-label {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     .main-recepies__search-text {
-        height: 1.6rem;
+        height: 1.8rem;
         width: 100%;
         padding: 0.1rem 0.4rem;
-        font-size: 0.8rem;
-        line-height: 9rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
     }
     
     .main-recepies__search-button {
@@ -3760,9 +3812,11 @@ iframe {
     
     .main-recepies__title {
         justify-content: center;
-        font-size: 1.6rem;
-        height: 4.5rem;
-        padding: 0 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+        height: 5.5rem;
+        padding: 0.4rem 0.5rem;
+        /* text-decoration: underline; */
     }
     
     .carousel-item {
@@ -3790,11 +3844,12 @@ iframe {
     }
 
     .main-about__text-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .main-about__text-p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
     }
 
     .main-about__img {
@@ -3827,21 +3882,33 @@ iframe {
         row-gap: 1rem;
         padding: 1.1rem 1rem;
         background-color: #EFEFD0;
-        height: 14rem;
+        height: 16rem;
     }
 
     .footer__contact-title {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 
     .footer__contact-p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer__contact-button {
+        height: 3rem;
+    }
+
+    .footer__contact-button-a {
+        font-size: 1.2rem;
     }
 
     .footer__main {
         height: auto;
         padding: 1.2rem 1.2rem;
         row-gap: 1rem;
+    }
+
+    .footer__link {
+        font-size: 1.1rem;
     }
 
     .footer__main-socials {
@@ -3871,7 +3938,7 @@ iframe {
         justify-content: space-around;
         color: #ffffff;
         row-gap: 1rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         padding: 0;
     }
 
