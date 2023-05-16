@@ -693,8 +693,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.main-about__body {
+.main-about .main-about__body {
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
@@ -702,36 +701,31 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(3px);
 }
-
-.main-about__text {
+.main-about .main-about__body .main-about__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 4rem;
   gap: 1.5rem;
 }
-
-.main-about__div-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-about__img {
-  width: 100%;
-  height: 100%;
-}
-
-.main-about__text-title {
+.main-about .main-about__body .main-about__text .main-about__text-title {
   font-size: 3rem;
   font-weight: 800;
   color: #023e8a;
 }
-
-.main-about__text-p {
+.main-about .main-about__body .main-about__text .main-about__text-p {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.7rem;
+}
+.main-about .main-about__body .main-about__div-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-about .main-about__body .main-about__div-img .main-about__img {
+  width: 100%;
+  height: 100%;
 }
 
 .main-contact__form-area {
@@ -1075,18 +1069,15 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 40rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     height: 88rem;
   }
-  .main-about__text-title {
+  .main-about .main-about__body .main-about__text .main-about__text-title {
     font-size: 5rem;
   }
-  .main-about__text-p {
+  .main-about .main-about__body .main-about__text .main-about__text-p {
     font-size: 2.5rem;
     line-height: 2.85rem;
-  }
-  .main-about__img {
-    height: 100%;
   }
   .main-contact__form-area {
     row-gap: 2.5rem;
@@ -1357,18 +1348,15 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 37rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     height: 85rem;
   }
-  .main-about__text-title {
+  .main-about .main-about__body .main-about__text .main-about__text-title {
     font-size: 5rem;
   }
-  .main-about__text-p {
+  .main-about .main-about__body .main-about__text .main-about__text-p {
     font-size: 2.5rem;
     line-height: 2.85rem;
-  }
-  .main-about__img {
-    height: 100%;
   }
   .main-contact__form-area {
     row-gap: 2rem;
@@ -1624,11 +1612,8 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 33rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     height: 50rem;
-  }
-  .main-about__img {
-    height: 100%;
   }
   .main-contact__form-area {
     padding: 3rem 2.7rem;
@@ -1850,10 +1835,10 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 30rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     height: 55rem;
   }
-  .main-about__text {
+  .main-about .main-about__body .main-about__text {
     padding: 1.8rem 2.5rem;
   }
   .main-contact__form-area {
@@ -2093,16 +2078,16 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 27rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     height: 45rem;
   }
-  .main-about__text {
+  .main-about .main-about__body .main-about__text {
     padding: 2rem;
   }
-  .main-about__text-title {
+  .main-about .main-about__body .main-about__text .main-about__text-title {
     font-size: 2.5rem;
   }
-  .main-about__text-p {
+  .main-about .main-about__body .main-about__text .main-about__text-p {
     font-size: 1.2rem;
   }
   .main-contact__form-area {
@@ -2380,29 +2365,29 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 27rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: auto;
     padding: 1rem 0;
   }
-  #div-img2 {
+  .main-about .main-about__body #div-img2 {
     order: 4;
   }
-  .main-about__text {
+  .main-about .main-about__body .main-about__div-img .main-about__img {
+    width: 85%;
+  }
+  .main-about .main-about__body .main-about__text {
     padding: 1.9rem;
     text-align: center;
   }
-  .main-about__text-title {
+  .main-about .main-about__body .main-about__text .main-about__text-title {
     font-size: 2.8rem;
   }
-  .main-about__text-p {
+  .main-about .main-about__body .main-about__text .main-about__text-p {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-  .main-about__img {
-    width: 85%;
   }
   .main-contact__form-area {
     row-gap: 1.5rem;
@@ -2696,29 +2681,29 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 25rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: auto;
     padding: 0.7rem 0;
   }
-  #div-img2 {
+  .main-about .main-about__body #div-img2 {
     order: 4;
   }
-  .main-about__text {
+  .main-about .main-about__body .main-about__div-img .main-about__img {
+    width: 100%;
+  }
+  .main-about .main-about__body .main-about__text {
     padding: 1rem;
     text-align: center;
   }
-  .main-about__text-title {
+  .main-about .main-about__body .main-about__text .main-about__text-title {
     font-size: 2.2rem;
   }
-  .main-about__text-p {
+  .main-about .main-about__body .main-about__text .main-about__text-p {
     font-size: 1.2rem;
     line-height: 1.8rem;
-  }
-  .main-about__img {
-    width: 100%;
   }
   .main-contact__form-area {
     padding: 1.5rem 0.5rem;
@@ -3010,29 +2995,29 @@ input[type=number]::-webkit-outer-spin-button {
   .carousel-item {
     height: 18rem;
   }
-  .main-about__body {
+  .main-about .main-about__body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 66rem;
+    height: auto;
     padding: 0.7rem 0;
   }
-  #div-img2 {
+  .main-about .main-about__body #div-img2 {
     order: 4;
   }
-  .main-about__text {
+  .main-about .main-about__body .main-about__div-img .main-about__img {
+    width: 100%;
+  }
+  .main-about .main-about__body .main-about__text {
     padding: 1rem;
     text-align: center;
   }
-  .main-about__text-title {
+  .main-about .main-about__body .main-about__text .main-about__text-title {
     font-size: 2.2rem;
   }
-  .main-about__text-p {
+  .main-about .main-about__body .main-about__text .main-about__text-p {
     font-size: 1.2rem;
     line-height: 1.75rem;
-  }
-  .main-about__img {
-    width: 100%;
   }
   .main-contact__form-area {
     padding: 1rem 0;
