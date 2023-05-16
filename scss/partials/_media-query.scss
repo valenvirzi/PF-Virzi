@@ -221,45 +221,94 @@
 
 
 
-    .main-recepies__search {
-        height: 7rem;
-        padding: 0.5rem 2.5rem;
-        column-gap: 1.5rem;
-        border-top: #219EBC solid 3px;
-    }
-
-    .main-recepies__search-title {
-        font-size: 2.2rem;
-    }
-
-    .main-recepies__search-label {
-        font-size: 1.4rem;
-    }
-
-    .main-recepies__search-text {
-        padding: 0.2rem 1rem;
-        font-size: 1.4rem;
-        line-height: 1.5rem;
-    }
-
-    .main-recepies__search-button {
-        font-size: 1.4rem;
-        line-height: 1.5rem;
-        column-gap: 5px;
-    }
-
-    .main-recepies__search-button-img {
-        width: 1.5rem;
-    }
-
-    .main-recepies__title {
-        font-size: 4rem;
-        height: 7.5rem;
-        padding: 0 0 0 6rem;
-    }
-
-    .carousel-item {
-        height: 40rem;
+    .main-recepies {
+    
+        .main-recepies__search {
+            height: 7rem;
+            padding: 0.5rem 2.5rem;
+            column-gap: 1.5rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                font-size: 2.2rem;
+            }
+    
+            .main-recepies__search-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 34%;
+                height: 90%;
+    
+                .main-recepies__search-label {
+                    font-size: 1.4rem;
+                }
+    
+                .main-recepies__search-input {
+                    display: flex;
+                    height: 52%;
+    
+                    .main-recepies__search-text {
+                        padding: 0.2rem 1rem;
+                        font-size: 1.4rem;
+                        line-height: 1.5rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        font-size: 1.4rem;
+                        line-height: 1.5rem;
+                        column-gap: 5px;
+    
+                        .main-recepies__search-button-img {
+                            width: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    font-size: 4rem;
+                    height: 7.5rem;
+                    padding: 0 0 0 6rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 40rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    font-size: 4rem;
+                    height: 7.5rem;
+                    padding: 0 0 0 6rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 40rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -359,46 +408,63 @@
 
 
     
-    .footer__contact {
-        height: 17rem;
-        row-gap: 0;
-        justify-content: space-around;
-    }
+    .footer {
+    
+        .footer__contact {
+            height: 17rem;
+            row-gap: 0;
+            justify-content: space-around;
+    
+            .footer__contact-title {
+                font-size: 3.83rem;
+            }
+    
+            .footer__contact-p {
+                font-size: 2rem;
+            }
+    
+            .footer__contact-button {
+                font-size: 1.67rem;
+                height: 3.33rem;
+                width: 26rem;
+            }
+        }
+    
+        .footer__main {
+            height: 16rem;
+            padding: 1rem 1rem 0.4rem 2rem;
+            font-size: 1.67rem;
+    
+            .footer__main-socials {
+                padding: 0 9rem 0 4rem;
+    
+                li {
+                    .footer__link-logo {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
 
-    .footer__contact-title {
-        font-size: 3.83rem;
-    }
+                        img {
+                            width: 4.5rem;
+                        }
+                    }
+    
+                    .footer__main-socials-img {
+                        column-gap: 7.5rem;
 
-    .footer__contact-p {
-        font-size: 2rem;
-    }
+                        li {
 
-    .footer__contact-button {
-        font-size: 1.67rem;
-        height: 3.33rem;
-        width: 26rem;
-    }
+                            a {
 
-    .footer__main {
-        height: 16rem;
-        padding: 1rem 1rem 0.4rem 2rem;
-        font-size: 1.67rem;
-    }
-
-    .footer__main-socials {
-        padding: 0 9rem 0 4rem;
-    }
-
-    .footer__main-socials-img {
-        column-gap: 7.5rem;
-    }
-
-    .footer__main-socials-img img {
-        width: 6rem;
-    }
-
-    .footer__link-logo img {
-        width: 4.5rem;
+                                img {
+                                    width: 6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -623,45 +689,87 @@
 
 
 
-    .main-recepies__search {
-        height: 7rem;
-        padding: 0.5rem 2.5rem;
-        column-gap: 1.5rem;
-        border-top: #219EBC solid 3px;
-    }
-
-    .main-recepies__search-title {
-        font-size: 2rem;
-    }
-
-    .main-recepies__search-label {
-        font-size: 1.2rem;
-    }
-
-    .main-recepies__search-text {
-        padding: 0.2rem 1rem;
-        font-size: 1.2rem;
-        line-height: 1.35rem;
-    }
-
-    .main-recepies__search-button {
-        font-size: 1.2rem;
-        line-height: 1.35rem;
-        column-gap: 5px;
-    }
-
-    .main-recepies__search-button-img {
-        width: 1.5rem;
-    }
-
-    .main-recepies__title {
-        font-size: 3.7rem;
-        height: 6.7rem;
-        padding: 0 0 0 5.5rem;
-    }
-
-    .carousel-item {
-        height: 37rem;
+    .main-recepies {
+    
+        .main-recepies__search {
+            height: 7rem;
+            padding: 0.5rem 2.5rem;
+            column-gap: 1.5rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                font-size: 2rem;
+            }
+    
+            .main-recepies__search-form {
+    
+                .main-recepies__search-label {
+                    font-size: 1.2rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        padding: 0.2rem 1rem;
+                        font-size: 1.2rem;
+                        line-height: 1.35rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        font-size: 1.2rem;
+                        line-height: 1.35rem;
+                        column-gap: 5px;
+    
+                        .main-recepies__search-button-img {
+                            width: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    font-size: 3.7rem;
+                    height: 6.7rem;
+                    padding: 0 0 0 5.5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 37rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    font-size: 3.7rem;
+                    height: 6.7rem;
+                    padding: 0 0 0 5.5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 37rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -762,48 +870,64 @@
 
 
 
-    .footer__contact {
-        height: 17rem;
-        row-gap: 0;
-        justify-content: space-around;
-    }
+    .footer {
+    
+        .footer__contact {
+            height: 17rem;
+            row-gap: 0;
+            justify-content: space-around;
+    
+            .footer__contact-title {
+                font-size: 3.7rem;
+            }
+    
+            .footer__contact-p {
+                font-size: 2rem;
+            }
+    
+            .footer__contact-button {
+                font-size: 1.67rem;
+                height: 3.33rem;
+                width: 26rem;
+            }
+        }
+    
+        .footer__main {
+            height: 16rem;
+            padding: 1rem 1rem 0.4rem 2rem;
+            font-size: 1.67rem;
+    
+            .footer__main-socials {
+                justify-content: space-between;
+                padding: 0 9rem 0 4rem;
+    
+                li {
+                    .footer__link-logo {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
 
-    .footer__contact-title {
-        font-size: 3.7rem;
-    }
+                        img {
+                            width: 4.5rem;
+                        }
+                    }
+    
+                    .footer__main-socials-img {
+                        column-gap: 7.5rem;
 
-    .footer__contact-p {
-        font-size: 2rem;
-    }
+                        li {
 
-    .footer__contact-button {
-        font-size: 1.67rem;
-        height: 3.33rem;
-        width: 26rem;
-    }
+                            a {
 
-
-    .footer__main {
-        height: 16rem;
-        padding: 1rem 1rem 0.4rem 2rem;
-        font-size: 1.67rem;
-    }
-
-    .footer__main-socials {
-        justify-content: space-between;
-        padding: 0 9rem 0 4rem;
-    }
-
-    .footer__main-socials-img {
-        column-gap: 7.5rem;
-    }
-
-    .footer__main-socials-img img {
-        width: 6rem;
-    }
-
-    .footer__link-logo img {
-        width: 4.5rem;
+                                img {
+                                    width: 6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1004,45 +1128,87 @@
 
 
 
-    .main-recepies__search {
-        height: 5.5rem;
-        padding: 0.5rem 2.5rem;
-        column-gap: 1.5rem;
-        border-top: #219EBC solid 3px;
-    }
-
-    .main-recepies__search-title {
-        font-size: 1.7rem;
-    }
-
-    .main-recepies__search-label {
-        font-size: 1rem;
-    }
-
-    .main-recepies__search-text {
-        padding: 0.2rem 1rem;
-        font-size: 1rem;
-        line-height: 1.1rem;
-    }
-
-    .main-recepies__search-button {
-        font-size: 1rem;
-        line-height: 1.1rem;
-        column-gap: 5px;
-    }
-
-    .main-recepies__search-button-img {
-        width: 1.2rem;
-    }
-
-    .main-recepies__title {
-        font-size: 3.2rem;
-        height: 5.8rem;
-        padding: 0 0 0 5rem;
-    }
-
-    .carousel-item {
-        height: 33rem;
+    .main-recepies {
+    
+        .main-recepies__search {
+            height: 5.5rem;
+            padding: 0.5rem 2.5rem;
+            column-gap: 1.5rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                font-size: 1.7rem;
+            }
+    
+            .main-recepies__search-form {
+    
+                .main-recepies__search-label {
+                    font-size: 1rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        padding: 0.2rem 1rem;
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                        column-gap: 5px;
+    
+                        .main-recepies__search-button-img {
+                            width: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    font-size: 3.2rem;
+                    height: 5.8rem;
+                    padding: 0 0 0 5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 33rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    font-size: 3.2rem;
+                    height: 5.8rem;
+                    padding: 0 0 0 5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 33rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -1325,45 +1491,87 @@
 
 
 
-    .main-recepies__search {
-        height: 5rem;
-        padding: 0.5rem 2.5rem;
-        column-gap: 1.3rem;
-        border-top: #219EBC solid 3px;
-    }
-
-    .main-recepies__search-title {
-        font-size: 1.4rem;
-    }
-
-    .main-recepies__search-label {
-        font-size: 0.85rem;
-    }
-
-    .main-recepies__search-text {
-        padding: 0.2rem 0.6rem;
-        font-size: 0.85rem;
-        line-height: 1rem;
-    }
-
-    .main-recepies__search-button {
-        font-size: 0.85rem;
-        line-height: 1rem;
-        column-gap: 5px;
-    }
-
-    .main-recepies__search-button-img {
-        width: 1rem;
-    }
-
-    .main-recepies__title {
-        font-size: 2.5rem;
-        height: 5rem;
-        padding: 0 0 0 3.5rem;
-    }
-
-    .carousel-item {
-        height: 30rem;
+    .main-recepies {
+    
+        .main-recepies__search {
+            height: 5rem;
+            padding: 0.5rem 2.5rem;
+            column-gap: 1.3rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                font-size: 1.4rem;
+            }
+    
+            .main-recepies__search-form {
+    
+                .main-recepies__search-label {
+                    font-size: 1rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        padding: 0.2rem 0.6rem;
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                        column-gap: 5px;
+    
+                        .main-recepies__search-button-img {
+                            width: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    font-size: 2.5rem;
+                    height: 5rem;
+                    padding: 0 0 0 3.5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 30rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    font-size: 2.5rem;
+                    height: 5rem;
+                    padding: 0 0 0 3.5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 30rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -1454,10 +1662,17 @@
     }
 
 
-    .footer__contact-p {
-        font-size: 1.1rem;
-    }
 
+
+    .footer {
+    
+        .footer__contact {
+
+            .footer__contact-p {
+                font-size: 1.1rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1673,50 +1888,89 @@
 
 
 
-    .main-recepies__search {
-        height: 4.5rem;
-        padding: 0.5rem 2rem;
-        column-gap: 1.3rem;
-        border-top: #219EBC solid 3px;
-    }
+    .main-recepies {
+    
+        .main-recepies__search {
+            height: 4.5rem;
+            padding: 0.5rem 2rem;
+            column-gap: 1.3rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                font-size: 1.2rem;
+                width: 60%;
+            }
+    
+            .main-recepies__search-form {
+                width: 40%;
 
-    .main-recepies__search-title {
-        font-size: 1.2rem;
-        width: 60%;
-    }
-
-    .main-recepies__search-form {
-        width: 40%;
-    }
-
-    .main-recepies__search-label {
-        font-size: 0.8rem;
-    }
-
-    .main-recepies__search-text {
-        padding: 0.1rem 0.5rem;
-        font-size: 0.8rem;
-        line-height: 1rem;
-    }
-
-    .main-recepies__search-button {
-        font-size: 0.8rem;
-        line-height: 1rem;
-        column-gap: 5px;
-    }
-
-    .main-recepies__search-button-img {
-        width: 0.85rem;
-    }
-
-    .main-recepies__title {
-        font-size: 2.2rem;
-        height: 4.5rem;
-        padding: 0 0 0 3rem;
-    }
-
-    .carousel-item {
-        height: 27rem;
+                .main-recepies__search-label {
+                    font-size: 0.9rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        padding: 0.1rem 0.5rem;
+                        font-size: 0.9rem;
+                        line-height: 1rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        font-size: 0.9rem;
+                        line-height: 1rem;
+                        column-gap: 5px;
+    
+                        .main-recepies__search-button-img {
+                            width: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    font-size: 2.2rem;
+                    height: 4.5rem;
+                    padding: 0 0 0 3rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 27rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    font-size: 2.2rem;
+                    height: 4.5rem;
+                    padding: 0 0 0 3rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 27rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -1818,43 +2072,58 @@
 
 
 
-    .footer__main {
-        padding: 1rem 1rem 0.4rem 1.5rem;
-    }
+    .footer {
+    
+        .footer__contact {
+            height: 10rem;
+    
+            .footer__contact-title {
+                font-size: 2.1rem;
+            }
+    
+            .footer__contact-p {
+                font-size: 1.1rem;
+            }
+    
+            .footer__contact-button {
+                font-size: 1rem;
+                height: 2rem;
+                width: 15rem;
+            }
+        }
+    
+        .footer__main {
+            padding: 1rem 1rem 0.4rem 1.5rem;
+            height: 10rem;
+            font-size: 1rem;
+    
+            .footer__main-socials {
+                justify-content: space-between;
+    
+                li {
+                    .footer__link-logo {
 
-    .footer__contact {
-        height: 10rem;
-    }
+                        img {
+                            width: 3rem;
+                        }
+                    }
+    
+                    .footer__main-socials-img {
+                        column-gap: 7.5rem;
 
-    .footer__contact-title {
-        font-size: 2.1rem;
-    }
+                        li {
 
-    .footer__contact-p {
-        font-size: 1.1rem;
-    }
+                            a {
 
-    .footer__contact-button {
-        font-size: 1rem;
-        height: 2rem;
-        width: 15rem;
-    }
-
-    .footer__main {
-        height: 10rem;
-        font-size: 0.9rem;
-    }
-
-    .footer__main-socials {
-        justify-content: space-between;
-    }
-
-    .footer__main-socials-img img {
-        width: 3.2rem;
-    }
-
-    .footer__link-logo img {
-        width: 3rem;
+                                img {
+                                    width: 3.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -2078,50 +2347,86 @@
 
 
 
-    .main-recepies__search {
-        height: 6rem;
-        padding: 0.35rem 1rem;
-        column-gap: 1.3rem;
-        border-top: #219EBC solid 3px;
-    }
+    .main-recepies {
+    
+        .main-recepies__search {
+            height: 6rem;
+            padding: 0.35rem 1rem;
+            column-gap: 1.3rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                font-size: 1.15rem;
+                width: 60%;
+            }
+    
+            .main-recepies__search-form {
+                width: 40%;
 
-    .main-recepies__search-title {
-        font-size: 1.15rem;
-        width: 60%;
-    }
-
-    .main-recepies__search-form {
-        width: 40%;
-    }
-
-    .main-recepies__search-label {
-        font-size: 1rem;
-    }
-
-    .main-recepies__search-text {
-        width: 100%;
-        padding: 0.1rem 0.5rem;
-        font-size: 1rem;
-        line-height: 1.1rem;
-    }
-
-    .main-recepies__search-button {
-        display: none;
-    }
-
-    .main-recepies__search-button-img {
-        width: 0.85rem;
-    }
-
-    .main-recepies__title {
-        justify-content: center;
-        font-size: 2.5rem;
-        height: 5.5rem;
-        padding: 0.2rem 1rem;
-    }
-
-    .carousel-item {
-        height: 27rem;
+                .main-recepies__search-label {
+                    font-size: 1rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        width: 100%;
+                        padding: 0.1rem 0.5rem;
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    justify-content: center;
+                    font-size: 2.5rem;
+                    height: 5.5rem;
+                    padding: 0.2rem 1rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 27rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    justify-content: center;
+                    font-size: 2.5rem;
+                    height: 5.5rem;
+                    padding: 0.2rem 1rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 27rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -2186,73 +2491,90 @@
 
 
 
-    .footer__contact {
-        row-gap: 1rem;
-        padding: 1.1rem 0.8rem;
-        background-color: #EFEFD0;
-        height: 14rem;
-    }
+    .footer {
+    
+        .footer__contact {
+            row-gap: 1rem;
+            padding: 1.1rem 0.8rem;
+            height: 14rem;
+    
+            .footer__contact-title {
+                font-size: 2.25rem;
+            }
+    
+            .footer__contact-p {
+                font-size: 1.3rem;
+            }
+    
+            .footer__contact-button {
+                height: 3rem;
 
-    .footer__contact-title {
-        font-size: 2.25rem;
-    }
+                .footer__contact-button-a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    
+        .footer__main {
+            height: auto;
+            padding: 1.5rem 1.5rem;
+            row-gap: 1rem;
+    
+            .footer__main-socials {
+                display: flex;
+                flex-direction: column;
+                height: 45%;
+                align-items: center;
+                gap: 0;
+                row-gap: 0.5rem;
+                justify-content: space-around;
+                padding: 0;
+    
+                li {
 
-    .footer__contact-p {
-        font-size: 1.3rem;
-    }
+                    .footer__link {
+                        font-size: 1.3rem;
+                    }
 
-    .footer__contact-button {
-        height: 3rem;
-    }
+                    .footer__link-logo {
 
-    .footer__contact-button-a {
-        font-size: 1.3rem;
-    }
+                        img {
+                            width: 3rem;
+                        }
+                    }
+    
+                    .footer__main-socials-img {
+                        column-gap: 2.5rem;
+                        padding: 0;
 
+                        li {
 
-    .footer__main {
-        height: auto;
-        padding: 1.5rem 1.5rem;
-        row-gap: 1rem;
-    }
+                            a {
 
-    .footer__main-socials {
-        display: flex;
-        flex-direction: column;
-        height: 45%;
-        align-items: center;
-        gap: 0;
-        row-gap: 0.5rem;
-        justify-content: space-around;
-        padding: 0;
-    }
+                                img {
+                                    width: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-    .footer__link {
-        font-size: 1.3rem;
-    }
+            .footer__main-legal {
+                flex-direction: column;
+                height: 55%;
+                align-items: center;
+                justify-content: space-around;
+                color: #ffffff;
+                row-gap: 1rem;
+                font-size: 1.3rem;
+                padding: 0;
 
-    .footer__main-socials-img {
-        column-gap: 2.5rem;
-        padding: 0;
-    }
-
-    .footer__main-socials-img img {
-        width: 2.5rem;
-    }
-
-    .footer__main-legal {
-        flex-direction: column;
-        height: 55%;
-        align-items: center;
-        justify-content: space-around;
-        color: #ffffff;
-        row-gap: 1rem;
-        font-size: 0.9rem;
-        padding: 0;
-    }
-
-    .footer__main-legal {
-        font-size: 1.3rem;
+                .footer__link {
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 }
 
@@ -2505,54 +2827,91 @@
 
 
 
-    .main-recepies__search {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem 1rem;
-        row-gap: 0.6rem;
-        border-top: #219EBC solid 3px;
-    }
+    .main-recepies {
+    
+        .main-recepies__search {
+            flex-direction: column;
+            height: auto;
+            padding: 1rem 1rem;
+            row-gap: 0.6rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                text-align: center;
+                font-size: 1.4rem;
+                width: 100%;
+            }
+    
+            .main-recepies__search-form {
+                width: 90%;
 
-    .main-recepies__search-title {
-        text-align: center;
-        font-size: 1.4rem;
-        width: 100%;
-    }
-
-    .main-recepies__search-form {
-        width: 90%;
-    }
-
-    .main-recepies__search-label {
-        font-size: 1.1rem;
-    }
-
-    .main-recepies__search-text {
-        height: 2rem;
-        width: 100%;
-        padding: 0.1rem 0.5rem;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-    }
-
-    .main-recepies__search-button {
-        display: none;
-    }
-
-    .main-recepies__search-button-img {
-        width: 0.85rem;
-    }
-
-    .main-recepies__title {
-        justify-content: center;
-        text-align: center;
-        font-size: 2.5rem;
-        height: 6rem;
-        padding: 0.2rem 0.7rem;
-    }
-
-    .carousel-item {
-        height: 25rem;
+                .main-recepies__search-label {
+                    font-size: 1.1rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        height: 2rem;
+                        width: 100%;
+                        padding: 0.1rem 0.5rem;
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    height: 6rem;
+                    padding: 0.2rem 0.7rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 25rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    height: 6rem;
+                    padding: 0.2rem 0.7rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 25rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -2619,68 +2978,90 @@
 
 
 
-    .footer__contact {
-        row-gap: 1rem;
-        padding: 1.1rem 1rem;
-        background-color: #EFEFD0;
-        height: 16rem;
-    }
+    .footer {
+    
+        .footer__contact {
+            row-gap: 1rem;
+            padding: 1.1rem 1rem;
+            height: 16rem;
+    
+            .footer__contact-title {
+                font-size: 2.1rem;
+            }
+    
+            .footer__contact-p {
+                font-size: 1.2rem;
+            }
+    
+            .footer__contact-button {
+                height: 3rem;
 
-    .footer__contact-title {
-        font-size: 2.1rem;
-    }
+                .footer__contact-button-a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    
+        .footer__main {
+            height: auto;
+            padding: 1.2rem 1.2rem;
+            row-gap: 1rem;
+    
+            .footer__main-socials {
+                display: flex;
+                flex-direction: column;
+                height: 45%;
+                align-items: center;
+                gap: 0;
+                row-gap: 0.5rem;
+                justify-content: space-around;
+                padding: 0;
+    
+                li {
 
-    .footer__contact-p {
-        font-size: 1.2rem;
-    }
+                    .footer__link {
+                        font-size: 1.2rem;
+                    }
 
-    .footer__contact-button {
-        height: 3rem;
-    }
+                    .footer__link-logo {
 
-    .footer__contact-button-a {
-        font-size: 1.2rem;
-    }
+                        img {
+                            width: 3rem;
+                        }
+                    }
+    
+                    .footer__main-socials-img {
+                        column-gap: 2rem;
+                        padding: 0;
 
-    .footer__main {
-        height: auto;
-        padding: 1.2rem 1.2rem;
-        row-gap: 1rem;
-    }
+                        li {
 
-    .footer__main-socials {
-        display: flex;
-        flex-direction: column;
-        height: 45%;
-        align-items: center;
-        gap: 0;
-        row-gap: 0.5rem;
-        justify-content: space-around;
-        padding: 0;
-    }
+                            a {
 
-    .footer__link {
-        font-size: 1.2rem;
-    }
+                                img {
+                                    width: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-    .footer__main-socials-img {
-        column-gap: 2rem;
-        padding: 0;
-    }
+            .footer__main-legal {
+                flex-direction: column;
+                height: 55%;
+                align-items: center;
+                justify-content: space-around;
+                color: #ffffff;
+                row-gap: 1rem;
+                font-size: 1.1rem;
+                padding: 0;
 
-    .footer__main-socials-img img {
-        width: 2.5rem;
-    }
-
-    .footer__main-legal {
-        flex-direction: column;
-        height: 55%;
-        align-items: center;
-        justify-content: space-around;
-        color: #ffffff;
-        row-gap: 1rem;
-        font-size: 1.1rem;
-        padding: 0;
+                .footer__link {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }
 
@@ -2933,52 +3314,92 @@
 
 
 
-    .main-recepies__search {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem 0.6rem;
-        row-gap: 0.6rem;
-        border-top: #219EBC solid 3px;
-    }
+    .main-recepies {
+    
+        .main-recepies__search {
+            flex-direction: column;
+            height: auto;
+            padding: 1rem 0.6rem;
+            row-gap: 0.6rem;
+            border-top: #219EBC solid 3px;
+    
+            .main-recepies__search-title {
+                text-align: center;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                width: 100%;
+            }
+    
+            .main-recepies__search-form {
+                width: 90%;
 
-    .main-recepies__search-title {
-        text-align: center;
-        font-size: 1.3rem;
-        line-height: 1.6rem;
-        width: 100%;
-    }
-
-    .main-recepies__search-form {
-        width: 90%;
-    }
-
-    .main-recepies__search-label {
-        font-size: 1rem;
-    }
-
-    .main-recepies__search-text {
-        height: 1.8rem;
-        width: 100%;
-        padding: 0.1rem 0.4rem;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-    }
-
-    .main-recepies__search-button {
-        display: none;
-    }
-
-    .main-recepies__title {
-        justify-content: center;
-        text-align: center;
-        font-size: 2rem;
-        height: 5.5rem;
-        padding: 0.4rem 0.5rem;
-        /* text-decoration: underline; */
-    }
-
-    .carousel-item {
-        height: 18rem;
+                .main-recepies__search-label {
+                    font-size: 1rem;
+                }
+    
+                .main-recepies__search-input {
+    
+                    .main-recepies__search-text {
+                        height: 1.8rem;
+                        width: 100%;
+                        padding: 0.1rem 0.4rem;
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                    }
+    
+                    .main-recepies__search-button {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .main-recepies__content {
+            display: flex;
+            flex-direction: column;
+    
+            .main-recepies__latest {
+    
+                .main-recepies__title {
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 2rem;
+                    height: 5.5rem;
+                    padding: 0.4rem 0.5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 18rem;
+                        }
+                    }
+                }
+            }
+    
+            .main-recepies__popular {
+    
+                .main-recepies__title {
+                    justify-content: center;
+                    text-align: center;
+                    font-size: 2rem;
+                    height: 5.5rem;
+                    padding: 0.4rem 0.5rem;
+                }
+    
+                .main-recepies__carousel {
+    
+                    .carousel-inner {
+    
+                        .carousel-item {
+                            height: 18rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -3045,68 +3466,89 @@
 
 
 
-    .footer__contact {
-        row-gap: 1rem;
-        padding: 1.1rem 1rem;
-        background-color: #EFEFD0;
-        height: 16rem;
-    }
+    .footer {
+    
+        .footer__contact {
+            row-gap: 1rem;
+            padding: 1.1rem 1rem;
+            height: 16rem;
+    
+            .footer__contact-title {
+                font-size: 2.1rem;
+            }
+    
+            .footer__contact-p {
+                font-size: 1.2rem;
+            }
+    
+            .footer__contact-button {
+                height: 3rem;
 
-    .footer__contact-title {
-        font-size: 2.1rem;
-    }
+                .footer__contact-button-a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    
+        .footer__main {
+            height: auto;
+            padding: 1.2rem 1.2rem;
+            row-gap: 1rem;
+    
+            .footer__main-socials {
+                display: flex;
+                flex-direction: column;
+                height: 45%;
+                align-items: center;
+                gap: 0;
+                row-gap: 0.5rem;
+                justify-content: space-around;
+                padding: 0;
+    
+                li {
 
-    .footer__contact-p {
-        font-size: 1.2rem;
-    }
+                    .footer__link {
+                        font-size: 1.1rem;
+                    }
 
-    .footer__contact-button {
-        height: 3rem;
-    }
+                    .footer__link-logo {
 
-    .footer__contact-button-a {
-        font-size: 1.2rem;
-    }
+                        img {
+                            width: 3rem;
+                        }
+                    }
+    
+                    .footer__main-socials-img {
+                        column-gap: 2rem;
+                        padding: 0;
 
-    .footer__main {
-        height: auto;
-        padding: 1.2rem 1.2rem;
-        row-gap: 1rem;
-    }
+                        li {
 
-    .footer__link {
-        font-size: 1.1rem;
-    }
+                            a {
 
-    .footer__main-socials {
-        display: flex;
-        flex-direction: column;
-        height: 45%;
-        align-items: center;
-        gap: 0;
-        row-gap: 0.5rem;
-        justify-content: space-around;
-        padding: 0;
-    }
+                                img {
+                                    width: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-    .footer__main-socials-img {
-        column-gap: 2rem;
-        padding: 0;
-    }
+            .footer__main-legal {
+                flex-direction: column;
+                height: 55%;
+                align-items: center;
+                justify-content: space-around;
+                color: #ffffff;
+                row-gap: 1rem;
+                font-size: 1.1rem;
+                padding: 0;
 
-    .footer__main-socials-img img {
-        width: 2.5rem;
+                .footer__link {
+                    font-size: 1.1rem;
+                }
+            }
+        }
     }
-
-    .footer__main-legal {
-        flex-direction: column;
-        height: 55%;
-        align-items: center;
-        justify-content: space-around;
-        color: #ffffff;
-        row-gap: 1rem;
-        font-size: 1.1rem;
-        padding: 0;
-    }
-
 }
