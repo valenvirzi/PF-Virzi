@@ -420,6 +420,8 @@ li {
 
 .main-products__info {
   display: flex;
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(to bottom, #1A659E, rgba(26, 101, 158, 0.5));
 }
 
 .main-products__text {
@@ -431,9 +433,6 @@ li {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  border-top: #219EBC solid 2px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
 }
 
 .main-products__img-title {
@@ -450,6 +449,7 @@ li {
   font-size: 2rem;
   font-weight: 800;
   color: #023e8a;
+  color: rgb(249, 199, 135);
 }
 
 .main-products__p {
@@ -471,7 +471,6 @@ li {
   border-top: #219EBC solid 2px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
 }
 
@@ -504,10 +503,8 @@ li {
   justify-content: space-between;
   column-gap: 0.75rem;
   align-items: center;
-  /* background-image: linear-gradient(#f0f3bd, #02c39a, #00a896, #028090, #05668d); */
-  background-image: linear-gradient(#a9d6e5, #89c2d9, #61a5c2, #468faf, #2c7da0);
+  background-image: linear-gradient(#a9d6e5, #a9d6e5, #89c2d9, #89c2d9, #61a5c2);
   background-color: #05668d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0.2rem 0.5rem;
   border-radius: 15px;
   margin: 0.5rem;
