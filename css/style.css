@@ -800,7 +800,7 @@ li {
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(to bottom, #1A659E, rgba(26, 101, 158, 0.5), rgba(249, 199, 135, 0.8));
   backdrop-filter: blur(3px);
 }
 .main-about .main-about__body .main-about__text {
@@ -814,6 +814,9 @@ li {
   font-size: 3rem;
   font-weight: 800;
   color: #023e8a;
+}
+.main-about .main-about__body .main-about__text .first-title {
+  color: rgb(249, 199, 135);
 }
 .main-about .main-about__body .main-about__text .main-about__text-p {
   font-size: 1.5rem;

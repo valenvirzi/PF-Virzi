@@ -10,7 +10,7 @@
         grid-template-rows: 50% 50%;
         grid-template-columns: 50% 50%;
         height: auto;
-        background-color: rgba(255, 255, 255, 0.15);
+        background: linear-gradient(to bottom, #1A659E, rgba(26, 101, 158, .5), rgba(249, 199, 135, .8));
         backdrop-filter: blur(3px);
 
         .main-about__text {
@@ -24,6 +24,10 @@
                 font-size: 3rem;
                 font-weight: 800;
                 color: $color-title;
+            }
+
+            .first-title {
+                color: rgb(249, 199, 135);
             }
 
             .main-about__text-p {
