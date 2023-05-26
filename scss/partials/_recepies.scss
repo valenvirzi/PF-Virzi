@@ -11,14 +11,14 @@
         padding: 0.5rem 1.5rem;
         column-gap: 1.5rem;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(3px);
+        background: linear-gradient(to bottom, #1A659E, rgba(26, 101, 158, .5));
+        backdrop-filter: blur(5px);
         border: none;
 
         .main-recepies__search-title {
             font-size: 1.5rem;
             font-weight: 800;
-            color: $color-title;
+            color: rgb(249, 199, 135);
             width: 66%;
         }
 
@@ -92,8 +92,8 @@
                 color: $color-title;
                 height: 6rem;
                 padding: 0 0 0 4rem;
-                background-color: rgba(255, 255, 255, 0.15);
-                backdrop-filter: blur(3px);
+                background-image: linear-gradient(to bottom, rgba(26, 101, 158, .5), rgba(249, 199, 135, .8));
+                backdrop-filter: blur(5px);
                 border: none;
             }
 
@@ -129,8 +129,8 @@
                 color: $color-title;
                 height: 6rem;
                 padding: 0 0 0 4rem;
-                background-color: rgba(255, 255, 255, 0.15);
-                backdrop-filter: blur(3px);
+                background-image: linear-gradient(rgba(249, 199, 135, .8), rgba(249, 199, 135, .8));
+                backdrop-filter: blur(5px);
                 border: none;
             }
 

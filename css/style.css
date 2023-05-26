@@ -417,115 +417,180 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.main-products__info {
+.main-products .main-products__info {
   display: flex;
+  height: 10rem;
   backdrop-filter: blur(5px);
   background-image: linear-gradient(to bottom, #1A659E, rgba(26, 101, 158, 0.5));
 }
-
-.main-products__text {
+.main-products .main-products__info .main-products__text {
   display: flex;
   flex-direction: column;
-  height: 10rem;
   width: 50%;
   padding: 0.5rem 3rem;
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
 }
-
-.main-products__img-title {
-  display: flex;
-  align-items: center;
-  column-gap: 0.4rem;
-}
-
-.main-products__img {
-  width: 2.5rem;
-}
-
-.main-products__title {
+.main-products .main-products__info .main-products__text .main-products__title {
   font-size: 2rem;
   font-weight: 800;
   color: rgb(249, 199, 135);
 }
-
-.main-products__p {
+.main-products .main-products__info .main-products__text .main-products__p {
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.7rem;
 }
-
-.main-products__categories {
+.main-products .main-products__info .main-products__text .main-products__img-title {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+.main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(249, 199, 135);
+}
+.main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+  width: 2.5rem;
+}
+.main-products .main-products__categories {
   display: flex;
   flex-direction: column;
 }
-
-.main-products__intro {
+.main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+.main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
   display: flex;
   height: 8rem;
   align-items: center;
   background-image: linear-gradient(rgba(249, 199, 135, 0.8), rgba(249, 199, 135, 0.8));
   backdrop-filter: blur(5px);
 }
-
-.end {
-  flex-direction: row-reverse;
-  background-image: linear-gradient(to bottom, rgba(26, 101, 158, 0.5), rgba(249, 199, 135, 0.8));
-}
-
-.main-products__intro-title {
+.main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+.main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
   font-size: 3.75rem;
   font-weight: 700;
   color: #023e8a;
   margin: 0 6rem;
 }
-
-.main-products__carousel {
+.main-products .main-products__categories .main-products__categories-frescos .end,
+.main-products .main-products__categories .main-products__categories-congelados .end {
+  flex-direction: row-reverse;
+  background-image: linear-gradient(to bottom, rgba(26, 101, 158, 0.5), rgba(249, 199, 135, 0.8));
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel,
+.main-products .main-products__categories .main-products__categories-congelados .carousel {
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 0.75rem 2.5rem;
 }
-
-.main-products__item {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
   display: flex;
-  justify-content: space-between;
-  column-gap: 0.75rem;
+  margin: 2rem;
+  background-color: #ced4da;
+  background: linear-gradient(#ff9f1c, #ffbf69, #ffffff, #cbf3f0, #2ec4b6);
+  background: linear-gradient(#fed9b7, #fdfcdc, #0081a7);
+  box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.5333333333);
+  border-radius: 0.7rem;
+  overflow: hidden;
+  transition: 0.35s all;
   align-items: center;
-  background-image: linear-gradient(#a9d6e5, #a9d6e5, #89c2d9, #89c2d9, #61a5c2);
-  background-color: #05668d;
-  padding: 0.2rem 0.5rem;
-  border-radius: 15px;
-  margin: 0.5rem;
-  min-height: 4.5rem;
+  justify-content: space-between;
 }
-
-.main-products__item-img {
-  width: 4.5rem;
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item p,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item p {
+  color: #000000;
+  margin: 0;
 }
-
-.main-products__item-text {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item hr,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.3333333333);
+  margin: 0;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item ins,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item ins {
+  text-decoration: none;
+  color: #1A659E;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  row-gap: 0.5rem;
 }
-
-.main-products__item-name {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  align-self: center;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
   color: #000000;
   font-weight: 600;
   text-align: center;
+  font-size: 1.8rem;
+  margin: 0;
 }
-
-.main-products__item-inputs {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
+  color: #000000;
+  font-weight: 500;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  color: #000000;
   column-gap: 0.3rem;
-  width: 4.3rem;
+  font-weight: 700;
 }
-
-.main-products__item-button {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  column-gap: 0.3rem;
+  font-weight: 700;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 1rem;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 0.3rem;
+  width: 38%;
+  height: auto;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -536,26 +601,66 @@ li {
   background-color: #FB8500;
   font-weight: 900;
 }
-
-.main-products__item-button:hover {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button:hover,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button:hover {
   background-color: #f6972a;
 }
-
-.main-products__item-button:active {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button:active,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button:active {
   background-color: #cd6f03;
 }
-
-.main-products__item-number {
-  width: 1.5rem;
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+  width: 55%;
+  height: 2.3rem;
   text-align: center;
   border: none;
   border-radius: 5px;
 }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs input[type=number]::-webkit-inner-spin-button,
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs input[type=number]::-webkit-outer-spin-button,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs input[type=number]::-webkit-inner-spin-button,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  background-color: #FB8500;
+  color: #ffffff;
+  font-weight: 600;
+  width: 60%;
+  height: 1.8rem;
+  padding: 0.3rem 0.5rem;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button:hover,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button:hover {
+  background-color: #f6972a;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button:active,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button:active {
+  background-color: #cd6f03;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item ::before,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item ::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.031372549);
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.7s all;
+}
+.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item:hover,
+.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item:hover {
+  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.6666666667);
+  transform: scale(1.01);
 }
 
 .main-recepies {
@@ -571,14 +676,14 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0.5rem 1.5rem;
   column-gap: 1.5rem;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(3px);
+  background: linear-gradient(to bottom, #1A659E, rgba(26, 101, 158, 0.5));
+  backdrop-filter: blur(5px);
   border: none;
 }
 .main-recepies .main-recepies__search .main-recepies__search-title {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #023e8a;
+  color: rgb(249, 199, 135);
   width: 66%;
 }
 .main-recepies .main-recepies__search .main-recepies__search-form {
@@ -642,8 +747,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: #023e8a;
   height: 6rem;
   padding: 0 0 0 4rem;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(3px);
+  background-image: linear-gradient(to bottom, rgba(26, 101, 158, 0.5), rgba(249, 199, 135, 0.8));
+  backdrop-filter: blur(5px);
   border: none;
 }
 .main-recepies .main-recepies__content .main-recepies__latest .main-recepies__carousel {
@@ -668,8 +773,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: #023e8a;
   height: 6rem;
   padding: 0 0 0 4rem;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(3px);
+  background-image: linear-gradient(rgba(249, 199, 135, 0.8), rgba(249, 199, 135, 0.8));
+  backdrop-filter: blur(5px);
   border: none;
 }
 .main-recepies .main-recepies__content .main-recepies__popular .main-recepies__carousel {
@@ -976,58 +1081,101 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 6.5rem;
     margin: 0 0 0 12rem;
   }
-  .main-products__info {
-    flex-direction: row;
+  .main-products .main-products__info {
+    height: 15rem;
   }
-  .main-products__text {
-    height: 14rem;
-    padding: 1rem 4rem;
+  .main-products .main-products__info .main-products__text {
+    padding: 0.5rem 3rem;
   }
-  .main-products__img-title {
-    column-gap: 0.5rem;
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 3rem;
   }
-  .main-products__img {
-    width: 4rem;
-  }
-  .main-products__title {
-    font-size: 3.4rem;
-  }
-  .main-products__p {
-    font-size: 2.3rem;
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 2rem;
     line-height: 2.5rem;
   }
-  .main-products__intro {
-    height: 10rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title {
+    column-gap: 0.6rem;
   }
-  .main-products__intro-title {
-    font-size: 5.7rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 3rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 4rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
+    height: 9rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
+    font-size: 5rem;
     margin: 0 10rem;
   }
-  .main-products__carousel {
-    grid-template-columns: 1fr 1fr 1fr;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 1.75rem 3rem;
+    padding: 0.75rem 2.5rem;
   }
-  .main-products__item {
-    padding: 0.25rem 0.75rem;
-    margin: 1rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 35rem;
+    margin: 1.8rem;
   }
-  .main-products__item-img {
-    width: 7.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1.6rem;
+    row-gap: 0.5rem;
   }
-  .main-products__item-name {
-    font-size: 2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 43%;
   }
-  .main-products__item-inputs {
-    width: 8rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 2.8rem;
   }
-  .main-products__item-button {
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
+    font-size: 1.8rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 1rem;
+    font-size: 1.8rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1.7rem;
+    column-gap: 1.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.8rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
     width: 2rem;
     height: 2rem;
-    font-size: 2rem;
   }
-  .main-products__item-number {
-    width: 3rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    width: 40%;
+    height: 4rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    border-radius: 0.4rem;
+    width: 62%;
     height: 4rem;
   }
   .main-recepies .main-recepies__search {
@@ -1282,59 +1430,102 @@ input[type=number]::-webkit-outer-spin-button {
   .main-subpage__title {
     font-size: 6rem;
   }
-  .main-products__info {
-    flex-direction: row;
+  .main-products .main-products__info {
+    height: 15rem;
   }
-  .main-products__text {
-    height: 12rem;
-    padding: 0.8rem 3.5rem;
+  .main-products .main-products__info .main-products__text {
+    padding: 0.5rem 3rem;
   }
-  .main-products__img-title {
-    column-gap: 0.5rem;
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 3rem;
   }
-  .main-products__img {
-    width: 3.25rem;
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
-  .main-products__title {
-    font-size: 2.85rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title {
+    column-gap: 0.6rem;
   }
-  .main-products__p {
-    font-size: 1.85rem;
-    line-height: 2.3rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 3rem;
   }
-  .main-products__intro {
-    height: 8.5rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 4rem;
   }
-  .main-products__intro-title {
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
+    height: 9rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
     font-size: 5rem;
-    margin: 0 8.5rem;
+    margin: 0 10rem;
   }
-  .main-products__carousel {
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 1rem 2.5rem;
+    padding: 0.75rem 2.5rem;
   }
-  .main-products__item {
-    padding: 0.25rem 0.7rem;
-    margin: 0.65rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 35rem;
+    margin: 1.8rem;
   }
-  .main-products__item-img {
-    width: 6rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1.6rem;
+    row-gap: 0.5rem;
   }
-  .main-products__item-name {
-    font-size: 1.75rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 43%;
   }
-  .main-products__item-inputs {
-    width: 7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 2.6rem;
   }
-  .main-products__item-button {
-    width: 1.75rem;
-    height: 1.75rem;
-    font-size: 1.75rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
+    font-size: 1.8rem;
   }
-  .main-products__item-number {
-    width: 2.75rem;
-    height: 3.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 1rem;
+    font-size: 1.6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1.6rem;
+    column-gap: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.8rem;
+    width: 40%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    width: 40%;
+    height: 4rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    border-radius: 0.4rem;
+    height: 4rem;
   }
   .main-recepies .main-recepies__search {
     height: 7rem;
@@ -1562,58 +1753,101 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
-  .main-products__info {
-    flex-direction: row;
-  }
-  .main-products__text {
+  .main-products .main-products__info {
     height: 10rem;
-    padding: 0.75rem 3rem;
   }
-  .main-products__img-title {
-    column-gap: 0.5rem;
+  .main-products .main-products__info .main-products__text {
+    padding: 0.5rem 3rem;
   }
-  .main-products__img {
-    width: 3rem;
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 2.4rem;
   }
-  .main-products__title {
-    font-size: 2.5rem;
-  }
-  .main-products__p {
-    font-size: 1.5rem;
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 1.6rem;
     line-height: 2rem;
   }
-  .main-products__intro {
-    height: 7.5rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title {
+    column-gap: 0.5rem;
   }
-  .main-products__intro-title {
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 2.4rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 3.1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
+    height: 7rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
     font-size: 4rem;
-    margin: 0 7.5rem;
+    margin: 0 8.5rem;
   }
-  .main-products__carousel {
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 1rem 2.5rem;
+    padding: 0.75rem 2.5rem;
   }
-  .main-products__item {
-    padding: 0.25rem 0.7rem;
-    margin: 0.65rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 35rem;
+    margin: 1.5rem;
   }
-  .main-products__item-img {
-    width: 5.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1.5rem;
+    row-gap: 0.5rem;
   }
-  .main-products__item-name {
-    font-size: 1.35rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 43%;
   }
-  .main-products__item-inputs {
-    width: 6rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 2.1rem;
   }
-  .main-products__item-button {
-    width: 1.5rem;
-    height: 1.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
     font-size: 1.5rem;
   }
-  .main-products__item-number {
-    width: 2.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 1rem;
+    font-size: 1.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1.4rem;
+    column-gap: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.8rem;
+    width: 38%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    width: 55%;
+    height: 3.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    border-radius: 0.4rem;
     height: 3.5rem;
   }
   .main-recepies .main-recepies__search {
@@ -1796,59 +2030,102 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-  .main-products__info {
-    flex-direction: row;
+  .main-products .main-products__info {
+    height: 8rem;
   }
-  .main-products__text {
-    height: 8.5rem;
-    padding: 0.75rem 2.8rem;
+  .main-products .main-products__info .main-products__text {
+    padding: 0.5rem 2rem;
   }
-  .main-products__img-title {
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 1.85rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title {
     column-gap: 0.5rem;
   }
-  .main-products__img {
-    width: 2.5rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 1.85rem;
   }
-  .main-products__title {
-    font-size: 2rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 3.1rem;
   }
-  .main-products__p {
-    font-size: 1.25rem;
-    line-height: 1.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
+    height: 6rem;
   }
-  .main-products__intro {
-    height: 6.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
+    font-size: 3.4rem;
+    margin: 0 6.5rem;
   }
-  .main-products__intro-title {
-    font-size: 3.7rem;
-    margin: 0 7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0.75rem 1.5rem;
   }
-  .main-products__carousel {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 1rem 2.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 30rem;
+    margin: 1.2rem;
   }
-  .main-products__item {
-    padding: 0.25rem 0.7rem;
-    margin: 0.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1.5rem;
+    row-gap: 0.5rem;
   }
-  .main-products__item-img {
-    width: 5.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 43%;
   }
-  .main-products__item-name {
-    font-size: 1.35rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 1.75rem;
   }
-  .main-products__item-inputs {
-    width: 6rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
+    font-size: 1.1rem;
   }
-  .main-products__item-button {
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 1rem;
+    font-size: 1.1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.3rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1rem;
+    column-gap: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.8rem;
+    width: 38%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
     width: 1.5rem;
     height: 1.5rem;
-    font-size: 1.5rem;
   }
-  .main-products__item-number {
-    width: 2.5rem;
-    height: 3.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    width: 55%;
+    height: 2.6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    border-radius: 0.4rem;
+    height: 2.5rem;
   }
   .main-recepies .main-recepies__search {
     height: 5rem;
@@ -2046,59 +2323,105 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 4rem;
     margin: 4.5rem;
   }
-  .main-products__info {
-    flex-direction: row;
+  .main-products .main-products__info {
+    height: 8rem;
   }
-  .main-products__text {
-    height: 8.5rem;
-    padding: 0.75rem 2.5rem;
+  .main-products .main-products__info .main-products__text {
+    padding: 0.5rem 2rem;
   }
-  .main-products__img-title {
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 1.85rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title {
     column-gap: 0.5rem;
   }
-  .main-products__img {
-    width: 2.5rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 1.85rem;
   }
-  .main-products__title {
-    font-size: 1.7rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 3.1rem;
   }
-  .main-products__p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-  .main-products__intro {
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
     height: 6rem;
   }
-  .main-products__intro-title {
-    font-size: 3.5rem;
-    margin: 0 6rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
+    font-size: 3.4rem;
+    margin: 0 6.5rem;
   }
-  .main-products__carousel {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 1rem 2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0.75rem 1.25rem;
   }
-  .main-products__item {
-    padding: 0.25rem 0.7rem;
-    margin: 0.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 25rem;
+    margin: 1rem;
   }
-  .main-products__item-img {
-    width: 4.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1rem 0.8rem;
+    row-gap: 0.4rem;
   }
-  .main-products__item-name {
-    font-size: 1.2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 40%;
   }
-  .main-products__item-inputs {
-    width: 5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 1.4rem;
   }
-  .main-products__item-button {
-    width: 1.2rem;
-    height: 1.2rem;
-    font-size: 1.2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
+    font-size: 1rem;
   }
-  .main-products__item-number {
-    width: 2rem;
-    height: 3rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1rem;
+    column-gap: 0.7rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.6rem;
+    width: 40%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    font-size: 0.85rem;
+    width: 55%;
+    height: 2.6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    padding: 0 0.2rem;
+    font-size: 0.75rem;
+    border-radius: 0.3rem;
+    height: 2.2rem;
   }
   .main-recepies .main-recepies__search {
     height: 4.5rem;
@@ -2212,7 +2535,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.35rem;
   }
   .footer .footer__contact {
-    height: 10rem;
+    height: 12rem;
   }
   .footer .footer__contact .footer__contact-title {
     font-size: 2.1rem;
@@ -2222,7 +2545,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .footer .footer__contact .footer__contact-button {
     font-size: 1rem;
-    height: 2rem;
+    height: 2.5rem;
     width: 15rem;
   }
   .footer .footer__main {
@@ -2230,14 +2553,18 @@ input[type=number]::-webkit-outer-spin-button {
     height: 10rem;
     font-size: 1rem;
   }
+  .footer .footer__main ul {
+    padding: 0;
+  }
   .footer .footer__main .footer__main-socials {
     justify-content: space-between;
+    padding: 0 1rem;
   }
   .footer .footer__main .footer__main-socials li .footer__link-logo img {
     width: 3rem;
   }
   .footer .footer__main .footer__main-socials li .footer__main-socials-img {
-    column-gap: 7.5rem;
+    column-gap: 6rem;
   }
   .footer .footer__main .footer__main-socials li .footer__main-socials-img li a img {
     width: 3.2rem;
@@ -2342,62 +2669,112 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     font-size: 3.5rem;
   }
-  .main-products__info {
+  .main-products .main-products__info {
     flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    row-gap: 1.2rem;
   }
-  .main-products__text {
+  .main-products .main-products__info .main-products__text {
     width: 100%;
-    height: 8rem;
-    padding: 0.5rem 2rem;
+    padding: 0;
+    row-gap: 0.75rem;
   }
-  .main-products__img-title {
-    column-gap: 0.5rem;
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 1.85rem;
   }
-  .main-products__img {
-    width: 2.5rem;
-  }
-  .main-products__title {
-    font-size: 2rem;
-  }
-  .main-products__p {
+  .main-products .main-products__info .main-products__text .main-products__p {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
-  .main-products__intro {
-    height: 5rem;
-    justify-content: center;
+  .main-products .main-products__info .main-products__text .main-products__img-title {
+    column-gap: 0.5rem;
   }
-  .main-products__intro-title {
-    font-size: 3rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 1.85rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 3.1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
+    justify-content: center;
+    height: 6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
+    font-size: 3.4rem;
     margin: 0;
   }
-  .main-products__carousel {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr, 9);
-    padding: 1rem 2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem 1rem;
   }
-  .main-products__item {
-    min-height: 4.5rem;
-    padding: 0.25rem 0.7rem;
-    margin: 0.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 25rem;
+    max-height: 26rem;
+    margin: 1rem;
   }
-  .main-products__item-img {
-    width: 4.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1rem 0.8rem;
+    row-gap: 0.4rem;
   }
-  .main-products__item-name {
-    font-size: 1.2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 40%;
   }
-  .main-products__item-inputs {
-    width: 5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 1.4rem;
   }
-  .main-products__item-button {
-    width: 1.2rem;
-    height: 1.2rem;
-    font-size: 1.2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
+    font-size: 1rem;
   }
-  .main-products__item-number {
-    width: 2rem;
-    height: 3rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 0.35rem;
+    font-size: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1rem;
+    column-gap: 0.7rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.4rem;
+    width: 40%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    font-size: 0.85rem;
+    width: 55%;
+    height: 2.6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    padding: 0 0.2rem;
+    font-size: 0.75rem;
+    border-radius: 0.3rem;
+    height: 2.2rem;
   }
   .main-recepies .main-recepies__search {
     height: 6rem;
@@ -2664,63 +3041,110 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     font-size: 3.5rem;
   }
-  .main-products__info {
+  .main-products .main-products__info {
     flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    row-gap: 1.2rem;
   }
-  .main-products__text {
+  .main-products .main-products__info .main-products__text {
     width: 100%;
-    height: 8rem;
-    padding: 0.5rem 2rem;
+    padding: 0;
+    row-gap: 0.75rem;
   }
-  .main-products__img-title {
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 1.85rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title {
     column-gap: 0.5rem;
   }
-  .main-products__img {
-    width: 2.2rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 1.85rem;
   }
-  .main-products__title {
-    font-size: 1.75rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 3.1rem;
   }
-  .main-products__p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-  }
-  .main-products__intro {
-    height: 4.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
     justify-content: center;
+    height: 6rem;
   }
-  .main-products__intro-title {
-    font-size: 2.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
+    font-size: 3.4rem;
     margin: 0;
   }
-  .main-products__carousel {
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 9);
-    padding: 1rem 1.2rem;
+    padding: 1rem 2.5rem;
   }
-  .main-products__item {
-    min-height: 4.5rem;
-    padding: 0.25rem 0.7rem;
-    margin: 0.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 10rem;
+    max-height: 23rem;
+    margin: 1rem;
   }
-  .main-products__item-img {
-    width: 4.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1.1rem;
+    row-gap: 0.4rem;
   }
-  .main-products__item-name {
-    font-size: 1.2rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 40%;
   }
-  .main-products__item-inputs {
-    width: 4.5rem;
-    column-gap: 0.35rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 1.4rem;
   }
-  .main-products__item-button {
-    width: 1rem;
-    height: 1rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
     font-size: 1rem;
   }
-  .main-products__item-number {
-    width: 1.75rem;
-    height: 2.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 0.35rem;
+    font-size: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1rem;
+    column-gap: 0.7rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.4rem;
+    width: 40%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    width: 55%;
+    height: 2.6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    padding: 0 0.2rem;
+    border-radius: 0.3rem;
+    height: 2.2rem;
   }
   .main-recepies .main-recepies__search {
     flex-direction: column;
@@ -2994,63 +3418,110 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
     font-size: 2.45rem;
   }
-  .main-products__info {
+  .main-products .main-products__info {
     flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    row-gap: 1.2rem;
   }
-  .main-products__text {
+  .main-products .main-products__info .main-products__text {
     width: 100%;
-    height: 6.5rem;
-    padding: 0.5rem 1.2rem;
+    padding: 0;
+    row-gap: 0.7rem;
   }
-  .main-products__img-title {
+  .main-products .main-products__info .main-products__text .main-products__title {
+    font-size: 1.6rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .main-products .main-products__info .main-products__text .main-products__img-title {
     column-gap: 0.5rem;
   }
-  .main-products__img {
-    width: 2.2rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__title {
+    font-size: 1.6rem;
   }
-  .main-products__title {
-    font-size: 1.5rem;
+  .main-products .main-products__info .main-products__text .main-products__img-title .main-products__img {
+    width: 2.4rem;
   }
-  .main-products__p {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-  }
-  .main-products__intro {
-    height: 4.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro {
     justify-content: center;
+    height: 4.5rem;
   }
-  .main-products__intro-title {
-    font-size: 2.7rem;
+  .main-products .main-products__categories .main-products__categories-frescos .main-products__intro .main-products__intro-title,
+  .main-products .main-products__categories .main-products__categories-congelados .main-products__intro .main-products__intro-title {
+    font-size: 2.8rem;
     margin: 0;
   }
-  .main-products__carousel {
+  .main-products .main-products__categories .main-products__categories-frescos .carousel,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 9);
-    padding: 1rem 0.7rem;
+    padding: 1rem 1.2rem;
   }
-  .main-products__item {
-    min-height: 4.5rem;
-    padding: 0.25rem 0.7rem;
-    margin: 0.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item {
+    min-height: 10rem;
+    max-height: 23rem;
+    margin: 0.8rem 0.8rem;
   }
-  .main-products__item-img {
-    width: 4.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main {
+    padding: 1.1rem;
+    row-gap: 0.4rem;
   }
-  .main-products__item-name {
-    font-size: 1.1rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-img,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-img {
+    height: 40%;
   }
-  .main-products__item-inputs {
-    width: 4.5rem;
-    column-gap: 0.35rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-name,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-name {
+    font-size: 1.4rem;
   }
-  .main-products__item-button {
-    width: 1rem;
-    height: 1rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-description,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-description {
     font-size: 1rem;
   }
-  .main-products__item-number {
-    width: 1.75rem;
-    height: 2.5rem;
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info {
+    column-gap: 0.35rem;
+    font-size: 1rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-price {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-info .main-products__item-duration {
+    column-gap: 0.2rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom {
+    font-size: 1rem;
+    column-gap: 0.7rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs {
+    column-gap: 0.4rem;
+    width: 40%;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-inputs .main-products__item-number {
+    width: 55%;
+    height: 2.6rem;
+  }
+  .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button,
+  .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button {
+    padding: 0 0.2rem;
+    border-radius: 0.3rem;
+    height: 2.2rem;
   }
   .main-recepies .main-recepies__search {
     flex-direction: column;

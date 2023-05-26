@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos | Truchas Buenos Aires | Los mejores frutos de mar</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
-    <meta name="description" content="Elegí los mejores frutos de mar de nuestro catálogo de productos. Pedidos mayores a $7.500 no abonan cargo de envío.">
+    <meta name="description"
+        content="Elegí los mejores frutos de mar de nuestro catálogo de productos. Pedidos mayores a $7.500 no abonan cargo de envío.">
     <meta name="keywords" content="mariscos, truchas, pescados, pescaderia, frutos de mar, rabas, langostinos, recetas">
     <meta property="og:title" content="Truchas Buenos Aires | Los mejores frutos de mar">
     <meta property="og:description" content="Conseguí los mejores pescados & mariscos">
@@ -43,11 +44,11 @@
                     </li>
                 </ul>
             </nav>
-            
+
             <a class="header__link-cart" href="">
                 <img class="header__cart" logo="carrito" src="../img/cart.png" alt="Carrito">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -109,234 +110,487 @@
                 <div class="main-products__intro end">
                     <h2 class="main-products__intro-title">Frescos</h2>
                 </div>
-                <ul class="main-products__carousel">
-
+                <ul id="carousel-fresh" class="slider-frescos carousel">
                     <li class="main-products__item">
-                        <img src="../img/penca-salmon.png" alt="penca de salmon" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Penca de Salmón Rosado</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" min="0" max="99" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/penca-salmon.png" alt="penca de salmon"
+                                class="main-products__item-img">
+                            <h4 class="main-products__item-name">Penca de Salmón Rosado</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>9.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/trucha-mariposa-fresca.jpeg" alt="trucha mariposa" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Trucha Mariposa Despinada</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/filet-truchon.jpg" alt="filet de truchon" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Filet de Truchón</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/truchon-entero.jpg" alt="truchon entero" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Truchón Entero</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/trucha-mariposa-fresca.jpeg" alt="trucha mariposa"
+                                class="main-products__item-img">
+                            <h4 class="main-products__item-name">Trucha Mariposa Despinada</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.500</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/filet-merluza.jpg" alt="filet de merluza" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Filet de Merluza</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/pollo-mar.jpg" alt="pollo de mar" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Pollo de Mar</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/palometa.jpeg" alt="palometa" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Palometa</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/filet-truchon.jpg" alt="filet de truchon"
+                                class="main-products__item-img">
+                            <h4 class="main-products__item-name">Filet de Truchón</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>5.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/mero.jpeg" alt="mero" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Mero</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/truchon-entero.jpg" alt="truchon entero"
+                                class="main-products__item-img">
+                            <h4 class="main-products__item-name">Truchón Entero</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.250</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/besugo.jpg" alt="besugo" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Besugo</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/filet-merluza.jpg" alt="filet de merluza"
+                                class="main-products__item-img">
+                            <h4 class="main-products__item-name">Filet de Merluza</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>1.500</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
-
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/pollo-mar.jpg" alt="pollo de mar" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Pollo de Mar</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>2.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/palometa.jpeg" alt="palometa" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Palometa</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/mero.jpeg" alt="mero" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Mero</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/besugo.jpg" alt="besugo" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Besugo</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="main-products__categories-congelados">
                 <div class="main-products__intro">
                     <h2 class="main-products__intro-title">Congelados</h2>
                 </div>
-                <ul class="main-products__carousel">
-
+                <ul id="carousel-frozen" class="slider-congelados carousel">
                     <li class="main-products__item">
-                        <img src="../img/langostino-pelado.jpg" alt="langostino pelado" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Langostino Pelado</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" min="0" max="99" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/langostino-pelado.jpg" alt="langostino pelado" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Langostino Pelado</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.400</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/tubo-calamar.jpg" alt="tubo de calamar" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Tubo de Calamar</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/mejillon-pelado.jpg" alt="mejillon pelado" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Mejillón Pelado</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/langostino-cola.jpeg" alt="langostino con cola" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Langostino C/Cola</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/tubo-calamar.jpg" alt="tubo de calamar" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Tubo de Calamar</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.100</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/mejillon-entero.webp" alt="mejillon entero" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Mejillón C/Cáscara</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/cornalitos.png" alt="cornalitos" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Cornalitos</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
-                        </div>
-                    </li>
-                    <li class="main-products__item">
-                        <img src="../img/camaron.jpeg" alt="camaron pelado" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Camarón</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/mejillon-pelado.jpg" alt="mejillon pelado" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Mejillón Pelado</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>5.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/mix-mariscos.jpg" alt="mix de mariscos" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Mix de Mariscos</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/langostino-cola.jpeg" alt="langostino con cola" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Langostino C/Cola</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>2.900</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
                     <li class="main-products__item">
-                        <img src="../img/tentaculo-calamar.jpg" alt="tentaculo de calamar" class="main-products__item-img">
-                        <div class="main-products__item-text">
-                            <p class="main-products__item-name">Tentáculo de Calamar</p>
-                            <p class="main-products__item-info"></p>
-                        </div>
-                        <div class="main-products__item-inputs">
-                            <button class="main-products__item-button">-</button>
-                            <input type="number" class="main-products__item-number">
-                            <button class="main-products__item-button">+</button>
+                        <div class='main-products__item-main'>
+                            <img src="../img/mejillon-entero.webp" alt="mejillon entero" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Mejillón C/Cáscara</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.300</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
                         </div>
                     </li>
-
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/cornalitos.png" alt="cornalitos" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Cornalitos</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>1.200</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/camaron.jpeg" alt="camaron pelado" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Camarón</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/mix-mariscos.jpg" alt="mix de mariscos" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Mix de Mariscos</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-products__item">
+                        <div class='main-products__item-main'>
+                            <img src="../img/tentaculo-calamar.jpg" alt="tentaculo de calamar" class="main-products__item-img">
+                            <h4 class="main-products__item-name">Tentáculo de Calamar</h4>
+                            <p class='main-products__item-description'>Camarón pelado congelado de Ecuador</p>
+                            <div class='main-products__item-info'>
+                                <div class="main-products__item-price">
+                                    <p>3.000</p>
+                                    <ins>$/Kg</ins>
+                                </div>
+                                <div class="main-products__item-duration">
+                                    <ins>◷</ins>
+                                    <p>Quedan 11kg</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="main-products__item-bottom">
+                                <div class="main-products__item-inputs">
+                                    <button class="main-products__item-button">-</button>
+                                    <input type="number" class="main-products__item-number">
+                                    <button class="main-products__item-button">+</button>
+                                </div>
+                                <button class="main-products__item-cart-button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
