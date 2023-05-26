@@ -492,12 +492,9 @@ li {
   display: flex;
   margin: 2rem;
   background-color: #ced4da;
-  background: linear-gradient(#ff9f1c, #ffbf69, #ffffff, #cbf3f0, #2ec4b6);
   background: linear-gradient(#fed9b7, #fdfcdc, #0081a7);
-  box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.5333333333);
   border-radius: 0.7rem;
   overflow: hidden;
-  transition: 0.35s all;
   align-items: center;
   justify-content: space-between;
 }
@@ -645,22 +642,6 @@ li {
 .main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button:active,
 .main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item .main-products__item-main .main-products__item-bottom .main-products__item-cart-button:active {
   background-color: #cd6f03;
-}
-.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item ::before,
-.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item ::before {
-  position: fixed;
-  content: "";
-  box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.031372549);
-  top: -10%;
-  left: -100%;
-  transform: rotate(-45deg);
-  height: 60rem;
-  transition: 0.7s all;
-}
-.main-products .main-products__categories .main-products__categories-frescos .carousel .main-products__item:hover,
-.main-products .main-products__categories .main-products__categories-congelados .carousel .main-products__item:hover {
-  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.6666666667);
-  transform: scale(1.01);
 }
 
 .main-recepies {

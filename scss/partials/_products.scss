@@ -90,12 +90,9 @@
           display: flex;
           margin: 2rem;
           background-color: #ced4da;
-          background: linear-gradient(#ff9f1c, #ffbf69, #ffffff, #cbf3f0, #2ec4b6);
           background: linear-gradient(#fed9b7, #fdfcdc, #0081a7);
-          box-shadow: 0 3px 8px 2px #00000088;
           border-radius: .7rem;
           overflow: hidden;
-          transition: .35s all;
           align-items: center;
           justify-content: space-between;
         
@@ -241,22 +238,6 @@
                 background-color: $color-button-active;
               }
             }
-          }
-        
-          ::before {
-            position: fixed;
-            content: "";
-            box-shadow: 0 0 20px 8px #ffffff08;
-            top: -10%;
-            left: -100%;
-            transform: rotate(-45deg);
-            height: 60rem;
-            transition: .7s all;
-          }
-        
-          &:hover {
-            box-shadow: 0 4px 20px 5px #000000aa;
-            transform: scale(1.01);
           }
         }
       }
